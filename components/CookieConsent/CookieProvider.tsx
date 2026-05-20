@@ -1,7 +1,5 @@
-"use client";
-
 import * as React from "react";
-import { GoogleConsentMode } from "./google-consent-mode";
+import { GoogleConsentMode } from "./GoogleConsentMode";
 import {
   hasGoogleScripts as checkHasGoogleScripts,
   getLoadedScripts,
@@ -9,7 +7,7 @@ import {
   registerScript as registerScriptInternal,
   unloadRevokedScripts,
   unregisterScript as unregisterScriptInternal,
-} from "./script-manager";
+} from "./scriptManager";
 import { retryFailedRecords, trackConsent } from "./tracker";
 import type {
   CategoryConfig,
@@ -67,10 +65,10 @@ interface CookieConsentProviderProps {
   config: CookieConsentConfig;
 }
 
-export function CookieConsentProvider({
+export const CookieConsentProvider = ({
   children,
   config,
-}: CookieConsentProviderProps) {
+}: CookieConsentProviderProps) => {
   const [state, setState] = React.useState<ConsentState>(() => ({
     hasConsented: false,
     categories: getDefaultCategories(),
@@ -87,15 +85,12 @@ export function CookieConsentProvider({
     getDefaultCategories()
   );
 
-  // Auto-enable Google Consent Mode if Google scripts are detected
   const effectiveGoogleConsentMode = React.useMemo(():
     | GoogleConsentModeConfig
     | undefined => {
-    // If user explicitly configured it, use their config
     if (config.googleConsentMode) {
       return config.googleConsentMode;
     }
-    // If Google scripts are detected, auto-enable with defaults
     if (hasGoogleScripts) {
       return {
         enabled: true,
@@ -113,13 +108,10 @@ export function CookieConsentProvider({
     return undefined;
   }, [config.googleConsentMode, hasGoogleScripts]);
 
-  // Update Google Consent Mode v2 when consent changes
-  // Only updates if Google Consent Mode is enabled AND gtag exists (user is using Google services)
   const updateGoogleConsentMode = React.useCallback(
     (categories: ConsentCategories) => {
       if (!effectiveGoogleConsentMode?.enabled) return;
       if (typeof window === "undefined" || !window.gtag) return;
-      // Additional check: only update if dataLayer exists (Google services are actually loaded)
       if (!window.dataLayer) return;
 
       const mapping = effectiveGoogleConsentMode.mapping || {
@@ -134,7 +126,6 @@ export function CookieConsentProvider({
 
       const consentUpdate: Record<string, "granted" | "denied"> = {};
 
-      // Map consent categories to Google consent types
       Object.entries(mapping).forEach(([googleType, category]) => {
         if (category && categories[category]) {
           consentUpdate[googleType] = "granted";
@@ -143,13 +134,11 @@ export function CookieConsentProvider({
         }
       });
 
-      // Update Google Consent Mode
       window.gtag("consent", "update", consentUpdate);
     },
     [effectiveGoogleConsentMode]
   );
 
-  // Initialize state from localStorage
   React.useEffect(() => {
     const visitorId = getVisitorId();
     const stored = loadConsentState();
@@ -172,9 +161,7 @@ export function CookieConsentProvider({
     }
   }, [config.consentVersion, config.traceability]);
 
-  // Check for existing Google scripts on mount
   React.useEffect(() => {
-    // Check if any already registered scripts are Google scripts
     if (checkHasGoogleScripts()) {
       setHasGoogleScripts(true);
     }
@@ -209,7 +196,6 @@ export function CookieConsentProvider({
       );
       loadConsentedScripts(categories);
 
-      // Update Google Consent Mode v2
       updateGoogleConsentMode(categories);
 
       const grantedCategories: ConsentCategory[] = [];
@@ -230,10 +216,8 @@ export function CookieConsentProvider({
         config.onConsentChange(event);
       }
 
-      // Update previous categories ref
       previousCategoriesRef.current = categories;
 
-      // Track consent if traceability is enabled
       if (config.traceability?.enabled) {
         const userId = await config.consentScope?.getUserId?.();
         await trackConsent({
@@ -309,7 +293,6 @@ export function CookieConsentProvider({
   const registerScript = React.useCallback((script: ScriptConfig) => {
     registerScriptInternal(script);
 
-    // Auto-detect Google scripts and enable Google Consent Mode
     if (isGoogleScript(script)) {
       setHasGoogleScripts(true);
     }
@@ -359,7 +342,6 @@ export function CookieConsentProvider({
   return (
     <CookieConsentContext.Provider value={value}>
       {children}
-      {/* Automatically render GoogleConsentMode when Google scripts are detected */}
       {hasGoogleScripts && effectiveGoogleConsentMode?.enabled && (
         <GoogleConsentMode
           defaults={{
@@ -375,7 +357,9 @@ export function CookieConsentProvider({
       )}
     </CookieConsentContext.Provider>
   );
-}
+};
+
+CookieConsentProvider.displayName = "CookieConsentProvider";
 
 export function useCookieConsent(): CookieConsentContextValue {
   const context = React.useContext(CookieConsentContext);

@@ -1,5 +1,3 @@
-"use client"
-
 import * as React from "react"
 import { Check, Shield } from "lucide-react"
 import {
@@ -14,7 +12,7 @@ import { Button } from "@ui/button"
 import { Switch } from "@ui/switch"
 import { Label } from "@ui/label"
 import { Separator } from "@ui/separator"
-import { useCookieConsent, defaultCategories } from "./cookie-provider"
+import { useCookieConsent, defaultCategories } from "./CookieProvider"
 import type { ConsentCategories, ConsentCategory } from "./types"
 import { getDefaultCategories, getAllAcceptedCategories } from "./utils"
 import { cn } from "@utils/cn"
@@ -23,7 +21,7 @@ export interface CookieSettingsProps {
   className?: string
 }
 
-export function CookieSettings({ className }: CookieSettingsProps) {
+export const CookieSettings = ({ className }: CookieSettingsProps) => {
   const { isSettingsOpen, closeSettings, state, updateConsent, config, acceptAll, rejectAll } = useCookieConsent()
   const labels = config.labels
 
@@ -31,7 +29,6 @@ export function CookieSettings({ className }: CookieSettingsProps) {
 
   const [localCategories, setLocalCategories] = React.useState<ConsentCategories>(state.categories)
 
-  // Sync local state when modal opens or when state changes
   React.useEffect(() => {
     if (isSettingsOpen) {
       setLocalCategories(state.categories)
@@ -52,7 +49,6 @@ export function CookieSettings({ className }: CookieSettingsProps) {
 
   const handleAcceptAll = async () => {
     const allAccepted = getAllAcceptedCategories()
-    // Update local state immediately for UI feedback
     setLocalCategories(allAccepted)
     await acceptAll()
     closeSettings()
@@ -60,7 +56,6 @@ export function CookieSettings({ className }: CookieSettingsProps) {
 
   const handleRejectAll = async () => {
     const defaultCats = getDefaultCategories()
-    // Update local state immediately for UI feedback
     setLocalCategories(defaultCats)
     await rejectAll()
     closeSettings()
@@ -157,3 +152,5 @@ export function CookieSettings({ className }: CookieSettingsProps) {
     </Dialog>
   )
 }
+
+CookieSettings.displayName = "CookieSettings"

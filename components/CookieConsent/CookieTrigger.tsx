@@ -1,7 +1,6 @@
-"use client"
 import { Cookie } from "lucide-react"
 import { Button } from "@ui/button"
-import { useCookieConsent } from "./cookie-provider"
+import { useCookieConsent } from "./CookieProvider"
 import { cn } from "@utils/cn"
 
 export interface CookieTriggerProps {
@@ -9,10 +8,7 @@ export interface CookieTriggerProps {
   variant?: "icon" | "text" | "full"
 }
 
-/**
- * A trigger button to reopen cookie settings after initial consent
- */
-export function CookieTrigger({ className, variant = "text" }: CookieTriggerProps) {
+export const CookieTrigger = ({ className, variant = "text" }: CookieTriggerProps) => {
   const { openSettings, state, config } = useCookieConsent()
   const label = config.labels?.trigger ?? "Cookie Settings"
 
@@ -55,3 +51,5 @@ export function CookieTrigger({ className, variant = "text" }: CookieTriggerProp
     </button>
   )
 }
+
+CookieTrigger.displayName = "CookieTrigger"

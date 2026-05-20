@@ -3,9 +3,6 @@ import type { ConsentCategories, ConsentState } from "./types"
 const STORAGE_KEY = "cookie-consent"
 const VISITOR_ID_KEY = "cookie-consent-visitor-id"
 
-/**
- * Generate a UUID v4
- */
 export function generateUUID(): string {
   return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, (c) => {
     const r = (Math.random() * 16) | 0
@@ -14,9 +11,6 @@ export function generateUUID(): string {
   })
 }
 
-/**
- * Get or create a visitor ID
- */
 export function getVisitorId(): string {
   if (typeof window === "undefined") {
     return generateUUID()
@@ -30,9 +24,6 @@ export function getVisitorId(): string {
   return visitorId
 }
 
-/**
- * Get default consent categories (all false except necessary)
- */
 export function getDefaultCategories(): ConsentCategories {
   return {
     necessary: true,
@@ -42,9 +33,6 @@ export function getDefaultCategories(): ConsentCategories {
   }
 }
 
-/**
- * Get all categories accepted
- */
 export function getAllAcceptedCategories(): ConsentCategories {
   return {
     necessary: true,
@@ -54,17 +42,11 @@ export function getAllAcceptedCategories(): ConsentCategories {
   }
 }
 
-/**
- * Save consent state to localStorage
- */
 export function saveConsentState(state: ConsentState): void {
   if (typeof window === "undefined") return
   localStorage.setItem(STORAGE_KEY, JSON.stringify(state))
 }
 
-/**
- * Load consent state from localStorage
- */
 export function loadConsentState(): ConsentState | null {
   if (typeof window === "undefined") return null
 
@@ -78,36 +60,22 @@ export function loadConsentState(): ConsentState | null {
   }
 }
 
-/**
- * Clear consent state from localStorage
- */
 export function clearConsentState(): void {
   if (typeof window === "undefined") return
   localStorage.removeItem(STORAGE_KEY)
 }
 
-/**
- * Calculate expiration date
- */
 export function calculateExpirationDate(days: number): string {
   const date = new Date()
   date.setDate(date.getDate() + days)
   return date.toISOString()
 }
 
-/**
- * Check if consent has expired
- */
 export function isConsentExpired(expiresAt: string): boolean {
   return new Date(expiresAt) < new Date()
 }
 
-/**
- * Check if a script is a Google service script
- * Detects Google Analytics, Google Tag Manager, Google Ads, etc.
- */
 export function isGoogleScript(script: { src?: string; content?: string }): boolean {
-  // Check if src URL contains Google domains (case-insensitive)
   if (script.src) {
     const srcLower = script.src.toLowerCase()
     const googleDomains = [
@@ -119,18 +87,12 @@ export function isGoogleScript(script: { src?: string; content?: string }): bool
       "doubleclick.net",
       "googleapis.com/gtag",
     ]
-    
-    // Check if any Google domain is present in the URL
-    // Use better matching to avoid false positives (e.g., "fakegoogletagmanager.com")
+
     const isGoogleDomain = googleDomains.some((domain) => {
       const domainLower = domain.toLowerCase()
-      // For full domains, check for domain boundaries (preceded by . or // or start of string)
       if (domainLower.includes("/")) {
-        // For paths like "google.com/analytics", just check if it's included
         return srcLower.includes(domainLower)
       } else {
-        // For domains, check for proper domain boundaries
-        // Match: .googletagmanager.com or //googletagmanager.com or googletagmanager.com/
         const domainPattern = new RegExp(
           `(^|//|\\.)${domainLower.replace(/\./g, "\\.")}(/|:|$|\\?)`,
           "i"
@@ -138,14 +100,12 @@ export function isGoogleScript(script: { src?: string; content?: string }): bool
         return domainPattern.test(srcLower)
       }
     })
-    
+
     if (isGoogleDomain) {
       return true
     }
   }
 
-  // Check if inline content contains Google-specific code (case-insensitive)
-  // This is checked as a fallback if src doesn't match, or if no src is provided
   if (script.content) {
     const contentLower = script.content.toLowerCase()
     const googlePatterns = [

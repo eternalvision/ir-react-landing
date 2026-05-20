@@ -52,9 +52,6 @@ declare global {
   }
 }
 
-// NEXT_PUBLIC_* vars are inlined at build time — same value on server and client.
-// This is the SSR-safe base that avoids hydration mismatches.
-// window.config (loaded via config.js before the bundle) can override on client.
 function envBase(): Partial<SiteConfig> {
   const v = <T>(val: T | undefined) => (val !== undefined && val !== '' ? val : undefined)
   return Object.fromEntries(

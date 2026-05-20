@@ -1,15 +1,14 @@
-"use client";
 import { Button } from "@ui/button";
 import { cn } from "@utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
 import { Cookie, Settings } from "lucide-react";
-import { useCookieConsent } from "./cookie-provider";
+import { useCookieConsent } from "./CookieProvider";
 
 export interface CookieBannerProps {
   className?: string;
 }
 
-export function CookieBanner({ className }: CookieBannerProps) {
+export const CookieBanner = ({ className }: CookieBannerProps) => {
   const { isBannerVisible, acceptAll, rejectAll, openSettings, config } =
     useCookieConsent();
   const labels = config.labels;
@@ -92,4 +91,6 @@ export function CookieBanner({ className }: CookieBannerProps) {
       )}
     </AnimatePresence>
   );
-}
+};
+
+CookieBanner.displayName = "CookieBanner";

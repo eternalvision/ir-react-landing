@@ -28,14 +28,12 @@ export default function Document() {
   return (
     <Html suppressHydrationWarning lang="en">
       <Head>
-        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
         <script src="/config.js" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         {process.env.NEXT_PUBLIC_GOOGLE_TAG && (
-          // eslint-disable-next-line @next/next/next-script-for-ga
           <script
             dangerouslySetInnerHTML={{
               __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

@@ -25,7 +25,6 @@ export const Hero = () => {
       aria-label={t('hero.title')}
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Geometric background */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-surface to-background">
         <svg
           className="absolute inset-0 w-full h-full opacity-[0.07] text-accent"

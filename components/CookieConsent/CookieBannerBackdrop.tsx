@@ -1,26 +1,20 @@
-"use client";
-
 import { cn } from "@utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
-import { useCookieConsent } from "./cookie-provider";
+import { useCookieConsent } from "./CookieProvider";
 
 export interface CookieBannerBackdropProps {
-  /** Custom class name for the backdrop */
   className?: string;
-  /** Whether clicking the backdrop should close the banner by rejecting all cookies */
   closeOnClick?: boolean;
-  /** Custom blur amount (e.g., "4px", "8px"). Defaults to "4px" */
   blur?: string;
-  /** Custom opacity for the backdrop (0-1). Defaults to 0.5 */
   opacity?: number;
 }
 
-export function CookieBannerBackdrop({
+export const CookieBannerBackdrop = ({
   className,
   closeOnClick = false,
   blur = "4px",
   opacity = 0.5,
-}: CookieBannerBackdropProps) {
+}: CookieBannerBackdropProps) => {
   const { isBannerVisible, rejectAll } = useCookieConsent();
 
   const handleClick = () => {
@@ -53,4 +47,6 @@ export function CookieBannerBackdrop({
       )}
     </AnimatePresence>
   );
-}
+};
+
+CookieBannerBackdrop.displayName = "CookieBannerBackdrop";

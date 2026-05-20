@@ -11,9 +11,6 @@ interface TrackConsentParams {
   scope?: "device" | "global"
 }
 
-/**
- * Send consent record to the configured endpoint
- */
 export async function trackConsent(params: TrackConsentParams): Promise<ConsentRecord | null> {
   const { categories, action, consentVersion, expiresAt, config, userId, scope = "device" } = params
 
@@ -62,7 +59,6 @@ export async function trackConsent(params: TrackConsentParams): Promise<ConsentR
         const err = error instanceof Error ? error : new Error(String(error))
         config.onError?.(err, record)
 
-        // Store in localStorage as fallback
         storeFailedRecord(record)
       }
     }
@@ -71,9 +67,6 @@ export async function trackConsent(params: TrackConsentParams): Promise<ConsentR
   return null
 }
 
-/**
- * Store failed record for later retry
- */
 function storeFailedRecord(record: ConsentRecord): void {
   if (typeof window === "undefined") return
 
@@ -83,9 +76,6 @@ function storeFailedRecord(record: ConsentRecord): void {
   localStorage.setItem(key, JSON.stringify(pending))
 }
 
-/**
- * Retry sending failed records
- */
 export async function retryFailedRecords(config: TraceabilityConfig): Promise<void> {
   if (typeof window === "undefined" || !config.enabled || !config.endpoint) return
 

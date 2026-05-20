@@ -1,5 +1,3 @@
-// Script management utilities for consent-based script loading
-
 import type { ConsentCategories, ConsentCategory, ScriptConfig } from "./types";
 
 interface ManagedScript extends ScriptConfig {
@@ -7,15 +5,10 @@ interface ManagedScript extends ScriptConfig {
   loaded: boolean;
 }
 
-// Registry of all managed scripts
 const scriptRegistry = new Map<string, ManagedScript>();
 
-// Track cleanup functions for each script
 const cleanupRegistry = new Map<string, () => void>();
 
-/**
- * Register a script to be managed by the consent system
- */
 export function registerScript(config: ScriptConfig): void {
   if (scriptRegistry.has(config.id)) {
     console.warn(
@@ -30,9 +23,6 @@ export function registerScript(config: ScriptConfig): void {
   });
 }
 
-/**
- * Unregister a script and clean it up
- */
 export function unregisterScript(id: string): void {
   const script = scriptRegistry.get(id);
   if (script) {
@@ -41,9 +31,6 @@ export function unregisterScript(id: string): void {
   }
 }
 
-/**
- * Load a script into the DOM
- */
 export function loadScript(id: string): Promise<void> {
   return new Promise((resolve, reject) => {
     const managed = scriptRegistry.get(id);
@@ -70,24 +57,19 @@ export function loadScript(id: string): Promise<void> {
       return;
     }
 
-    // Apply custom attributes
     if (managed.attributes) {
       Object.entries(managed.attributes).forEach(([key, value]) => {
         script.setAttribute(key, value);
       });
     }
 
-    // For inline scripts (content), resolve immediately after appending
-    // For external scripts (src), wait for onload
     if (managed.content) {
-      // Inline scripts execute immediately when appended
       if (managed.strategy === "beforeInteractive") {
         document.head.appendChild(script);
       } else {
         document.body.appendChild(script);
       }
 
-      // Use setTimeout to ensure script has executed
       setTimeout(() => {
         managed.loaded = true;
         managed.element = script;
@@ -95,7 +77,6 @@ export function loadScript(id: string): Promise<void> {
         resolve();
       }, 0);
     } else {
-      // External script - wait for load/error events
       script.onload = () => {
         managed.loaded = true;
         managed.element = script;
@@ -109,7 +90,6 @@ export function loadScript(id: string): Promise<void> {
         reject(error);
       };
 
-      // Append based on strategy
       if (managed.strategy === "beforeInteractive") {
         document.head.appendChild(script);
       } else {
@@ -119,29 +99,22 @@ export function loadScript(id: string): Promise<void> {
   });
 }
 
-/**
- * Unload a script from the DOM and run cleanup
- */
 export function unloadScript(id: string): void {
   const managed = scriptRegistry.get(id);
   if (!managed) return;
 
-  // Remove the script element
   if (managed.element) {
     managed.element.remove();
     delete managed.element;
   }
 
-  // Also try to find by ID in case element reference is stale
   const existingScript = document.getElementById(`consent-script-${id}`);
   if (existingScript) {
     existingScript.remove();
   }
 
-  // Run the revoke callback
   managed.onRevoke?.();
 
-  // Run any registered cleanup
   const cleanup = cleanupRegistry.get(id);
   if (cleanup) {
     cleanup();
@@ -151,16 +124,10 @@ export function unloadScript(id: string): void {
   managed.loaded = false;
 }
 
-/**
- * Register a cleanup function for a script
- */
 export function registerCleanup(id: string, cleanup: () => void): void {
   cleanupRegistry.set(id, cleanup);
 }
 
-/**
- * Load all scripts for consented categories
- */
 export function loadConsentedScripts(categories: ConsentCategories): void {
   scriptRegistry.forEach((script, id) => {
     if (categories[script.category] && !script.loaded) {
@@ -171,23 +138,18 @@ export function loadConsentedScripts(categories: ConsentCategories): void {
   });
 }
 
-/**
- * Unload all scripts for revoked categories
- */
 export function unloadRevokedScripts(
   previousCategories: ConsentCategories,
   currentCategories: ConsentCategories
 ): ConsentCategory[] {
   const revokedCategories: ConsentCategory[] = [];
 
-  // Find revoked categories
   (Object.keys(previousCategories) as ConsentCategory[]).forEach((category) => {
     if (previousCategories[category] && !currentCategories[category]) {
       revokedCategories.push(category);
     }
   });
 
-  // Unload scripts for revoked categories
   scriptRegistry.forEach((script, id) => {
     if (revokedCategories.includes(script.category) && script.loaded) {
       unloadScript(id);
@@ -197,9 +159,6 @@ export function unloadRevokedScripts(
   return revokedCategories;
 }
 
-/**
- * Get all loaded script IDs
- */
 export function getLoadedScripts(): string[] {
   const loaded: string[] = [];
   scriptRegistry.forEach((script, id) => {
@@ -210,16 +169,10 @@ export function getLoadedScripts(): string[] {
   return loaded;
 }
 
-/**
- * Get all registered scripts
- */
 export function getRegisteredScripts(): Map<string, ManagedScript> {
   return new Map(scriptRegistry);
 }
 
-/**
- * Check if any registered scripts are Google scripts
- */
 export function hasGoogleScripts(): boolean {
   for (const script of scriptRegistry.values()) {
     if (
@@ -247,9 +200,6 @@ export function hasGoogleScripts(): boolean {
   return false;
 }
 
-/**
- * Clear all scripts (useful for testing)
- */
 export function clearAllScripts(): void {
   scriptRegistry.forEach((_, id) => {
     unloadScript(id);
@@ -258,13 +208,8 @@ export function clearAllScripts(): void {
   cleanupRegistry.clear();
 }
 
-/**
- * Common third-party script cleanup helpers
- */
 export const scriptCleanupHelpers = {
-  // Google Analytics cleanup
   googleAnalytics: () => {
-    // Remove GA cookies
     const cookies = document.cookie.split(";");
     cookies.forEach((cookie) => {
       const name = (cookie.split("=")[0] ?? "").trim();
@@ -277,7 +222,6 @@ export const scriptCleanupHelpers = {
         document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=.${window.location.hostname}`;
       }
     });
-    // Clear GA global
     if (typeof window !== "undefined") {
       (window as unknown as Record<string, unknown>).ga = undefined;
       (window as unknown as Record<string, unknown>).gtag = undefined;
@@ -285,7 +229,6 @@ export const scriptCleanupHelpers = {
     }
   },
 
-  // Facebook Pixel cleanup
   facebookPixel: () => {
     const cookies = document.cookie.split(";");
     cookies.forEach((cookie) => {
@@ -300,7 +243,6 @@ export const scriptCleanupHelpers = {
     }
   },
 
-  // Generic cookie cleanup by prefix
   clearCookiesByPrefix: (prefix: string) => {
     const cookies = document.cookie.split(";");
     cookies.forEach((cookie) => {

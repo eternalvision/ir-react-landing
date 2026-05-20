@@ -9,7 +9,7 @@ import {
   CookieTrigger,
   type CategoryConfig,
   type CookieConsentLabels,
-} from '@components/cookie-consent'
+} from '@components/CookieConsent'
 import { Toaster } from '@ui/sonner'
 import '../styles/globals.css'
 
