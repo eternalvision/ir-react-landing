@@ -9,8 +9,8 @@ export {
 export { CookieSettings } from "./CookieSettings";
 export { CookieTrigger } from "./CookieTrigger";
 export { GoogleConsentMode } from "./GoogleConsentMode";
-export { useConsentScript } from "./useConsentScript";
-export { useConsentGate, useConsentValue } from "./useCookieConsent";
+export { useConsentScript } from "@hooks/useConsentScript";
+export { useConsentGate, useConsentValue } from "@hooks/useCookieConsent";
 
 export type {
   BannerPosition,
@@ -40,6 +40,6 @@ export {
   scriptCleanupHelpers,
   unloadScript,
   unregisterScript,
-} from "./scriptManager";
-export { retryFailedRecords, trackConsent } from "./tracker";
-export { generateUUID, getVisitorId, isGoogleScript } from "./utils";
+} from "@lib/scriptManager";
+export { retryFailedRecords, trackConsent } from "@lib/tracker";
+export { generateUUID, getVisitorId, isGoogleScript } from "@utils/consentUtils";

@@ -1,13 +1,13 @@
 import * as React from "react";
-import { useCookieConsent } from "./CookieProvider";
+import { useCookieConsent } from "@components/CookieConsent/CookieProvider";
 import {
   loadScript,
   registerCleanup,
   registerScript,
   unloadScript,
   unregisterScript,
-} from "./scriptManager";
-import type { ConsentCategory, ScriptConfig } from "./types";
+} from "@lib/scriptManager";
+import type { ConsentCategory, ScriptConfig } from "@components/CookieConsent/types";
 
 interface UseConsentScriptOptions {
   src?: string;
@@ -26,11 +26,11 @@ interface UseConsentScriptReturn {
   unload: () => void;
 }
 
-export function useConsentScript(
+export const useConsentScript = (
   category: ConsentCategory,
   id: string,
   options: UseConsentScriptOptions = {}
-): UseConsentScriptReturn {
+): UseConsentScriptReturn => {
   const { hasConsent: checkConsent, registerScript: ctxRegister } =
     useCookieConsent();
   const consentGranted = checkConsent(category);
@@ -126,4 +126,4 @@ export function useConsentScript(
     load,
     unload,
   };
-}
+};

@@ -7,8 +7,8 @@ import {
   registerScript as registerScriptInternal,
   unloadRevokedScripts,
   unregisterScript as unregisterScriptInternal,
-} from "./scriptManager";
-import { retryFailedRecords, trackConsent } from "./tracker";
+} from "@lib/scriptManager";
+import { retryFailedRecords, trackConsent } from "@lib/tracker";
 import type {
   CategoryConfig,
   ConsentCategories,
@@ -29,7 +29,7 @@ import {
   isGoogleScript,
   loadConsentState,
   saveConsentState,
-} from "./utils";
+} from "@utils/consentUtils";
 
 const CookieConsentContext =
   React.createContext<CookieConsentContextValue | null>(null);
@@ -361,7 +361,7 @@ export const CookieConsentProvider = ({
 
 CookieConsentProvider.displayName = "CookieConsentProvider";
 
-export function useCookieConsent(): CookieConsentContextValue {
+export const useCookieConsent = (): CookieConsentContextValue => {
   const context = React.useContext(CookieConsentContext);
   if (!context) {
     throw new Error(
@@ -369,6 +369,6 @@ export function useCookieConsent(): CookieConsentContextValue {
     );
   }
   return context;
-}
+};
 
 export { CookieConsentContext };

@@ -1,7 +1,7 @@
 import * as React from "react"
 import { useCookieConsent } from "./CookieProvider"
 import type { ConsentCategory, ScriptConfig } from "./types"
-import { loadScript, registerCleanup, registerScript, unregisterScript } from "./scriptManager"
+import { loadScript, registerCleanup, registerScript, unregisterScript } from "@lib/scriptManager"
 
 export interface ConsentScriptProps {
   id: string

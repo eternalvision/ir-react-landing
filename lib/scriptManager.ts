@@ -1,4 +1,4 @@
-import type { ConsentCategories, ConsentCategory, ScriptConfig } from "./types";
+import type { ConsentCategories, ConsentCategory, ScriptConfig } from "@components/CookieConsent/types";
 
 interface ManagedScript extends ScriptConfig {
   element?: HTMLScriptElement;
@@ -9,7 +9,7 @@ const scriptRegistry = new Map<string, ManagedScript>();
 
 const cleanupRegistry = new Map<string, () => void>();
 
-export function registerScript(config: ScriptConfig): void {
+export const registerScript = (config: ScriptConfig): void => {
   if (scriptRegistry.has(config.id)) {
     console.warn(
       `[CookieConsent] Script with id "${config.id}" is already registered`
@@ -21,17 +21,17 @@ export function registerScript(config: ScriptConfig): void {
     ...config,
     loaded: false,
   });
-}
+};
 
-export function unregisterScript(id: string): void {
+export const unregisterScript = (id: string): void => {
   const script = scriptRegistry.get(id);
   if (script) {
     unloadScript(id);
     scriptRegistry.delete(id);
   }
-}
+};
 
-export function loadScript(id: string): Promise<void> {
+export const loadScript = (id: string): Promise<void> => {
   return new Promise((resolve, reject) => {
     const managed = scriptRegistry.get(id);
     if (!managed) {
@@ -97,9 +97,9 @@ export function loadScript(id: string): Promise<void> {
       }
     }
   });
-}
+};
 
-export function unloadScript(id: string): void {
+export const unloadScript = (id: string): void => {
   const managed = scriptRegistry.get(id);
   if (!managed) return;
 
@@ -122,13 +122,13 @@ export function unloadScript(id: string): void {
   }
 
   managed.loaded = false;
-}
+};
 
-export function registerCleanup(id: string, cleanup: () => void): void {
+export const registerCleanup = (id: string, cleanup: () => void): void => {
   cleanupRegistry.set(id, cleanup);
-}
+};
 
-export function loadConsentedScripts(categories: ConsentCategories): void {
+export const loadConsentedScripts = (categories: ConsentCategories): void => {
   scriptRegistry.forEach((script, id) => {
     if (categories[script.category] && !script.loaded) {
       loadScript(id).catch((error) => {
@@ -136,12 +136,12 @@ export function loadConsentedScripts(categories: ConsentCategories): void {
       });
     }
   });
-}
+};
 
-export function unloadRevokedScripts(
+export const unloadRevokedScripts = (
   previousCategories: ConsentCategories,
   currentCategories: ConsentCategories
-): ConsentCategory[] {
+): ConsentCategory[] => {
   const revokedCategories: ConsentCategory[] = [];
 
   (Object.keys(previousCategories) as ConsentCategory[]).forEach((category) => {
@@ -157,9 +157,9 @@ export function unloadRevokedScripts(
   });
 
   return revokedCategories;
-}
+};
 
-export function getLoadedScripts(): string[] {
+export const getLoadedScripts = (): string[] => {
   const loaded: string[] = [];
   scriptRegistry.forEach((script, id) => {
     if (script.loaded) {
@@ -167,13 +167,13 @@ export function getLoadedScripts(): string[] {
     }
   });
   return loaded;
-}
+};
 
-export function getRegisteredScripts(): Map<string, ManagedScript> {
+export const getRegisteredScripts = (): Map<string, ManagedScript> => {
   return new Map(scriptRegistry);
-}
+};
 
-export function hasGoogleScripts(): boolean {
+export const hasGoogleScripts = (): boolean => {
   for (const script of scriptRegistry.values()) {
     if (
       (script.src && (
@@ -198,15 +198,15 @@ export function hasGoogleScripts(): boolean {
     }
   }
   return false;
-}
+};
 
-export function clearAllScripts(): void {
+export const clearAllScripts = (): void => {
   scriptRegistry.forEach((_, id) => {
     unloadScript(id);
   });
   scriptRegistry.clear();
   cleanupRegistry.clear();
-}
+};
 
 export const scriptCleanupHelpers = {
   googleAnalytics: () => {

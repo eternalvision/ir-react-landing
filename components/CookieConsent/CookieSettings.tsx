@@ -14,7 +14,7 @@ import { Label } from "@ui/label"
 import { Separator } from "@ui/separator"
 import { useCookieConsent, defaultCategories } from "./CookieProvider"
 import type { ConsentCategories, ConsentCategory } from "./types"
-import { getDefaultCategories, getAllAcceptedCategories } from "./utils"
+import { getDefaultCategories, getAllAcceptedCategories } from "@utils/consentUtils"
 import { cn } from "@utils/cn"
 
 export interface CookieSettingsProps {

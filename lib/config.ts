@@ -65,7 +65,7 @@ function envBase(): Partial<SiteConfig> {
   ) as Partial<SiteConfig>
 }
 
-export function getConfig(): SiteConfig {
+export const getConfig = (): SiteConfig => {
   return { ...defaults, ...envBase() }
 }
 
@@ -73,7 +73,7 @@ function getBrowserConfig(): SiteConfig {
   return { ...getConfig(), ...(window.config ?? {}) }
 }
 
-export function useConfig(): SiteConfig {
+export const useConfig = (): SiteConfig => {
   const [config, setConfig] = useState<SiteConfig>(() => getConfig())
 
   useEffect(() => {

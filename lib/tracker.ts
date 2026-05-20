@@ -1,5 +1,5 @@
-import type { ConsentAction, ConsentCategories, ConsentRecord, TraceabilityConfig } from "./types"
-import { generateUUID, getVisitorId } from "./utils"
+import type { ConsentAction, ConsentCategories, ConsentRecord, TraceabilityConfig } from "@components/CookieConsent/types"
+import { generateUUID, getVisitorId } from "@utils/consentUtils"
 
 interface TrackConsentParams {
   categories: ConsentCategories
@@ -11,7 +11,7 @@ interface TrackConsentParams {
   scope?: "device" | "global"
 }
 
-export async function trackConsent(params: TrackConsentParams): Promise<ConsentRecord | null> {
+export const trackConsent = async (params: TrackConsentParams): Promise<ConsentRecord | null> => {
   const { categories, action, consentVersion, expiresAt, config, userId, scope = "device" } = params
 
   if (!config.enabled || !config.endpoint) {
@@ -67,7 +67,7 @@ export async function trackConsent(params: TrackConsentParams): Promise<ConsentR
   return null
 }
 
-function storeFailedRecord(record: ConsentRecord): void {
+const storeFailedRecord = (record: ConsentRecord): void => {
   if (typeof window === "undefined") return
 
   const key = "cookie-consent-pending"
@@ -76,7 +76,7 @@ function storeFailedRecord(record: ConsentRecord): void {
   localStorage.setItem(key, JSON.stringify(pending))
 }
 
-export async function retryFailedRecords(config: TraceabilityConfig): Promise<void> {
+export const retryFailedRecords = async (config: TraceabilityConfig): Promise<void> => {
   if (typeof window === "undefined" || !config.enabled || !config.endpoint) return
 
   const key = "cookie-consent-pending"

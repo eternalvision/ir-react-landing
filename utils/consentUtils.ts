@@ -1,9 +1,9 @@
-import type { ConsentCategories, ConsentState } from "./types"
+import type { ConsentCategories, ConsentState } from "@components/CookieConsent/types"
 
 const STORAGE_KEY = "cookie-consent"
 const VISITOR_ID_KEY = "cookie-consent-visitor-id"
 
-export function generateUUID(): string {
+export const generateUUID = (): string => {
   return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, (c) => {
     const r = (Math.random() * 16) | 0
     const v = c === "x" ? r : (r & 0x3) | 0x8
@@ -11,7 +11,7 @@ export function generateUUID(): string {
   })
 }
 
-export function getVisitorId(): string {
+export const getVisitorId = (): string => {
   if (typeof window === "undefined") {
     return generateUUID()
   }
@@ -24,7 +24,7 @@ export function getVisitorId(): string {
   return visitorId
 }
 
-export function getDefaultCategories(): ConsentCategories {
+export const getDefaultCategories = (): ConsentCategories => {
   return {
     necessary: true,
     analytics: false,
@@ -33,7 +33,7 @@ export function getDefaultCategories(): ConsentCategories {
   }
 }
 
-export function getAllAcceptedCategories(): ConsentCategories {
+export const getAllAcceptedCategories = (): ConsentCategories => {
   return {
     necessary: true,
     analytics: true,
@@ -42,12 +42,12 @@ export function getAllAcceptedCategories(): ConsentCategories {
   }
 }
 
-export function saveConsentState(state: ConsentState): void {
+export const saveConsentState = (state: ConsentState): void => {
   if (typeof window === "undefined") return
   localStorage.setItem(STORAGE_KEY, JSON.stringify(state))
 }
 
-export function loadConsentState(): ConsentState | null {
+export const loadConsentState = (): ConsentState | null => {
   if (typeof window === "undefined") return null
 
   const stored = localStorage.getItem(STORAGE_KEY)
@@ -60,22 +60,22 @@ export function loadConsentState(): ConsentState | null {
   }
 }
 
-export function clearConsentState(): void {
+export const clearConsentState = (): void => {
   if (typeof window === "undefined") return
   localStorage.removeItem(STORAGE_KEY)
 }
 
-export function calculateExpirationDate(days: number): string {
+export const calculateExpirationDate = (days: number): string => {
   const date = new Date()
   date.setDate(date.getDate() + days)
   return date.toISOString()
 }
 
-export function isConsentExpired(expiresAt: string): boolean {
+export const isConsentExpired = (expiresAt: string): boolean => {
   return new Date(expiresAt) < new Date()
 }
 
-export function isGoogleScript(script: { src?: string; content?: string }): boolean {
+export const isGoogleScript = (script: { src?: string; content?: string }): boolean => {
   if (script.src) {
     const srcLower = script.src.toLowerCase()
     const googleDomains = [
