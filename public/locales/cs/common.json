@@ -1,0 +1,233 @@
+{
+  "nav": {
+    "about": "O nás",
+    "services": "Služby",
+    "portfolio": "Rozsah činností",
+    "testimonials": "Firemní údaje",
+    "faq": "FAQ",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "InstaRum s.r.o.",
+    "subtitle": "Pražská společnost pro dokončovací stavební práce, specializované stavební činnosti, správu nemovitostí, technické služby a podnikatelskou podporu.",
+    "cta_contact": "Kontaktujte nás",
+    "cta_portfolio": "Služby"
+  },
+  "about": {
+    "label": "Společnost",
+    "title": "Česká společnost se sídlem v Praze",
+    "text": "InstaRum s.r.o. je společnost s ručením omezeným zapsaná v obchodním rejstříku pod spisovou značkou C 415103/MSPH. Zaměřuje se na přípravné a dokončovací stavební práce, specializované stavební činnosti, nákup, prodej, správu a údržbu nemovitostí, technické služby, poradenství a související podnikatelskou podporu.",
+    "stats": [
+      {
+        "value": 2024,
+        "suffix": "",
+        "label": "Rok založení"
+      },
+      {
+        "value": 240,
+        "suffix": " tis. Kč",
+        "label": "Základní kapitál"
+      },
+      {
+        "value": 100,
+        "suffix": " %",
+        "label": "Obchodní podíl"
+      }
+    ]
+  },
+  "services": {
+    "label": "Služby",
+    "title": "Čemu se věnujeme",
+    "items": [
+      {
+        "icon": "Hammer",
+        "title": "Dokončovací stavební práce",
+        "description": "Přípravné a dokončovací práce, úpravy interiérů i exteriérů, rekonstrukce a specializované stavební činnosti."
+      },
+      {
+        "icon": "Building2",
+        "title": "Služby pro nemovitosti",
+        "description": "Nákup, prodej, správa a údržba nemovitostí včetně pronájmu bytových a nebytových prostor."
+      },
+      {
+        "icon": "Shield",
+        "title": "Zámečnictví a kovovýroba",
+        "description": "Zámečnictví, nástrojařství, povrchové úpravy a svařování kovů a dalších materiálů."
+      },
+      {
+        "icon": "Layers",
+        "title": "Technické služby",
+        "description": "Technické služby, příprava a vypracování technických návrhů, grafické a kresličské práce."
+      },
+      {
+        "icon": "Leaf",
+        "title": "Nakládání s odpady",
+        "description": "Nakládání s odpady vyjma nebezpečných a související provozní podpora."
+      },
+      {
+        "icon": "Home",
+        "title": "Poradenství a administrativa",
+        "description": "Konzultační činnost, odborné studie, administrativní správa, marketing a zprostředkování obchodu a služeb."
+      }
+    ]
+  },
+  "portfolio": {
+    "label": "Rozsah",
+    "title": "Oblasti služeb",
+    "filter_all": "Vše",
+    "categories": [
+      "Stavby",
+      "Nemovitosti",
+      "Technické služby"
+    ],
+    "items": [
+      {
+        "title": "Dokončovací stavební práce",
+        "category": "Stavby",
+        "image": "/portfolio/project-1.jpg"
+      },
+      {
+        "title": "Specializované stavební činnosti",
+        "category": "Stavby",
+        "image": "/portfolio/project-2.jpg"
+      },
+      {
+        "title": "Správa a údržba nemovitostí",
+        "category": "Nemovitosti",
+        "image": "/portfolio/project-3.jpg"
+      },
+      {
+        "title": "Pronájem bytových a nebytových prostor",
+        "category": "Nemovitosti",
+        "image": "/portfolio/project-4.jpg"
+      },
+      {
+        "title": "Technické návrhy a kresličské práce",
+        "category": "Technické služby",
+        "image": "/portfolio/project-5.jpg"
+      },
+      {
+        "title": "Povrchové úpravy a svařování",
+        "category": "Technické služby",
+        "image": "/portfolio/project-6.jpg"
+      }
+    ]
+  },
+  "testimonials": {
+    "label": "Firemní údaje",
+    "title": "Údaje z rejstříku",
+    "items": [
+      {
+        "name": "InstaRum s.r.o.",
+        "company": "IČO 22348760",
+        "rating": 5,
+        "text": "Společnost s ručením omezeným zapsaná dne 13. prosince 2024 v obchodním rejstříku vedeném Městským soudem v Praze."
+      },
+      {
+        "name": "Sídlo společnosti",
+        "company": "Praha 5 - Smíchov",
+        "rating": 5,
+        "text": "Holečkova 789/49, Smíchov, 150 00 Praha 5."
+      },
+      {
+        "name": "Statutární orgán",
+        "company": "Roman Priadchenko",
+        "rating": 5,
+        "text": "Jednatel jedná za společnost samostatně."
+      }
+    ]
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Časté dotazy",
+    "items": [
+      {
+        "question": "Jaké je identifikační číslo společnosti?",
+        "answer": "Identifikační číslo společnosti je IČO 22348760. DIČ uvedené v registru je CZ22348760."
+      },
+      {
+        "question": "Kde má InstaRum s.r.o. sídlo?",
+        "answer": "Sídlo společnosti je Holečkova 789/49, Smíchov, 150 00 Praha 5."
+      },
+      {
+        "question": "Jaké služby společnost poskytuje?",
+        "answer": "Zapsaný rozsah zahrnuje dokončovací stavební práce, specializované stavební činnosti, správu a údržbu nemovitostí, technické služby, zámečnictví, kovovýrobu, poradenství, administrativu a související služby."
+      },
+      {
+        "question": "Kdo jedná za společnost?",
+        "answer": "Jednatelem je Roman Priadchenko. Podle rejstříku jedná jednatel za společnost samostatně."
+      },
+      {
+        "question": "Kdy byla společnost založena?",
+        "answer": "Společnost vznikla a byla zapsána dne 13. prosince 2024."
+      }
+    ]
+  },
+  "contact": {
+    "label": "Kontakt",
+    "title": "Kontaktujte InstaRum s.r.o.",
+    "subtitle": "Sídlo: Holečkova 789/49, Smíchov, 150 00 Praha 5. Datová schránka: ehjy4t5.",
+    "form": {
+      "name": "Celé jméno",
+      "name_placeholder": "Jan Novák",
+      "email": "E-mailová adresa",
+      "email_placeholder": "jan@firma.cz",
+      "phone": "Telefonní číslo",
+      "phone_placeholder": "+420 123 456 789",
+      "message": "Zpráva",
+      "message_placeholder": "Napište nám, co potřebujete...",
+      "submit": "Odeslat zprávu",
+      "submitting": "Odesílání...",
+      "success": "Zpráva byla odeslána. Brzy se ozveme.",
+      "error": "Něco se pokazilo. Zkuste to prosím znovu."
+    }
+  },
+  "footer": {
+    "description": "InstaRum s.r.o. - IČO 22348760, DIČ CZ22348760. Sídlo: Holečkova 789/49, Smíchov, 150 00 Praha 5.",
+    "copyright": "Všechna práva vyhrazena."
+  },
+  "seo": {
+    "title": "InstaRum s.r.o. - stavební, technické a realitní služby v Praze",
+    "description": "InstaRum s.r.o., IČO 22348760: dokončovací stavební práce, specializované stavební činnosti, správa nemovitostí, technické služby a poradenství v Praze."
+  },
+  "cookies": {
+    "banner": {
+      "title": "Nastavení cookies",
+      "description": "Používáme nezbytné cookies pro fungování webu a volitelné cookies pro analytiku, preference a marketing.",
+      "learn_more": "Více informací"
+    },
+    "settings": {
+      "title": "Nastavení cookies",
+      "description": "Níže můžete spravovat své preference cookies.",
+      "required": "Povinné",
+      "toggle": "Přepnout cookies {{title}}",
+      "read_our": "Přečtěte si naše",
+      "privacy_policy": "Zásady ochrany osobních údajů"
+    },
+    "actions": {
+      "customize": "Upravit",
+      "reject_all": "Odmítnout vše",
+      "accept_all": "Přijmout vše",
+      "save": "Uložit nastavení"
+    },
+    "trigger": "Nastavení cookies",
+    "categories": {
+      "necessary": {
+        "title": "Nezbytné",
+        "description": "Cookies nezbytné pro správné fungování webu. Tyto cookies nelze vypnout."
+      },
+      "analytics": {
+        "title": "Analytické",
+        "description": "Cookies, které nám pomáhají pochopit, jak návštěvníci používají web."
+      },
+      "marketing": {
+        "title": "Marketingové",
+        "description": "Cookies používané pro reklamu a měření kampaní."
+      },
+      "preferences": {
+        "title": "Preferenční",
+        "description": "Cookies, které si pamatují vaše nastavení a volby."
+      }
+    }
+  }
+}
