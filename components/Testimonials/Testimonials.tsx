@@ -3,9 +3,7 @@ import { useTranslation } from 'next-i18next'
 import { motion, useReducedMotion } from 'framer-motion'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
-import { Star, PenLine } from 'lucide-react'
-import { Button } from '@ui/button'
-import { ReviewModal } from './ReviewModal'
+import { Star } from 'lucide-react'
 
 interface TestimonialItem {
   name: string
@@ -18,13 +16,16 @@ export const Testimonials = () => {
   const { t } = useTranslation('common')
   const shouldReduce = useReducedMotion()
   const items = t('testimonials.items', { returnObjects: true }) as TestimonialItem[]
-  const [modalOpen, setModalOpen] = useState(false)
 
   const autoplay = useRef(
     Autoplay({ delay: 5000, stopOnInteraction: false, stopOnMouseEnter: true }),
   )
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [autoplay.current])
+  const [emblaRef, emblaApi] = useEmblaCarousel(
+    { loop: true, slidesToScroll: 3 },
+    [autoplay.current],
+  )
   const [selectedIndex, setSelectedIndex] = useState(0)
+  const slideCount = Math.ceil(items.length / 3)
 
   const onSelect = useCallback(() => {
     if (!emblaApi) return
@@ -50,17 +51,9 @@ export const Testimonials = () => {
           <p className="text-accent font-semibold text-sm uppercase tracking-widest mb-3">
             {t('testimonials.label')}
           </p>
-          <h2 id="testimonials-heading" className="font-heading font-bold text-4xl md:text-5xl mb-6">
+          <h2 id="testimonials-heading" className="font-heading font-bold text-4xl md:text-5xl">
             {t('testimonials.title')}
           </h2>
-          <Button
-            variant="outline"
-            onClick={() => setModalOpen(true)}
-            className="gap-2"
-          >
-            <PenLine className="h-4 w-4" aria-hidden />
-            {t('testimonials.review_modal.trigger')}
-          </Button>
         </motion.div>
 
         <div className="overflow-hidden" ref={emblaRef}>
@@ -95,7 +88,7 @@ export const Testimonials = () => {
         </div>
 
         <div className="flex justify-center gap-2 mt-8" role="tablist" aria-label="Carousel navigation">
-          {items.map((_, i) => (
+          {Array.from({ length: slideCount }).map((_, i) => (
             <button
               key={i}
               onClick={() => emblaApi?.scrollTo(i)}
@@ -109,8 +102,6 @@ export const Testimonials = () => {
           ))}
         </div>
       </div>
-
-      <ReviewModal open={modalOpen} onClose={() => setModalOpen(false)} />
     </section>
   )
 }

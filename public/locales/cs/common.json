@@ -176,6 +176,42 @@
         "company": "Praha 3",
         "rating": 5,
         "text": "Servis chladicího zařízení v provozovně. Přístup profesionální, cena odpovídá kvalitě. Spolehliví lidé, rádi se vrátíme."
+      },
+      {
+        "name": "Lukáš Procházka",
+        "company": "Praha 7",
+        "rating": 5,
+        "text": "Instalace radiátorů v trojpokojovém bytě. Hotovo rychle a čistě, bez zbytečného prachu. Hned vidět profíci."
+      },
+      {
+        "name": "Světlana Ivanova",
+        "company": "Praha 1",
+        "rating": 5,
+        "text": "V noci přestalo fungovat topení — přijeli za 40 minut a závadu odstranili. Velmi vděčná za rychlý zásah."
+      },
+      {
+        "name": "Jiří Blaha",
+        "company": "Praha 11",
+        "rating": 5,
+        "text": "Kompletní výměna instalatérských rozvodů v koupelně a kuchyni. Poradili s materiály, vše provedli čistě. Výsledek skvělý."
+      },
+      {
+        "name": "Nataliya Bondarenko",
+        "company": "Praha 13",
+        "rating": 5,
+        "text": "Servis kotle před zimou. Vše zkontrolovali, vyčistili a nastavili. Mluví ukrajinsky — velmi příjemné jednání."
+      },
+      {
+        "name": "Pavel Černý",
+        "company": "Praha 5",
+        "rating": 5,
+        "text": "Pravidelný servis tepelného čerpadla. Dorazili přesně v domluvený čas, práci odvedli na jedničku. Doporučuji."
+      },
+      {
+        "name": "Kateryna Shevchenko",
+        "company": "Praha 6",
+        "rating": 5,
+        "text": "Podlahové vytápění v dětském pokoji. Pracovali velmi pečlivě, vše po sobě uklidili. Dítě spokojené — teplo!"
       }
     ]
   },

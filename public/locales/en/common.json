@@ -176,6 +176,42 @@
         "company": "Prague 3",
         "rating": 5,
         "text": "Refrigeration equipment service at our premises. Professional approach, fair price for the quality. Reliable people we will call again."
+      },
+      {
+        "name": "Lukáš Procházka",
+        "company": "Prague 7",
+        "rating": 5,
+        "text": "Radiator installation in a three-room apartment. Done quickly and cleanly, no dust or mess. You can immediately tell these are professionals."
+      },
+      {
+        "name": "Svetlana Ivanova",
+        "company": "Prague 1",
+        "rating": 5,
+        "text": "Heating stopped working in the middle of the night — they arrived in 40 minutes and fixed it. So grateful for the quick response."
+      },
+      {
+        "name": "Jiří Blaha",
+        "company": "Prague 11",
+        "rating": 5,
+        "text": "Full replumbing in the bathroom and kitchen. Good advice on materials, everything installed neatly. Very happy with the result."
+      },
+      {
+        "name": "Nataliya Bondarenko",
+        "company": "Prague 13",
+        "rating": 5,
+        "text": "Boiler service before winter. Everything checked, cleaned and tuned. They speak Ukrainian — very pleasant to deal with."
+      },
+      {
+        "name": "Pavel Černý",
+        "company": "Prague 5",
+        "rating": 5,
+        "text": "Scheduled heat pump maintenance. Arrived exactly on time, work done to a high standard. Would recommend without hesitation."
+      },
+      {
+        "name": "Kateryna Shevchenko",
+        "company": "Prague 6",
+        "rating": 5,
+        "text": "Underfloor heating in the children's room. Worked very carefully, cleaned up everything afterwards. The kid is happy — warm!"
       }
     ]
   },
