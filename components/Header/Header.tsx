@@ -5,6 +5,7 @@ import { useTheme } from 'next-themes';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Sun, Moon, Globe } from 'lucide-react';
 import { Button } from '@ui/button'
+import { Logo } from '@ui/Logo'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -59,7 +60,8 @@ export const Header = () => {
           className="flex items-center gap-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded"
           aria-label={`${config.companyName} — home`}
         >
-          <span className="font-heading font-bold text-lg">
+          <Logo size={36} className="shrink-0" />
+          <span className="font-heading font-bold text-lg hidden sm:block">
             {config.companyName}
           </span>
         </button>

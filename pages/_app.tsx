@@ -1,7 +1,9 @@
+import { useState } from 'react'
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'next-themes'
 import { appWithTranslation } from 'next-i18next'
 import { Inter, Space_Grotesk } from 'next/font/google'
+import { Preloader } from '@components/Preloader/Preloader'
 import {
   CookieBanner,
   CookieConsentProvider,
@@ -195,6 +197,7 @@ function App({ Component, pageProps, router }: AppProps) {
   const locale = router.locale ?? 'en'
   const cookieCategories = COOKIE_CATEGORIES[locale] ?? COOKIE_CATEGORIES.en!
   const cookieLabels = COOKIE_LABELS[locale] ?? COOKIE_LABELS.en!
+  const [preloaderDone, setPreloaderDone] = useState(false)
 
   return (
     <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
@@ -211,6 +214,7 @@ function App({ Component, pageProps, router }: AppProps) {
         }}
       >
         <div className={`${inter.variable} ${spaceGrotesk.variable}`}>
+          {!preloaderDone && <Preloader onComplete={() => setPreloaderDone(true)} />}
           <Component {...pageProps} />
           <CookieBanner />
           <CookieSettings />

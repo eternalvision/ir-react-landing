@@ -2,6 +2,7 @@ import type { ElementType } from 'react'
 import { useTranslation } from 'next-i18next'
 import { ExternalLink } from 'lucide-react'
 import { useConfig } from '@lib/config'
+import { Logo } from '@ui/Logo'
 
 const NAV_KEYS = ['about', 'services', 'portfolio', 'testimonials', 'faq', 'contact'] as const
 
@@ -31,6 +32,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center gap-3 mb-4">
+              <Logo size={32} className="shrink-0" />
               <span className="font-heading font-bold text-lg">{config.companyName}</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">

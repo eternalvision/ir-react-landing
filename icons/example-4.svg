@@ -1,0 +1,56 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- background -->
+  <rect width="512" height="512" rx="56" fill="#F8F9FA" />
+
+  <!-- house roof -->
+  <path
+    d="M86 225L256 82L426 225"
+    stroke="#0A0F1E"
+    stroke-width="34"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- house walls -->
+  <path
+    d="M116 224V330"
+    stroke="#0A0F1E"
+    stroke-width="34"
+    stroke-linecap="round"
+  />
+  <path
+    d="M396 224V330"
+    stroke="#0A0F1E"
+    stroke-width="34"
+    stroke-linecap="round"
+  />
+
+  <!-- heating waves -->
+  <path
+    d="M214 206C190 234 190 270 214 298"
+    stroke="#EA3B12"
+    stroke-width="24"
+    stroke-linecap="round"
+  />
+  <path
+    d="M256 206C232 234 232 270 256 298"
+    stroke="#EA3B12"
+    stroke-width="24"
+    stroke-linecap="round"
+  />
+  <path
+    d="M298 206C274 234 274 270 298 298"
+    stroke="#EA3B12"
+    stroke-width="24"
+    stroke-linecap="round"
+  />
+
+  <!-- blue pipe -->
+  <path
+    d="M68 362H138V418H224V382H444"
+    stroke="#2563EB"
+    stroke-width="34"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
