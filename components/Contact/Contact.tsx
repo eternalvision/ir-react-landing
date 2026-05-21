@@ -157,7 +157,7 @@ export const Contact = () => {
               <iframe
                 src={config.addressIframe}
                 title="Company location map"
-                className="w-full h-64 border-0 mb-6 grayscale"
+                className="w-full h-64 border-0 mb-6"
                 loading="lazy"
                 allowFullScreen
                 referrerPolicy="no-referrer-when-downgrade"
