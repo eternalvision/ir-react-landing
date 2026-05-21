@@ -1,6 +1,5 @@
 import type { ElementType } from 'react'
 import { useTranslation } from 'next-i18next'
-import Image from 'next/image'
 import { ExternalLink } from 'lucide-react'
 import { useConfig } from '@lib/config'
 
@@ -32,13 +31,6 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <Image
-                src={config.logoUrl}
-                alt={config.companyName}
-                width={32}
-                height={32}
-                className="h-8 w-auto"
-              />
               <span className="font-heading font-bold text-lg">{config.companyName}</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">

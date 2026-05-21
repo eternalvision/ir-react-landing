@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import { useTheme } from 'next-themes';
-import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Sun, Moon, Globe } from 'lucide-react';
 import { Button } from '@ui/button'
@@ -60,15 +59,7 @@ export const Header = () => {
           className="flex items-center gap-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded"
           aria-label={`${config.companyName} — home`}
         >
-          <Image
-            src={config.logoUrl}
-            alt={config.companyName}
-            width={36}
-            height={36}
-            className="h-9 w-auto"
-            priority
-          />
-          <span className="font-heading font-bold text-lg hidden sm:block">
+          <span className="font-heading font-bold text-lg">
             {config.companyName}
           </span>
         </button>
