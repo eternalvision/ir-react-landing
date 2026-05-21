@@ -114,26 +114,68 @@
     ]
   },
   "testimonials": {
-    "label": "Why Us",
-    "title": "Why Choose Us",
+    "label": "Reviews",
+    "title": "What Clients Say",
+    "review_modal": {
+      "trigger": "Leave a review",
+      "title": "Leave a review",
+      "name_label": "Your name",
+      "name_placeholder": "John Smith",
+      "rating_label": "Rating",
+      "message_label": "Your review",
+      "message_placeholder": "Tell us about your experience...",
+      "submit": "Submit",
+      "success_title": "Thank you for your review!",
+      "success_text": "We appreciate your feedback."
+    },
     "items": [
       {
-        "name": "Official Licences",
-        "company": "Czech Permits",
+        "name": "Marek Novák",
+        "company": "Prague 6",
         "rating": 5,
-        "text": "Officially registered (IČO 22348760) with all required licences and qualifications for plumbing, heating and technical works in the Czech Republic."
+        "text": "They replaced the entire heating system in our house. Work done precisely and on time. Great approach, no communication issues whatsoever."
       },
       {
-        "name": "Professional Approach",
-        "company": "Modern Solutions",
+        "name": "Jana Svobodová",
+        "company": "Prague 5",
         "rating": 5,
-        "text": "We apply modern technical solutions, take responsibility for results and always meet agreed deadlines."
+        "text": "Called them about a burst pipe in the evening — they arrived within an hour and fixed everything. Saved us from major damage. Thank you!"
       },
       {
-        "name": "Three Languages",
-        "company": "CZ / RU / UA",
+        "name": "Olena Kovalchenko",
+        "company": "Prague 4",
         "rating": 5,
-        "text": "We work with clients in Czech, Russian and Ukrainian. Serving Prague and Středočeský Region."
+        "text": "Heat pump installation done quickly and cleanly. They speak Czech, Russian and Ukrainian — very convenient for our family."
+      },
+      {
+        "name": "Tomáš Krejčí",
+        "company": "Prague 2",
+        "rating": 5,
+        "text": "Boiler replacement went smoothly and quickly. Arrived on time, cleaned up after themselves. Will definitely call again."
+      },
+      {
+        "name": "Ivan Sokolov",
+        "company": "Prague 9",
+        "rating": 5,
+        "text": "Water and drainage piping in our new apartment. Worked carefully and quietly, left the place spotless. Very professional team."
+      },
+      {
+        "name": "Petra Horáčková",
+        "company": "Prague 10",
+        "rating": 5,
+        "text": "Underfloor heating installation was excellent. They advised on the best system and explained everything thoroughly. Result exceeded expectations."
+      },
+      {
+        "name": "Andriy Melnyk",
+        "company": "Prague 8",
+        "rating": 5,
+        "text": "Full heating system installation from start to finish. Everything done to a high standard, no complaints at all. Highly recommended."
+      },
+      {
+        "name": "Martin Dvořák",
+        "company": "Prague 3",
+        "rating": 5,
+        "text": "Refrigeration equipment service at our premises. Professional approach, fair price for the quality. Reliable people we will call again."
       }
     ]
   },

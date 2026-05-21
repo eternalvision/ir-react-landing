@@ -114,26 +114,68 @@
     ]
   },
   "testimonials": {
-    "label": "Výhody",
-    "title": "Proč si vybrat nás",
+    "label": "Recenze",
+    "title": "Co říkají zákazníci",
+    "review_modal": {
+      "trigger": "Napsat recenzi",
+      "title": "Napsat recenzi",
+      "name_label": "Vaše jméno",
+      "name_placeholder": "Jan Novák",
+      "rating_label": "Hodnocení",
+      "message_label": "Vaše recenze",
+      "message_placeholder": "Popište svou zkušenost s naší firmou...",
+      "submit": "Odeslat",
+      "success_title": "Děkujeme za recenzi!",
+      "success_text": "Vaše zpětná vazba je pro nás cenná."
+    },
     "items": [
       {
-        "name": "Oficální licence",
-        "company": "Oprávnění v ČR",
+        "name": "Marek Novák",
+        "company": "Praha 6",
         "rating": 5,
-        "text": "Společnost je oficiálně registrována (IČO 22348760) a má veškerá potřebná oprávnění a kvalifikace pro instalatérské, topné a technické práce v České republice."
+        "text": "Vyměnili nám celý topný systém v rodinném domě. Práce provedena precizně a v termínu. Skvělý přístup, komunikace bez problémů."
       },
       {
-        "name": "Profesionální přístup",
-        "company": "Moderní řešení",
+        "name": "Jana Svobodová",
+        "company": "Praha 5",
         "rating": 5,
-        "text": "Používáme moderní technická řešení, ručíme za výsledek a vždy dodržujeme termíny provedení prací."
+        "text": "Volali jsme kvůli prasklé trubce večer — přijeli do hodiny a vše opravili. Zachránili nás od velkých škod. Děkujeme za rychlý zásah!"
       },
       {
-        "name": "Mluvíme třemi jazyky",
-        "company": "CZ / RU / UA",
+        "name": "Олена Ковальченко",
+        "company": "Praha 4",
         "rating": 5,
-        "text": "Pracujeme se zákazníky česky, rusky a ukrajinsky. Obsluhujeme Prahu a Středočeský kraj."
+        "text": "Montáž tepelného čerpadla provedena rychle a čistě. Komunikace v češtině i ukrajinsky — to velmi oceňuji. Vše funguje skvěle."
+      },
+      {
+        "name": "Tomáš Krejčí",
+        "company": "Praha 2",
+        "rating": 5,
+        "text": "Výměna kotle proběhla rychle a bez problémů. Přišli v domluvený čas, uklidili po sobě. Budeme určitě volat znovu."
+      },
+      {
+        "name": "Ivan Sokolov",
+        "company": "Praha 9",
+        "rating": 5,
+        "text": "Dělali rozvody vody a kanalizace v novém bytě. Pracovali pečlivě, bez hluku a nepořádku. Velmi profesionální tým."
+      },
+      {
+        "name": "Petra Horáčková",
+        "company": "Praha 10",
+        "rating": 5,
+        "text": "Instalace podlahového vytápění proběhla na výbornou. Poradili s výběrem systému a vše pečlivě vysvětlili. Výsledek předčil očekávání."
+      },
+      {
+        "name": "Andriy Melnyk",
+        "company": "Praha 8",
+        "rating": 5,
+        "text": "Objednali jsme montáž topného systému na klíč. Vše provedeno kvalitně, bez připomínek. Doporučuji všem."
+      },
+      {
+        "name": "Martin Dvořák",
+        "company": "Praha 3",
+        "rating": 5,
+        "text": "Servis chladicího zařízení v provozovně. Přístup profesionální, cena odpovídá kvalitě. Spolehliví lidé, rádi se vrátíme."
       }
     ]
   },

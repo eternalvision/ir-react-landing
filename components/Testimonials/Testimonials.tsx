@@ -3,7 +3,9 @@ import { useTranslation } from 'next-i18next'
 import { motion, useReducedMotion } from 'framer-motion'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
-import { Star } from 'lucide-react'
+import { Star, PenLine } from 'lucide-react'
+import { Button } from '@ui/button'
+import { ReviewModal } from './ReviewModal'
 
 interface TestimonialItem {
   name: string
@@ -16,6 +18,7 @@ export const Testimonials = () => {
   const { t } = useTranslation('common')
   const shouldReduce = useReducedMotion()
   const items = t('testimonials.items', { returnObjects: true }) as TestimonialItem[]
+  const [modalOpen, setModalOpen] = useState(false)
 
   const autoplay = useRef(
     Autoplay({ delay: 5000, stopOnInteraction: false, stopOnMouseEnter: true }),
@@ -47,9 +50,17 @@ export const Testimonials = () => {
           <p className="text-accent font-semibold text-sm uppercase tracking-widest mb-3">
             {t('testimonials.label')}
           </p>
-          <h2 id="testimonials-heading" className="font-heading font-bold text-4xl md:text-5xl">
+          <h2 id="testimonials-heading" className="font-heading font-bold text-4xl md:text-5xl mb-6">
             {t('testimonials.title')}
           </h2>
+          <Button
+            variant="outline"
+            onClick={() => setModalOpen(true)}
+            className="gap-2"
+          >
+            <PenLine className="h-4 w-4" aria-hidden />
+            {t('testimonials.review_modal.trigger')}
+          </Button>
         </motion.div>
 
         <div className="overflow-hidden" ref={emblaRef}>
@@ -98,6 +109,8 @@ export const Testimonials = () => {
           ))}
         </div>
       </div>
+
+      <ReviewModal open={modalOpen} onClose={() => setModalOpen(false)} />
     </section>
   )
 }
