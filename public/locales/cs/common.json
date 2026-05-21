@@ -2,21 +2,21 @@
   "nav": {
     "about": "O nás",
     "services": "Služby",
-    "portfolio": "Rozsah činností",
-    "testimonials": "Firemní údaje",
+    "portfolio": "Práce",
+    "testimonials": "Výhody",
     "faq": "FAQ",
     "contact": "Kontakt"
   },
   "hero": {
     "title": "InstaRum s.r.o.",
-    "subtitle": "Pražská společnost pro dokončovací stavební práce, specializované stavební činnosti, správu nemovitostí, technické služby a podnikatelskou podporu.",
+    "subtitle": "Inženýrské systémy, instalatérství a topení v Praze. Jsme oficiálně registrováni — pracujeme v Praze a Středočeském kraji.",
     "cta_contact": "Kontaktujte nás",
-    "cta_portfolio": "Služby"
+    "cta_portfolio": "Naše práce"
   },
   "about": {
     "label": "Společnost",
-    "title": "Česká společnost se sídlem v Praze",
-    "text": "InstaRum s.r.o. je společnost s ručením omezeným zapsaná v obchodním rejstříku pod spisovou značkou C 415103/MSPH. Zaměřuje se na přípravné a dokončovací stavební práce, specializované stavební činnosti, nákup, prodej, správu a údržbu nemovitostí, technické služby, poradenství a související podnikatelskou podporu.",
+    "title": "Inženýrské systémy v Česku",
+    "text": "InstaRum s.r.o. se specializuje na profesionální montáž a servis inženýrských systémů v České republice. Jsme oficiálně registrováni a máme potřebná oprávnění a kvalifikace pro instalatérské, topné a technické práce. Mluvíme česky, rusky a ukrajinsky.",
     "stats": [
       {
         "value": 2024,
@@ -24,116 +24,116 @@
         "label": "Rok založení"
       },
       {
-        "value": 240,
-        "suffix": " tis. Kč",
-        "label": "Základní kapitál"
+        "value": 10,
+        "suffix": "+",
+        "label": "Druhů služeb"
       },
       {
-        "value": 100,
-        "suffix": " %",
-        "label": "Obchodní podíl"
+        "value": 24,
+        "suffix": "/7",
+        "label": "Havarijní výjezd"
       }
     ]
   },
   "services": {
     "label": "Služby",
-    "title": "Čemu se věnujeme",
+    "title": "Co děláme",
     "items": [
       {
-        "icon": "Hammer",
-        "title": "Dokončovací stavební práce",
-        "description": "Přípravné a dokončovací práce, úpravy interiérů i exteriérů, rekonstrukce a specializované stavební činnosti."
+        "icon": "Droplets",
+        "title": "Instalatérské práce",
+        "description": "Instalatérské práce jakékoli náročnosti: montáž, opravy a výměna zařízení."
       },
       {
-        "icon": "Building2",
-        "title": "Služby pro nemovitosti",
-        "description": "Nákup, prodej, správa a údržba nemovitostí včetně pronájmu bytových a nebytových prostor."
+        "icon": "Flame",
+        "title": "Topné systémy",
+        "description": "Montáž a opravy topných systémů, instalace kotlů a bojlerů."
+      },
+      {
+        "icon": "Zap",
+        "title": "Tepelná čerpadla",
+        "description": "Montáž tepelných čerpadel a servis chladicích zařízení."
+      },
+      {
+        "icon": "Thermometer",
+        "title": "Vodovod a kanalizace",
+        "description": "Rozvody vody a kanalizace, montáž radiátorů a podlahového vytápění."
+      },
+      {
+        "icon": "Hammer",
+        "title": "Svářečské a montážní práce",
+        "description": "Profesionální svářečské práce a montáž inženýrských konstrukcí."
       },
       {
         "icon": "Shield",
-        "title": "Zámečnictví a kovovýroba",
-        "description": "Zámečnictví, nástrojařství, povrchové úpravy a svařování kovů a dalších materiálů."
-      },
-      {
-        "icon": "Layers",
-        "title": "Technické služby",
-        "description": "Technické služby, příprava a vypracování technických návrhů, grafické a kresličské práce."
-      },
-      {
-        "icon": "Leaf",
-        "title": "Nakládání s odpady",
-        "description": "Nakládání s odpady vyjma nebezpečných a související provozní podpora."
-      },
-      {
-        "icon": "Home",
-        "title": "Poradenství a administrativa",
-        "description": "Konzultační činnost, odborné studie, administrativní správa, marketing a zprostředkování obchodu a služeb."
+        "title": "Havarijní výjezd 24/7",
+        "description": "Technická údržba objektů a rychlé havarijní opravy kdykoli."
       }
     ]
   },
   "portfolio": {
-    "label": "Rozsah",
-    "title": "Oblasti služeb",
+    "label": "Práce",
+    "title": "Naše projekty",
     "filter_all": "Vše",
     "categories": [
-      "Stavby",
-      "Nemovitosti",
-      "Technické služby"
+      "Instalatérství",
+      "Topení",
+      "Montáž"
     ],
     "items": [
       {
-        "title": "Dokončovací stavební práce",
-        "category": "Stavby",
+        "title": "Montáž topného systému",
+        "category": "Topení",
         "image": "/portfolio/project-1.jpg"
       },
       {
-        "title": "Specializované stavební činnosti",
-        "category": "Stavby",
+        "title": "Rozvody vodovodu",
+        "category": "Instalatérství",
         "image": "/portfolio/project-2.jpg"
       },
       {
-        "title": "Správa a údržba nemovitostí",
-        "category": "Nemovitosti",
+        "title": "Instalace kotle",
+        "category": "Topení",
         "image": "/portfolio/project-3.jpg"
       },
       {
-        "title": "Pronájem bytových a nebytových prostor",
-        "category": "Nemovitosti",
+        "title": "Montáž podlahového vytápění",
+        "category": "Montáž",
         "image": "/portfolio/project-4.jpg"
       },
       {
-        "title": "Technické návrhy a kresličské práce",
-        "category": "Technické služby",
+        "title": "Montáž tepelného čerpadla",
+        "category": "Montáž",
         "image": "/portfolio/project-5.jpg"
       },
       {
-        "title": "Povrchové úpravy a svařování",
-        "category": "Technické služby",
+        "title": "Svářečské práce",
+        "category": "Montáž",
         "image": "/portfolio/project-6.jpg"
       }
     ]
   },
   "testimonials": {
-    "label": "Firemní údaje",
-    "title": "Údaje z rejstříku",
+    "label": "Výhody",
+    "title": "Proč si vybrat nás",
     "items": [
       {
-        "name": "InstaRum s.r.o.",
-        "company": "IČO 22348760",
+        "name": "Oficální licence",
+        "company": "Oprávnění v ČR",
         "rating": 5,
-        "text": "Společnost s ručením omezeným zapsaná dne 13. prosince 2024 v obchodním rejstříku vedeném Městským soudem v Praze."
+        "text": "Společnost je oficiálně registrována (IČO 22348760) a má veškerá potřebná oprávnění a kvalifikace pro instalatérské, topné a technické práce v České republice."
       },
       {
-        "name": "Sídlo společnosti",
-        "company": "Praha 5 - Smíchov",
+        "name": "Profesionální přístup",
+        "company": "Moderní řešení",
         "rating": 5,
-        "text": "Holečkova 789/49, Smíchov, 150 00 Praha 5."
+        "text": "Používáme moderní technická řešení, ručíme za výsledek a vždy dodržujeme termíny provedení prací."
       },
       {
-        "name": "Statutární orgán",
-        "company": "Roman Priadchenko",
+        "name": "Mluvíme třemi jazyky",
+        "company": "CZ / RU / UA",
         "rating": 5,
-        "text": "Jednatel jedná za společnost samostatně."
+        "text": "Pracujeme se zákazníky česky, rusky a ukrajinsky. Obsluhujeme Prahu a Středočeský kraj."
       }
     ]
   },
@@ -142,53 +142,53 @@
     "title": "Časté dotazy",
     "items": [
       {
-        "question": "Jaké je identifikační číslo společnosti?",
-        "answer": "Identifikační číslo společnosti je IČO 22348760. DIČ uvedené v registru je CZ22348760."
+        "question": "V jakých oblastech pracujete?",
+        "answer": "Pracujeme v Praze a Středočeském kraji. V případě potřeby vyjíždíme i do dalších regionů České republiky."
       },
       {
-        "question": "Kde má InstaRum s.r.o. sídlo?",
-        "answer": "Sídlo společnosti je Holečkova 789/49, Smíchov, 150 00 Praha 5."
+        "question": "Nabízíte havarijní výjezd?",
+        "answer": "Ano, poskytujeme havarijní výjezd a rychlé opravy inženýrských systémů 24/7."
       },
       {
-        "question": "Jaké služby společnost poskytuje?",
-        "answer": "Zapsaný rozsah zahrnuje dokončovací stavební práce, specializované stavební činnosti, správu a údržbu nemovitostí, technické služby, zámečnictví, kovovýrobu, poradenství, administrativu a související služby."
+        "question": "Jakými jazyky pracujete?",
+        "answer": "Pracujeme česky, rusky a ukrajinsky."
       },
       {
-        "question": "Kdo jedná za společnost?",
-        "answer": "Jednatelem je Roman Priadchenko. Podle rejstříku jedná jednatel za společnost samostatně."
+        "question": "Máte všechna potřebná oprávnění?",
+        "answer": "Ano, společnost je oficiálně registrována (IČO 22348760) a má veškeré potřebné licence a oprávnění pro instalatérské, topné a technické práce v České republice."
       },
       {
-        "question": "Kdy byla společnost založena?",
-        "answer": "Společnost vznikla a byla zapsána dne 13. prosince 2024."
+        "question": "Nabízíte bezplatnou konzultaci?",
+        "answer": "Ano, rádi vás poradíme v jakékoli věci zdarma. Kontaktujte nás telefonicky nebo prostřednictvím kontaktního formuláře."
       }
     ]
   },
   "contact": {
     "label": "Kontakt",
-    "title": "Kontaktujte InstaRum s.r.o.",
-    "subtitle": "Sídlo: Holečkova 789/49, Smíchov, 150 00 Praha 5. Datová schránka: ehjy4t5.",
+    "title": "Kontaktujte nás",
+    "subtitle": "Praha a Středočeský kraj. Mluvíme: CZ / RU / UA. Bezplatná konzultace.",
     "form": {
-      "name": "Celé jméno",
+      "name": "Vaše jméno",
       "name_placeholder": "Jan Novák",
-      "email": "E-mailová adresa",
-      "email_placeholder": "jan@firma.cz",
-      "phone": "Telefonní číslo",
+      "email": "E-mail",
+      "email_placeholder": "jan@example.com",
+      "phone": "Telefon",
       "phone_placeholder": "+420 123 456 789",
       "message": "Zpráva",
-      "message_placeholder": "Napište nám, co potřebujete...",
-      "submit": "Odeslat zprávu",
+      "message_placeholder": "Popište svůj požadavek...",
+      "submit": "Odeslat",
       "submitting": "Odesílání...",
-      "success": "Zpráva byla odeslána. Brzy se ozveme.",
+      "success": "Zpráva odeslána. Brzy se vám ozveme.",
       "error": "Něco se pokazilo. Zkuste to prosím znovu."
     }
   },
   "footer": {
-    "description": "InstaRum s.r.o. - IČO 22348760, DIČ CZ22348760. Sídlo: Holečkova 789/49, Smíchov, 150 00 Praha 5.",
+    "description": "InstaRum s.r.o. — inženýrské systémy, instalatérství a topení v Praze. IČO 22348760.",
     "copyright": "Všechna práva vyhrazena."
   },
   "seo": {
-    "title": "InstaRum s.r.o. - stavební, technické a realitní služby v Praze",
-    "description": "InstaRum s.r.o., IČO 22348760: dokončovací stavební práce, specializované stavební činnosti, správa nemovitostí, technické služby a poradenství v Praze."
+    "title": "InstaRum s.r.o. — instalatérství, topení a inženýrské systémy v Praze",
+    "description": "InstaRum s.r.o. — profesionální montáž a servis inženýrských systémů v Praze. Instalatérství, topení, kotle, tepelná čerpadla, havarijní výjezd 24/7."
   },
   "cookies": {
     "banner": {

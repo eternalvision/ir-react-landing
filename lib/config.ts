@@ -29,7 +29,7 @@ export interface SiteConfig {
 
 const defaults: SiteConfig = {
   companyName: 'InstaRum s.r.o.',
-  tagline: 'Stavební, technické a realitní služby v Praze',
+  tagline: 'Inženýrské systémy, instalatérství a topení v Praze',
   logoUrl: '/logo.svg',
   faviconUrl: '/favicon.ico',
   phone: '',

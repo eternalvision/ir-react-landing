@@ -2,21 +2,21 @@
   "nav": {
     "about": "About",
     "services": "Services",
-    "portfolio": "Service Areas",
-    "testimonials": "Company Details",
+    "portfolio": "Our Work",
+    "testimonials": "Why Us",
     "faq": "FAQ",
     "contact": "Contact"
   },
   "hero": {
     "title": "InstaRum s.r.o.",
-    "subtitle": "Prague-based company for construction finishing works, specialised building activities, property management, technical services and business support.",
+    "subtitle": "Engineering systems, plumbing and heating in Prague. Officially registered — serving Prague and Středočeský Region.",
     "cta_contact": "Contact us",
-    "cta_portfolio": "Services"
+    "cta_portfolio": "Our work"
   },
   "about": {
     "label": "Company",
-    "title": "Registered Czech company based in Prague",
-    "text": "InstaRum s.r.o. is a limited liability company registered in the Commercial Register under file C 415103/MSPH. The company focuses on construction finishing works, specialised construction activities, property purchase, sale, management and maintenance, technical services, consulting and related business support.",
+    "title": "Engineering Systems in Czechia",
+    "text": "InstaRum s.r.o. specialises in professional installation and maintenance of engineering systems in the Czech Republic. We are officially registered and hold all required licences and qualifications for plumbing, heating and technical works. We speak Czech, Russian and Ukrainian.",
     "stats": [
       {
         "value": 2024,
@@ -24,14 +24,14 @@
         "label": "Founded"
       },
       {
-        "value": 240,
-        "suffix": "k Kč",
-        "label": "Registered capital"
+        "value": 10,
+        "suffix": "+",
+        "label": "Services"
       },
       {
-        "value": 100,
-        "suffix": "%",
-        "label": "Ownership share"
+        "value": 24,
+        "suffix": "/7",
+        "label": "Emergency call-out"
       }
     ]
   },
@@ -40,100 +40,100 @@
     "title": "What We Do",
     "items": [
       {
-        "icon": "Hammer",
-        "title": "Construction Finishing Works",
-        "description": "Preparation and completion works, interior and exterior finishing, renovations and specialised construction tasks."
+        "icon": "Droplets",
+        "title": "Plumbing Works",
+        "description": "Plumbing works of any complexity: installation, repair and replacement of equipment."
       },
       {
-        "icon": "Building2",
-        "title": "Property Services",
-        "description": "Purchase, sale, management and maintenance of real estate, including rental of residential and non-residential premises."
+        "icon": "Flame",
+        "title": "Heating Systems",
+        "description": "Installation and repair of heating systems, boilers and water heaters."
+      },
+      {
+        "icon": "Zap",
+        "title": "Heat Pumps",
+        "description": "Heat pump installation and refrigeration equipment servicing."
+      },
+      {
+        "icon": "Thermometer",
+        "title": "Water Supply & Drainage",
+        "description": "Piping, drainage systems, radiators and underfloor heating installation."
+      },
+      {
+        "icon": "Hammer",
+        "title": "Welding & Assembly",
+        "description": "Professional welding and engineering assembly works of any scope."
       },
       {
         "icon": "Shield",
-        "title": "Locksmithing and Metal Work",
-        "description": "Locksmithing, toolmaking, surface treatment and welding of metals and other materials."
-      },
-      {
-        "icon": "Layers",
-        "title": "Technical Services",
-        "description": "Technical services, technical design preparation, drafting, graphic and drawing work."
-      },
-      {
-        "icon": "Leaf",
-        "title": "Waste Handling",
-        "description": "Handling of non-hazardous waste and related operational support."
-      },
-      {
-        "icon": "Home",
-        "title": "Consulting and Administration",
-        "description": "Consulting, expert studies, administrative management, marketing and business intermediation."
+        "title": "Emergency Call-out 24/7",
+        "description": "Technical maintenance and emergency repairs around the clock."
       }
     ]
   },
   "portfolio": {
-    "label": "Scope",
-    "title": "Service Areas",
+    "label": "Work",
+    "title": "Our Projects",
     "filter_all": "All",
     "categories": [
-      "Construction",
-      "Real Estate",
-      "Technical"
+      "Plumbing",
+      "Heating",
+      "Installation"
     ],
     "items": [
       {
-        "title": "Finishing Construction Works",
-        "category": "Construction",
+        "title": "Heating System Installation",
+        "category": "Heating",
         "image": "/portfolio/project-1.jpg"
       },
       {
-        "title": "Specialised Building Activities",
-        "category": "Construction",
+        "title": "Water Supply Piping",
+        "category": "Plumbing",
         "image": "/portfolio/project-2.jpg"
       },
       {
-        "title": "Property Management and Maintenance",
-        "category": "Real Estate",
+        "title": "Boiler Installation",
+        "category": "Heating",
         "image": "/portfolio/project-3.jpg"
       },
       {
-        "title": "Rental of Residential and Non-residential Premises",
-        "category": "Real Estate",
+        "title": "Underfloor Heating",
+        "category": "Installation",
         "image": "/portfolio/project-4.jpg"
       },
       {
-        "title": "Technical Design and Drafting",
-        "category": "Technical",
+        "title": "Heat Pump Installation",
+        "category": "Installation",
         "image": "/portfolio/project-5.jpg"
       },
       {
-        "title": "Metal Surface Treatment and Welding",
-        "category": "Technical",
+        "title": "Welding Works",
+        "category": "Installation",
         "image": "/portfolio/project-6.jpg"
       }
     ]
   },
   "testimonials": {
-    "label": "Company Details",
-    "title": "Registry Information",
+    "label": "Why Us",
+    "title": "Why Choose Us",
     "items": [
       {
-        "name": "InstaRum s.r.o.",
-        "company": "IČO 22348760",
+        "name": "Official Licences",
+        "company": "Czech Permits",
         "rating": 5,
-        "text": "Limited liability company registered on 13 December 2024 in the Commercial Register maintained by the Municipal Court in Prague."
+        "text": "Officially registered (IČO 22348760) with all required licences and qualifications for plumbing, heating and technical works in the Czech Republic."
       },
       {
-        "name": "Registered office",
-        "company": "Praha 5 - Smíchov",
+        "name": "Professional Approach",
+        "company": "Modern Solutions",
         "rating": 5,
-        "text": "Holečkova 789/49, Smíchov, 150 00 Praha 5."
+        "text": "We apply modern technical solutions, take responsibility for results and always meet agreed deadlines."
       },
       {
-        "name": "Statutory representative",
-        "company": "Roman Priadchenko",
+        "name": "Three Languages",
+        "company": "CZ / RU / UA",
         "rating": 5,
-        "text": "The managing director acts independently on behalf of the company."
+        "text": "We work with clients in Czech, Russian and Ukrainian. Serving Prague and Středočeský Region."
       }
     ]
   },
@@ -142,53 +142,53 @@
     "title": "Frequently Asked Questions",
     "items": [
       {
-        "question": "What is the company identification number?",
-        "answer": "The company identification number is IČO 22348760. The VAT ID listed in the register is CZ22348760."
+        "question": "Which areas do you cover?",
+        "answer": "We work in Prague and Středočeský Region. We can also travel to other parts of the Czech Republic on request."
       },
       {
-        "question": "Where is InstaRum s.r.o. registered?",
-        "answer": "The registered office is Holečkova 789/49, Smíchov, 150 00 Praha 5."
+        "question": "Do you offer emergency call-out?",
+        "answer": "Yes, we provide 24/7 emergency call-out and urgent repairs for all engineering systems."
       },
       {
-        "question": "What services does the company provide?",
-        "answer": "The registered scope includes construction finishing works, specialised construction activities, property management and maintenance, technical services, locksmithing, metal work, consulting, administration and related business services."
+        "question": "Which languages do you work in?",
+        "answer": "We work in Czech, Russian and Ukrainian."
       },
       {
-        "question": "Who acts for the company?",
-        "answer": "The managing director is Roman Priadchenko. According to the register, the managing director acts independently."
+        "question": "Are you fully licensed?",
+        "answer": "Yes, the company is officially registered (IČO 22348760) and holds all required licences and permits for plumbing, heating and technical works in the Czech Republic."
       },
       {
-        "question": "When was the company established?",
-        "answer": "The company was established and registered on 13 December 2024."
+        "question": "Do you offer a free consultation?",
+        "answer": "Yes, we are happy to advise you on any question free of charge. Contact us by phone or via the contact form."
       }
     ]
   },
   "contact": {
     "label": "Contact",
-    "title": "Contact InstaRum s.r.o.",
-    "subtitle": "Registered office: Holečkova 789/49, Smíchov, 150 00 Praha 5. Data box: ehjy4t5.",
+    "title": "Get in Touch",
+    "subtitle": "Prague and Středočeský Region. Languages: CZ / RU / UA. Free consultation.",
     "form": {
-      "name": "Full name",
+      "name": "Your name",
       "name_placeholder": "John Smith",
-      "email": "Email address",
-      "email_placeholder": "john@company.com",
-      "phone": "Phone number",
+      "email": "Email",
+      "email_placeholder": "john@example.com",
+      "phone": "Phone",
       "phone_placeholder": "+420 123 456 789",
       "message": "Message",
-      "message_placeholder": "Tell us what you need...",
-      "submit": "Send message",
+      "message_placeholder": "Describe your task...",
+      "submit": "Send",
       "submitting": "Sending...",
-      "success": "Message sent! We will get back to you soon.",
+      "success": "Message sent. We will get back to you shortly.",
       "error": "Something went wrong. Please try again."
     }
   },
   "footer": {
-    "description": "InstaRum s.r.o. - IČO 22348760, DIČ CZ22348760. Registered office: Holečkova 789/49, Smíchov, 150 00 Praha 5.",
+    "description": "InstaRum s.r.o. — engineering systems, plumbing and heating in Prague. IČO 22348760.",
     "copyright": "All rights reserved."
   },
   "seo": {
-    "title": "InstaRum s.r.o. - Construction, Technical and Property Services in Prague",
-    "description": "InstaRum s.r.o., IČO 22348760: construction finishing works, specialised construction activities, property management, technical services and consulting in Prague."
+    "title": "InstaRum s.r.o. — Plumbing, Heating & Engineering Systems in Prague",
+    "description": "InstaRum s.r.o. — professional installation and maintenance of engineering systems in Prague. Plumbing, heating, boilers, heat pumps, 24/7 emergency call-out."
   },
   "cookies": {
     "banner": {
