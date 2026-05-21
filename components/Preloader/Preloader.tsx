@@ -22,7 +22,7 @@ export const Preloader = ({ onComplete }: Props) => {
           className="fixed inset-0 z-[9999] flex items-center justify-center"
           style={{ backgroundColor: 'var(--background)' }}
           initial={{ opacity: 1 }}
-          exit={{ opacity: 0, transition: { duration: 0.6, ease: 'easeInOut' } }}
+          exit={{ opacity: 0, transition: { duration: 1.1, ease: [0.4, 0, 0.2, 1] } }}
         >
           <motion.div
             initial={{ opacity: 0, scale: 0.85 }}
