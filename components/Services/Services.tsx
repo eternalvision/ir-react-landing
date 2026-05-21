@@ -1,9 +1,9 @@
 import { useTranslation } from 'next-i18next'
 import { motion, useReducedMotion } from 'framer-motion'
 import { Card, CardContent } from '@ui/card'
-import { Building2, Home, Hammer, Layers, Shield, Leaf, type LucideIcon } from 'lucide-react'
+import { Wrench, Flame, Zap, Droplets, Hammer, ShieldAlert, type LucideIcon } from 'lucide-react'
 
-const ICON_MAP: Record<string, LucideIcon> = { Building2, Home, Hammer, Layers, Shield, Leaf }
+const ICON_MAP: Record<string, LucideIcon> = { Wrench, Flame, Zap, Droplets, Hammer, ShieldAlert }
 
 interface ServiceItem {
   icon: string
@@ -29,7 +29,7 @@ export const Services = () => {
         </div>
         <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 list-none p-0 m-0">
           {items.map((item, i) => {
-            const Icon = ICON_MAP[item.icon] ?? Building2
+            const Icon = ICON_MAP[item.icon] ?? Wrench
             return (
               <motion.li
                 key={i}

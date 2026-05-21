@@ -1,0 +1,16 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" fill="#2563EB" />
+
+  <!-- i -->
+  <rect x="17" y="27" width="7" height="22" fill="#FFFFFF" />
+  <rect x="15" y="17" width="11" height="7" fill="#FFFFFF" />
+
+  <!-- r -->
+  <rect x="32" y="21" width="7" height="28" fill="#FFFFFF" />
+  <rect x="32" y="21" width="17" height="7" fill="#FFFFFF" />
+  <rect x="42" y="21" width="7" height="17" fill="#FFFFFF" />
+  <path d="M38 36H45L52 49H45L38 36Z" fill="#FFFFFF" />
+
+  <!-- technical flow cut -->
+  <rect x="17" y="35" width="32" height="3" fill="#2563EB" />
+</svg>

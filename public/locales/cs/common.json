@@ -40,7 +40,7 @@
     "title": "Co děláme",
     "items": [
       {
-        "icon": "Droplets",
+        "icon": "Wrench",
         "title": "Instalatérské práce",
         "description": "Instalatérské práce jakékoli náročnosti: montáž, opravy a výměna zařízení."
       },
@@ -55,7 +55,7 @@
         "description": "Montáž tepelných čerpadel a servis chladicích zařízení."
       },
       {
-        "icon": "Thermometer",
+        "icon": "Droplets",
         "title": "Vodovod a kanalizace",
         "description": "Rozvody vody a kanalizace, montáž radiátorů a podlahového vytápění."
       },
@@ -65,7 +65,7 @@
         "description": "Profesionální svářečské práce a montáž inženýrských konstrukcí."
       },
       {
-        "icon": "Shield",
+        "icon": "ShieldAlert",
         "title": "Havarijní výjezd 24/7",
         "description": "Technická údržba objektů a rychlé havarijní opravy kdykoli."
       }

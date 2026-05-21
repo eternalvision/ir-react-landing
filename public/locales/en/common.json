@@ -40,7 +40,7 @@
     "title": "What We Do",
     "items": [
       {
-        "icon": "Droplets",
+        "icon": "Wrench",
         "title": "Plumbing Works",
         "description": "Plumbing works of any complexity: installation, repair and replacement of equipment."
       },
@@ -55,7 +55,7 @@
         "description": "Heat pump installation and refrigeration equipment servicing."
       },
       {
-        "icon": "Thermometer",
+        "icon": "Droplets",
         "title": "Water Supply & Drainage",
         "description": "Piping, drainage systems, radiators and underfloor heating installation."
       },
@@ -65,7 +65,7 @@
         "description": "Professional welding and engineering assembly works of any scope."
       },
       {
-        "icon": "Shield",
+        "icon": "ShieldAlert",
         "title": "Emergency Call-out 24/7",
         "description": "Technical maintenance and emergency repairs around the clock."
       }
