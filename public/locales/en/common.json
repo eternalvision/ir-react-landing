@@ -16,7 +16,7 @@
   "about": {
     "label": "Company",
     "title": "Engineering Systems in Czechia",
-    "text": "InstaRum s.r.o. specialises in professional installation and maintenance of engineering systems in the Czech Republic. We are officially registered and hold all required licences and qualifications for plumbing, heating and technical works. We speak Czech, Russian and Ukrainian.",
+    "text": "InstaRum s.r.o. specialises in professional installation and maintenance of engineering systems in the Czech Republic. We are officially registered and hold all required licences and qualifications for plumbing, heating and technical works. We speak Czech, English, Russian and Ukrainian.",
     "stats": [
       {
         "value": 2024,
@@ -145,7 +145,7 @@
         "name": "Olena Kovalchenko",
         "company": "Prague 4",
         "rating": 5,
-        "text": "Heat pump installation done quickly and cleanly. They speak Czech, Russian and Ukrainian — very convenient for our family."
+        "text": "Heat pump installation done quickly and cleanly. They speak Czech, English, Russian and Ukrainian — very convenient for our family."
       },
       {
         "name": "Tomáš Krejčí",
@@ -199,7 +199,7 @@
         "name": "Nataliya Bondarenko",
         "company": "Prague 13",
         "rating": 5,
-        "text": "Boiler service before winter. Everything checked, cleaned and tuned. They speak Ukrainian — very pleasant to deal with."
+        "text": "Boiler service before winter. Everything checked, cleaned and tuned. They speak Czech, English, Russian and Ukrainian — very pleasant to deal with."
       },
       {
         "name": "Pavel Černý",
@@ -229,7 +229,7 @@
       },
       {
         "question": "Which languages do you work in?",
-        "answer": "We work in Czech, Russian and Ukrainian."
+        "answer": "We work in Czech, English, Russian and Ukrainian."
       },
       {
         "question": "Are you fully licensed?",
@@ -244,7 +244,7 @@
   "contact": {
     "label": "Contact",
     "title": "Get in Touch",
-    "subtitle": "Prague and Středočeský Region. Languages: CZ / RU / UA. Free consultation.",
+    "subtitle": "Prague and Středočeský Region. Languages: CZ / EN / RU / UA. Free consultation.",
     "form": {
       "name": "Your name",
       "name_placeholder": "John Smith",

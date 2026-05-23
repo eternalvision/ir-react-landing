@@ -16,7 +16,7 @@
   "about": {
     "label": "Společnost",
     "title": "Inženýrské systémy v Česku",
-    "text": "InstaRum s.r.o. se specializuje na profesionální montáž a servis inženýrských systémů v České republice. Jsme oficiálně registrováni a máme potřebná oprávnění a kvalifikace pro instalatérské, topné a technické práce. Mluvíme česky, rusky a ukrajinsky.",
+    "text": "InstaRum s.r.o. se specializuje na profesionální montáž a servis inženýrských systémů v České republice. Jsme oficiálně registrováni a máme potřebná oprávnění a kvalifikace pro instalatérské, topné a technické práce. Mluvíme česky, anglicky, rusky a ukrajinsky.",
     "stats": [
       {
         "value": 2024,
@@ -145,7 +145,7 @@
         "name": "Олена Ковальченко",
         "company": "Praha 4",
         "rating": 5,
-        "text": "Montáž tepelného čerpadla provedena rychle a čistě. Komunikace v češtině i ukrajinsky — to velmi oceňuji. Vše funguje skvěle."
+        "text": "Montáž tepelného čerpadla provedena rychle a čistě. Komunikace česky, anglicky, rusky i ukrajinsky — to velmi oceňuji. Vše funguje skvěle."
       },
       {
         "name": "Tomáš Krejčí",
@@ -199,7 +199,7 @@
         "name": "Nataliya Bondarenko",
         "company": "Praha 13",
         "rating": 5,
-        "text": "Servis kotle před zimou. Vše zkontrolovali, vyčistili a nastavili. Mluví ukrajinsky — velmi příjemné jednání."
+        "text": "Servis kotle před zimou. Vše zkontrolovali, vyčistili a nastavili. Mluví česky, anglicky, rusky i ukrajinsky — velmi příjemné jednání."
       },
       {
         "name": "Pavel Černý",
@@ -229,7 +229,7 @@
       },
       {
         "question": "Jakými jazyky pracujete?",
-        "answer": "Pracujeme česky, rusky a ukrajinsky."
+        "answer": "Pracujeme česky, anglicky, rusky a ukrajinsky."
       },
       {
         "question": "Máte všechna potřebná oprávnění?",
@@ -244,7 +244,7 @@
   "contact": {
     "label": "Kontakt",
     "title": "Kontaktujte nás",
-    "subtitle": "Praha a Středočeský kraj. Mluvíme: CZ / RU / UA. Bezplatná konzultace.",
+    "subtitle": "Praha a Středočeský kraj. Mluvíme: CZ / EN / RU / UA. Bezplatná konzultace.",
     "form": {
       "name": "Vaše jméno",
       "name_placeholder": "Jan Novák",
