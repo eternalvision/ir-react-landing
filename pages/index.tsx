@@ -24,16 +24,20 @@ const LOCALE_NAMES: Record<string, string> = {
 
 const ALL_LOCALES = ['cs', 'en', 'ru', 'uk']
 
+const getLocalizedUrl = (siteUrl: string, locale: string) =>
+  locale === 'cs' ? siteUrl : `${siteUrl}/${locale}`
+
 export default function Home() {
   const { t } = useTranslation('common')
   const router = useRouter()
   const config = useConfig()
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://example.com'
   const locale = router.locale ?? 'cs'
+  const localizedUrl = getLocalizedUrl(siteUrl, locale)
 
   const languageAlternates = ALL_LOCALES.map((loc) => ({
     hrefLang: loc,
-    href: `${siteUrl}/${loc}`,
+    href: getLocalizedUrl(siteUrl, loc),
   }))
   languageAlternates.push({ hrefLang: 'x-default', href: siteUrl })
   const twitter = {
@@ -47,11 +51,11 @@ export default function Home() {
         {generateNextSeo({
           title: t('seo.title'),
           description: t('seo.description'),
-          canonical: `${siteUrl}/${locale}`,
+          canonical: localizedUrl,
           openGraph: {
             title: t('seo.title'),
             description: t('seo.description'),
-            url: `${siteUrl}/${locale}`,
+            url: localizedUrl,
             locale: LOCALE_NAMES[locale] ?? 'en_GB',
             images: [
               {

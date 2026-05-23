@@ -9,9 +9,24 @@
   },
   "hero": {
     "title": "InstaRum s.r.o.",
+    "eyebrow": "Technické práce bez zdržení",
     "subtitle": "Inženýrské systémy, instalatérství a topení v Praze. Jsme oficiálně registrováni — pracujeme v Praze a Středočeském kraji.",
     "cta_contact": "Kontaktujte nás",
-    "cta_portfolio": "Naše práce"
+    "cta_portfolio": "Naše práce",
+    "highlights": [
+      {
+        "value": "IČO",
+        "label": "Registrovaná společnost"
+      },
+      {
+        "value": "24/7",
+        "label": "Havarijní výjezd"
+      },
+      {
+        "value": "4",
+        "label": "Jazyky: CZ / EN / RU / UA"
+      }
+    ]
   },
   "about": {
     "label": "Společnost",
@@ -84,32 +99,32 @@
       {
         "title": "Montáž topného systému",
         "category": "Topení",
-        "image": "/portfolio/project-1.jpg"
+        "image": "/portfolio/guy-installator.jpg"
       },
       {
         "title": "Rozvody vodovodu",
         "category": "Instalatérství",
-        "image": "/portfolio/project-2.jpg"
+        "image": "/portfolio/water-supply-distribution.jpeg"
       },
       {
         "title": "Instalace kotle",
         "category": "Topení",
-        "image": "/portfolio/project-3.jpg"
+        "image": "/portfolio/boiler-room.jpg"
       },
       {
         "title": "Montáž podlahového vytápění",
         "category": "Montáž",
-        "image": "/portfolio/project-4.jpg"
+        "image": "/portfolio/warm-floor.jpg"
       },
       {
         "title": "Montáž tepelného čerpadla",
         "category": "Montáž",
-        "image": "/portfolio/project-5.jpg"
+        "image": "/portfolio/warm-pump.jpg"
       },
       {
         "title": "Svářečské práce",
         "category": "Montáž",
-        "image": "/portfolio/project-6.jpg"
+        "image": "/portfolio/gas-welding.jpg"
       }
     ]
   },

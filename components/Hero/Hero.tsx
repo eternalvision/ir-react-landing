@@ -1,10 +1,20 @@
 import { useTranslation } from 'next-i18next';
 import { motion, useReducedMotion } from 'framer-motion';
+import Image from 'next/image';
+import { ArrowRight, Clock, Flame, ShieldCheck, Wrench } from 'lucide-react';
 import { Button } from '@ui/button'
+
+interface HeroHighlight {
+  label: string
+  value: string
+}
+
+const FEATURE_ICONS = [ShieldCheck, Clock, Wrench]
 
 export const Hero = () => {
   const { t } = useTranslation('common');
   const shouldReduce = useReducedMotion();
+  const highlights = t('hero.highlights', { returnObjects: true }) as HeroHighlight[]
 
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
@@ -23,65 +33,123 @@ export const Hero = () => {
     <section
       id="hero"
       aria-label={t('hero.title')}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-[calc(100svh-1px)] overflow-hidden bg-background"
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-surface to-background">
-        <svg
-          className="absolute inset-0 w-full h-full opacity-[0.07] text-accent"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden
-        >
-          <defs>
-            <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
-              <path d="M 60 0 L 0 0 0 60" fill="none" stroke="currentColor" strokeWidth="1" />
-            </pattern>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#grid)" />
-        </svg>
-        <div
-          className="absolute top-24 right-[10%] w-72 h-72 bg-accent/10 rotate-45"
-          aria-hidden
-        />
-        <div
-          className="absolute bottom-24 left-[8%] w-48 h-48 bg-accent/5 rotate-12"
-          aria-hidden
-        />
-      </div>
+      <div className="absolute inset-x-0 top-0 h-20 border-b border-border bg-surface/70" aria-hidden />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,var(--border)_1px,transparent_1px),linear-gradient(to_bottom,var(--border)_1px,transparent_1px)] bg-[size:72px_72px] opacity-20" aria-hidden />
+      <div className="absolute inset-x-0 bottom-0 h-24 bg-surface" aria-hidden />
 
-      <div className="relative container mx-auto text-center pt-16">
-        <motion.h1
-          {...fadeUp(0)}
-          className="font-heading font-bold text-5xl md:text-7xl lg:text-8xl leading-[1.05] mb-6"
-        >
-          {t('hero.title')}
-        </motion.h1>
+      <div className="relative container mx-auto grid min-h-screen grid-cols-1 items-center gap-12 pt-28 pb-16 lg:grid-cols-[minmax(0,0.95fr)_minmax(420px,1.05fr)] lg:pt-24">
+        <div>
+          <motion.div
+            {...fadeUp(0)}
+            className="mb-6 inline-flex items-center gap-2 border border-border bg-surface px-3 py-2 text-xs font-semibold uppercase text-foreground/70"
+          >
+            <span className="h-2 w-2 bg-accent" aria-hidden />
+            <span>{t('hero.eyebrow')}</span>
+          </motion.div>
 
-        <motion.p
-          {...fadeUp(0.2)}
-          className="text-lg md:text-2xl text-foreground/60 mb-10 max-w-2xl mx-auto leading-relaxed"
-        >
-          {t('hero.subtitle')}
-        </motion.p>
+          <motion.h1
+            {...fadeUp(0.08)}
+            className="max-w-4xl font-heading text-5xl font-bold leading-[0.98] text-foreground sm:text-6xl lg:text-7xl"
+          >
+            {t('hero.title')}
+          </motion.h1>
+
+          <motion.p
+            {...fadeUp(0.16)}
+            className="mt-6 max-w-2xl text-base leading-8 text-foreground/70 sm:text-lg"
+          >
+            {t('hero.subtitle')}
+          </motion.p>
+
+          <motion.div
+            {...fadeUp(0.24)}
+            className="mt-8 flex flex-col gap-3 sm:flex-row"
+          >
+            <Button
+              size="lg"
+              onClick={() => scrollTo('contact')}
+              className="h-12 cursor-pointer gap-2 bg-accent px-6 text-base font-semibold text-white hover:bg-accent/90"
+            >
+              {t('hero.cta_contact')}
+              <ArrowRight className="h-4 w-4" aria-hidden />
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              onClick={() => scrollTo('portfolio')}
+              className="h-12 cursor-pointer border-accent bg-surface px-6 text-base font-semibold text-accent hover:bg-accent hover:text-white"
+            >
+              {t('hero.cta_portfolio')}
+            </Button>
+          </motion.div>
+
+          <motion.ul
+            {...fadeUp(0.32)}
+            className="mt-10 grid max-w-3xl grid-cols-1 gap-3 p-0 sm:grid-cols-3"
+          >
+            {highlights.map((item, index) => {
+              const Icon = FEATURE_ICONS[index] ?? ShieldCheck
+              return (
+                <li key={item.label} className="list-none border border-border bg-surface p-4">
+                  <Icon className="mb-3 h-5 w-5 text-accent" aria-hidden />
+                  <div className="font-heading text-2xl font-bold leading-none text-foreground">
+                    {item.value}
+                  </div>
+                  <div className="mt-2 text-sm leading-5 text-foreground/60">
+                    {item.label}
+                  </div>
+                </li>
+              )
+            })}
+          </motion.ul>
+        </div>
 
         <motion.div
-          {...fadeUp(0.4)}
-          className="flex flex-col sm:flex-row gap-4 justify-center"
+          {...fadeUp(0.18)}
+          className="relative min-h-[520px] lg:min-h-[640px]"
+          aria-hidden
         >
-          <Button
-            size="lg"
-            onClick={() => scrollTo('contact')}
-            className="bg-accent hover:bg-accent/90 text-white font-semibold px-8 h-12 text-base cursor-pointer"
-          >
-            {t('hero.cta_contact')}
-          </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            onClick={() => scrollTo('portfolio')}
-            className="border-accent text-accent hover:bg-accent hover:text-white font-semibold px-8 h-12 text-base cursor-pointer"
-          >
-            {t('hero.cta_portfolio')}
-          </Button>
+          <div className="absolute right-0 top-0 h-[72%] w-[78%] overflow-hidden border border-border bg-surface shadow-2xl shadow-slate-950/10">
+            <Image
+              src="/portfolio/metall-pipes.jpg"
+              alt=""
+              fill
+              priority
+              sizes="(min-width: 1024px) 48vw, 92vw"
+              className="object-cover"
+            />
+          </div>
+
+          <div className="absolute bottom-8 left-0 h-[45%] w-[54%] overflow-hidden border border-border bg-surface shadow-xl shadow-slate-950/10">
+            <Image
+              src="/portfolio/pump.jpg"
+              alt=""
+              fill
+              sizes="(min-width: 1024px) 28vw, 60vw"
+              className="object-cover"
+            />
+          </div>
+
+          <div className="absolute bottom-0 right-8 w-[48%] border border-border bg-surface p-5 shadow-xl shadow-slate-950/10">
+            <div className="flex items-center gap-3">
+              <div className="flex h-11 w-11 items-center justify-center bg-accent text-white">
+                <Clock className="h-5 w-5" />
+              </div>
+              <div>
+                <div className="font-heading text-3xl font-bold leading-none">24/7</div>
+                <div className="mt-1 text-sm text-foreground/60">{t('services.items.5.title')}</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="absolute left-[12%] top-12 border border-border bg-surface p-4 shadow-lg shadow-slate-950/10">
+            <div className="flex items-center gap-3">
+              <Wrench className="h-5 w-5 text-accent" />
+              <span className="text-sm font-semibold text-foreground">{t('services.items.0.title')}</span>
+            </div>
+          </div>
         </motion.div>
       </div>
     </section>

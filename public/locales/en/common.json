@@ -9,9 +9,24 @@
   },
   "hero": {
     "title": "InstaRum s.r.o.",
+    "eyebrow": "Technical work without delays",
     "subtitle": "Engineering systems, plumbing and heating in Prague. Officially registered — serving Prague and Středočeský Region.",
     "cta_contact": "Contact us",
-    "cta_portfolio": "Our work"
+    "cta_portfolio": "Our work",
+    "highlights": [
+      {
+        "value": "IČO",
+        "label": "Registered company"
+      },
+      {
+        "value": "24/7",
+        "label": "Emergency call-out"
+      },
+      {
+        "value": "4",
+        "label": "Languages: CZ / EN / RU / UA"
+      }
+    ]
   },
   "about": {
     "label": "Company",
@@ -84,32 +99,32 @@
       {
         "title": "Heating System Installation",
         "category": "Heating",
-        "image": "/portfolio/project-1.jpg"
+        "image": "/portfolio/guy-installator.jpg"
       },
       {
         "title": "Water Supply Piping",
         "category": "Plumbing",
-        "image": "/portfolio/project-2.jpg"
+        "image": "/portfolio/water-supply-distribution.jpeg"
       },
       {
         "title": "Boiler Installation",
         "category": "Heating",
-        "image": "/portfolio/project-3.jpg"
+        "image": "/portfolio/boiler-room.jpg"
       },
       {
         "title": "Underfloor Heating",
         "category": "Installation",
-        "image": "/portfolio/project-4.jpg"
+        "image": "/portfolio/warm-floor.jpg"
       },
       {
         "title": "Heat Pump Installation",
         "category": "Installation",
-        "image": "/portfolio/project-5.jpg"
+        "image": "/portfolio/warm-pump.jpg"
       },
       {
         "title": "Welding Works",
         "category": "Installation",
-        "image": "/portfolio/project-6.jpg"
+        "image": "/portfolio/gas-welding.jpg"
       }
     ]
   },

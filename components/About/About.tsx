@@ -100,7 +100,7 @@ export const About = () => {
               style={{ clipPath: 'polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%)' }}
             >
               <Image
-                src="/portfolio/project-1.jpg"
+                src="/portfolio/bier.jpg"
                 alt={t('about.title')}
                 width={600}
                 height={500}

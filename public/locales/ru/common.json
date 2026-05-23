@@ -9,9 +9,24 @@
   },
   "hero": {
     "title": "InstaRum s.r.o.",
+    "eyebrow": "Технические работы без задержек",
     "subtitle": "Инженерные системы, сантехника и отопление в Праге. Официально зарегистрированы — работаем по Праге и Středočeský kraj.",
     "cta_contact": "Связаться",
-    "cta_portfolio": "Наши работы"
+    "cta_portfolio": "Наши работы",
+    "highlights": [
+      {
+        "value": "IČO",
+        "label": "Зарегистрированная компания"
+      },
+      {
+        "value": "24/7",
+        "label": "Аварийный выезд"
+      },
+      {
+        "value": "4",
+        "label": "Языки: CZ / EN / RU / UA"
+      }
+    ]
   },
   "about": {
     "label": "Компания",
@@ -89,27 +104,27 @@
       {
         "title": "Разводка водоснабжения",
         "category": "Сантехника",
-        "image": "/portfolio/project-2.jpg"
+        "image": "/portfolio/water-supply-distribution.jpeg"
       },
       {
         "title": "Установка котла",
         "category": "Отопление",
-        "image": "/portfolio/project-3.jpg"
+        "image": "/portfolio/boiler-room.jpg"
       },
       {
         "title": "Монтаж тёплого пола",
         "category": "Монтаж",
-        "image": "/portfolio/project-4.jpg"
+        "image": "/portfolio/warm-floor.jpg"
       },
       {
         "title": "Монтаж теплового насоса",
         "category": "Монтаж",
-        "image": "/portfolio/project-5.jpg"
+        "image": "/portfolio/warm-pump.jpg"
       },
       {
         "title": "Сварочные работы",
         "category": "Монтаж",
-        "image": "/portfolio/project-6.jpg"
+        "image": "/portfolio/gas-welding.jpg"
       }
     ]
   },

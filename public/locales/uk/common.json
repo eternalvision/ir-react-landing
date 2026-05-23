@@ -9,9 +9,24 @@
   },
   "hero": {
     "title": "InstaRum s.r.o.",
+    "eyebrow": "Технічні роботи без затримок",
     "subtitle": "Інженерні системи, сантехніка та опалення у Празі. Офіційно зареєстровані — працюємо у Празі та Středočeský kraj.",
     "cta_contact": "Зв'язатися",
-    "cta_portfolio": "Наші роботи"
+    "cta_portfolio": "Наші роботи",
+    "highlights": [
+      {
+        "value": "IČO",
+        "label": "Зареєстрована компанія"
+      },
+      {
+        "value": "24/7",
+        "label": "Аварійний виїзд"
+      },
+      {
+        "value": "4",
+        "label": "Мови: CZ / EN / RU / UA"
+      }
+    ]
   },
   "about": {
     "label": "Компанія",
@@ -89,27 +104,27 @@
       {
         "title": "Розводка водопостачання",
         "category": "Сантехніка",
-        "image": "/portfolio/project-2.jpg"
+        "image": "/portfolio/water-supply-distribution.jpeg"
       },
       {
         "title": "Встановлення котла",
         "category": "Опалення",
-        "image": "/portfolio/project-3.jpg"
+        "image": "/portfolio/boiler-room.jpg"
       },
       {
         "title": "Монтаж теплої підлоги",
         "category": "Монтаж",
-        "image": "/portfolio/project-4.jpg"
+        "image": "/portfolio/warm-floor.jpg"
       },
       {
         "title": "Монтаж теплового насоса",
         "category": "Монтаж",
-        "image": "/portfolio/project-5.jpg"
+        "image": "/portfolio/warm-pump.jpg"
       },
       {
         "title": "Зварювальні роботи",
         "category": "Монтаж",
-        "image": "/portfolio/project-6.jpg"
+        "image": "/portfolio/gas-welding.jpg"
       }
     ]
   },
