@@ -74,7 +74,7 @@ function App({ Component, pageProps, router }: AppProps) {
   )
 
   return (
-    <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+    <ThemeProvider attribute="class" defaultTheme="dark" disableTransitionOnChange>
       <CookieConsentProvider
         config={{
           consentVersion: '2026-05-20',

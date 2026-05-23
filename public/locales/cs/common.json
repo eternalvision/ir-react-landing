@@ -9,8 +9,8 @@
   },
   "hero": {
     "title": "InstaRum s.r.o.",
-    "eyebrow": "Technické práce bez zdržení",
-    "subtitle": "Inženýrské systémy, instalatérství a topení v Praze. Jsme oficiálně registrováni — pracujeme v Praze a Středočeském kraji.",
+    "eyebrow": "Montáž a servis inženýrských systémů",
+    "subtitle": "Profesionálně zajišťujeme instalatérské, topné a technické práce v Česku. Společnost je oficiálně registrovaná a má potřebná oprávnění i kvalifikace.",
     "cta_contact": "Kontaktujte nás",
     "cta_portfolio": "Naše práce",
     "highlights": [
@@ -30,8 +30,8 @@
   },
   "about": {
     "label": "Společnost",
-    "title": "Inženýrské systémy v Česku",
-    "text": "InstaRum s.r.o. se specializuje na profesionální montáž a servis inženýrských systémů v České republice. Jsme oficiálně registrováni a máme potřebná oprávnění a kvalifikace pro instalatérské, topné a technické práce. Mluvíme česky, anglicky, rusky a ukrajinsky.",
+    "title": "Spolehlivý partner pro montáž a servis inženýrských systémů",
+    "text": "InstaRum s.r.o. se specializuje na profesionální montáž a servis inženýrských systémů v Česku. Pracujeme pro byty a rodinné domy, komerční objekty, kanceláře, obchody, stavební firmy i dodavatele. Mluvíme česky, anglicky, rusky a ukrajinsky.",
     "stats": [
       {
         "value": 2024,
@@ -41,7 +41,7 @@
       {
         "value": 10,
         "suffix": "+",
-        "label": "Druhů služeb"
+        "label": "Směrů prací"
       },
       {
         "value": 24,
@@ -52,7 +52,7 @@
   },
   "services": {
     "label": "Služby",
-    "title": "Co děláme",
+    "title": "Naše služby",
     "items": [
       {
         "icon": "Wrench",
@@ -60,29 +60,44 @@
         "description": "Instalatérské práce jakékoli náročnosti: montáž, opravy a výměna zařízení."
       },
       {
-        "icon": "Flame",
+        "icon": "Factory",
         "title": "Topné systémy",
-        "description": "Montáž a opravy topných systémů, instalace kotlů a bojlerů."
+        "description": "Montáž a opravy topných systémů pro bytové i komerční objekty."
+      },
+      {
+        "icon": "ThermometerSun",
+        "title": "Montáž kotelny",
+        "description": "Kompletní montáž kotelny včetně napojení kotlů, bojlerů a vybavení."
       },
       {
         "icon": "Zap",
         "title": "Tepelná čerpadla",
-        "description": "Montáž tepelných čerpadel a servis chladicích zařízení."
+        "description": "Montáž tepelných čerpadel a napojení systémů."
       },
       {
         "icon": "Droplets",
-        "title": "Vodovod a kanalizace",
-        "description": "Rozvody vody a kanalizace, montáž radiátorů a podlahového vytápění."
+        "title": "Voda a kanalizace",
+        "description": "Rozvody vody a kanalizace pro různé typy objektů."
+      },
+      {
+        "icon": "Flame",
+        "title": "Radiátory a podlahové vytápění",
+        "description": "Montáž radiátorů a systémů podlahového vytápění."
       },
       {
         "icon": "Hammer",
         "title": "Svářečské a montážní práce",
-        "description": "Profesionální svářečské práce a montáž inženýrských konstrukcí."
+        "description": "Svářečské práce a montáž inženýrských konstrukcí."
+      },
+      {
+        "icon": "Settings",
+        "title": "Technická údržba",
+        "description": "Pravidelná údržba objektů a inženýrských systémů."
       },
       {
         "icon": "ShieldAlert",
-        "title": "Havarijní výjezd 24/7",
-        "description": "Technická údržba objektů a rychlé havarijní opravy kdykoli."
+        "title": "Rychlé opravy",
+        "description": "Havarijní výjezd a operativní opravy při poruchách."
       }
     ]
   },
@@ -107,7 +122,7 @@
         "image": "/portfolio/water-supply-distribution.jpeg"
       },
       {
-        "title": "Instalace kotle",
+        "title": "Montáž kotelny",
         "category": "Topení",
         "image": "/portfolio/boiler-room.jpg"
       },
@@ -125,6 +140,21 @@
         "title": "Svářečské práce",
         "category": "Montáž",
         "image": "/portfolio/gas-welding.jpg"
+      },
+      {
+        "title": "Instalace a připojení sanitárního vybavení",
+        "category": "Instalatérství",
+        "image": "/portfolio/plumbing-equipment-installation.jpg"
+      },
+      {
+        "title": "Výměna a montáž kotlů",
+        "category": "Topení",
+        "image": "/portfolio/boiler-replacement.jpg"
+      },
+      {
+        "title": "Výměna a montáž bojlerů",
+        "category": "Topení",
+        "image": "/portfolio/boiler.webp"
       }
     ]
   },
@@ -247,8 +277,12 @@
         "answer": "Pracujeme česky, anglicky, rusky a ukrajinsky."
       },
       {
-        "question": "Máte všechna potřebná oprávnění?",
-        "answer": "Ano, společnost je oficiálně registrována (IČO 22348760) a má veškeré potřebné licence a oprávnění pro instalatérské, topné a technické práce v České republice."
+        "question": "S jakými objekty pracujete?",
+        "answer": "Zajišťujeme práce pro byty, rodinné domy, komerční prostory, kanceláře, obchody i projekty stavebních firem a dodavatelů."
+      },
+      {
+        "question": "Proč si vybrat InstaRum s.r.o.?",
+        "answer": "Zákazníci oceňují oficiální licence a oprávnění v Česku, profesionální přístup, moderní technická řešení, odpovědnost za výsledek a dodržování termínů."
       },
       {
         "question": "Nabízíte bezplatnou konzultaci?",
@@ -259,7 +293,7 @@
   "contact": {
     "label": "Kontakt",
     "title": "Kontaktujte nás",
-    "subtitle": "Praha a Středočeský kraj. Mluvíme: CZ / EN / RU / UA. Bezplatná konzultace.",
+    "subtitle": "Pracujeme v Praze a Středočeském kraji. Bezplatná konzultace. Mluvíme: CZ / EN / RU / UA.",
     "form": {
       "name": "Vaše jméno",
       "name_placeholder": "Jan Novák",
@@ -276,12 +310,12 @@
     }
   },
   "footer": {
-    "description": "InstaRum s.r.o. — inženýrské systémy, instalatérství a topení v Praze. IČO 22348760.",
+    "description": "InstaRum s.r.o. — montáž a servis inženýrských systémů v Praze. IČO 22348760.",
     "copyright": "Všechna práva vyhrazena."
   },
   "seo": {
     "title": "InstaRum s.r.o. — instalatérství, topení a inženýrské systémy v Praze",
-    "description": "InstaRum s.r.o. — profesionální montáž a servis inženýrských systémů v Praze. Instalatérství, topení, kotle, tepelná čerpadla, havarijní výjezd 24/7."
+    "description": "InstaRum s.r.o. — profesionální montáž a servis inženýrských systémů v Česku. Instalatérství, topení, kotle, bojlery, tepelná čerpadla, chladicí zařízení a rychlé opravy."
   },
   "cookies": {
     "banner": {

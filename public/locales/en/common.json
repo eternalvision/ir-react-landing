@@ -9,8 +9,8 @@
   },
   "hero": {
     "title": "InstaRum s.r.o.",
-    "eyebrow": "Technical work without delays",
-    "subtitle": "Engineering systems, plumbing and heating in Prague. Officially registered — serving Prague and Středočeský Region.",
+    "eyebrow": "Installation and service of engineering systems",
+    "subtitle": "Professional plumbing, heating and technical work in Czechia. The company is officially registered and has the required permits and qualifications.",
     "cta_contact": "Contact us",
     "cta_portfolio": "Our work",
     "highlights": [
@@ -30,8 +30,8 @@
   },
   "about": {
     "label": "Company",
-    "title": "Engineering Systems in Czechia",
-    "text": "InstaRum s.r.o. specialises in professional installation and maintenance of engineering systems in the Czech Republic. We are officially registered and hold all required licences and qualifications for plumbing, heating and technical works. We speak Czech, English, Russian and Ukrainian.",
+    "title": "A reliable partner for engineering system installation and service",
+    "text": "InstaRum s.r.o. specialises in professional installation and maintenance of engineering systems in Czechia. We work with apartments and private houses, commercial facilities, offices, shops, construction companies and contractors. We speak Czech, English, Russian and Ukrainian.",
     "stats": [
       {
         "value": 2024,
@@ -41,7 +41,7 @@
       {
         "value": 10,
         "suffix": "+",
-        "label": "Services"
+        "label": "Work areas"
       },
       {
         "value": 24,
@@ -52,7 +52,7 @@
   },
   "services": {
     "label": "Services",
-    "title": "What We Do",
+    "title": "Our Services",
     "items": [
       {
         "icon": "Wrench",
@@ -60,29 +60,44 @@
         "description": "Plumbing works of any complexity: installation, repair and replacement of equipment."
       },
       {
-        "icon": "Flame",
+        "icon": "Factory",
         "title": "Heating Systems",
-        "description": "Installation and repair of heating systems, boilers and water heaters."
+        "description": "Installation and repair of heating systems for residential and commercial properties."
+      },
+      {
+        "icon": "ThermometerSun",
+        "title": "Boiler Room Installation",
+        "description": "Complete boiler room installation, including boiler, water heater and equipment connection."
       },
       {
         "icon": "Zap",
         "title": "Heat Pumps",
-        "description": "Heat pump installation and refrigeration equipment servicing."
+        "description": "Heat pump installation and system connection."
       },
       {
         "icon": "Droplets",
-        "title": "Water Supply & Drainage",
-        "description": "Piping, drainage systems, radiators and underfloor heating installation."
+        "title": "Water Supply & Sewage",
+        "description": "Water and sewage distribution for different types of properties."
+      },
+      {
+        "icon": "Flame",
+        "title": "Radiators & Underfloor Heating",
+        "description": "Installation of radiators and underfloor heating systems."
       },
       {
         "icon": "Hammer",
         "title": "Welding & Assembly",
-        "description": "Professional welding and engineering assembly works of any scope."
+        "description": "Welding work and assembly of engineering structures."
+      },
+      {
+        "icon": "Settings",
+        "title": "Technical Maintenance",
+        "description": "Scheduled maintenance of properties and engineering systems."
       },
       {
         "icon": "ShieldAlert",
-        "title": "Emergency Call-out 24/7",
-        "description": "Technical maintenance and emergency repairs around the clock."
+        "title": "Urgent Repairs",
+        "description": "Emergency call-outs and fast repairs when failures occur."
       }
     ]
   },
@@ -107,7 +122,7 @@
         "image": "/portfolio/water-supply-distribution.jpeg"
       },
       {
-        "title": "Boiler Installation",
+        "title": "Boiler Room Installation",
         "category": "Heating",
         "image": "/portfolio/boiler-room.jpg"
       },
@@ -125,6 +140,21 @@
         "title": "Welding Works",
         "category": "Installation",
         "image": "/portfolio/gas-welding.jpg"
+      },
+      {
+        "title": "Installation and connection of plumbing equipment",
+        "category": "Plumbing",
+        "image": "/portfolio/plumbing-equipment-installation.jpg"
+      },
+      {
+        "title": "Boiler replacement and installation",
+        "category": "Heating",
+        "image": "/portfolio/boiler-replacement.jpg"
+      },
+      {
+        "title": "Water heater replacement and installation",
+        "category": "Heating",
+        "image": "/portfolio/boiler.webp"
       }
     ]
   },
@@ -247,8 +277,12 @@
         "answer": "We work in Czech, English, Russian and Ukrainian."
       },
       {
-        "question": "Are you fully licensed?",
-        "answer": "Yes, the company is officially registered (IČO 22348760) and holds all required licences and permits for plumbing, heating and technical works in the Czech Republic."
+        "question": "What types of properties do you work with?",
+        "answer": "We handle apartments, private houses, commercial premises, offices, shops, and projects for construction companies and contractors."
+      },
+      {
+        "question": "Why choose InstaRum s.r.o.?",
+        "answer": "Clients choose us for official Czech licences and permits, a professional approach, modern technical solutions, responsibility for the result and respect for deadlines."
       },
       {
         "question": "Do you offer a free consultation?",
@@ -259,7 +293,7 @@
   "contact": {
     "label": "Contact",
     "title": "Get in Touch",
-    "subtitle": "Prague and Středočeský Region. Languages: CZ / EN / RU / UA. Free consultation.",
+    "subtitle": "Serving Prague and Středočeský Region. Free consultation. Languages: CZ / EN / RU / UA.",
     "form": {
       "name": "Your name",
       "name_placeholder": "John Smith",
@@ -276,12 +310,12 @@
     }
   },
   "footer": {
-    "description": "InstaRum s.r.o. — engineering systems, plumbing and heating in Prague. IČO 22348760.",
+    "description": "InstaRum s.r.o. — engineering system installation and service in Prague. IČO 22348760.",
     "copyright": "All rights reserved."
   },
   "seo": {
     "title": "InstaRum s.r.o. — Plumbing, Heating & Engineering Systems in Prague",
-    "description": "InstaRum s.r.o. — professional installation and maintenance of engineering systems in Prague. Plumbing, heating, boilers, heat pumps, 24/7 emergency call-out."
+    "description": "InstaRum s.r.o. — professional installation and maintenance of engineering systems in Czechia. Plumbing, heating, boilers, water heaters, heat pumps, refrigeration equipment and urgent repairs."
   },
   "cookies": {
     "banner": {

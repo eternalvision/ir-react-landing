@@ -1,9 +1,30 @@
 import { useTranslation } from 'next-i18next'
 import { motion, useReducedMotion } from 'framer-motion'
 import { Card, CardContent } from '@ui/card'
-import { Wrench, Flame, Zap, Droplets, Hammer, ShieldAlert, type LucideIcon } from 'lucide-react'
+import {
+  Droplets,
+  Factory,
+  Flame,
+  Hammer,
+  Settings,
+  ShieldAlert,
+  ThermometerSun,
+  Wrench,
+  Zap,
+  type LucideIcon,
+} from 'lucide-react'
 
-const ICON_MAP: Record<string, LucideIcon> = { Wrench, Flame, Zap, Droplets, Hammer, ShieldAlert }
+const ICON_MAP: Record<string, LucideIcon> = {
+  Droplets,
+  Factory,
+  Flame,
+  Hammer,
+  Settings,
+  ShieldAlert,
+  ThermometerSun,
+  Wrench,
+  Zap,
+}
 
 interface ServiceItem {
   icon: string

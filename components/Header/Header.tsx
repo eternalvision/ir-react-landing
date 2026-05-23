@@ -60,7 +60,7 @@ export const Header = () => {
           className="flex items-center gap-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded"
           aria-label={`${config.companyName} — home`}
         >
-          <Logo size={36} className="shrink-0" />
+          <Logo size={55} className="shrink-0" />
           <span className="font-heading font-bold text-lg hidden sm:block">
             {config.companyName}
           </span>

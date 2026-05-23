@@ -1,7 +1,7 @@
 import { useTranslation } from 'next-i18next';
 import { motion, useReducedMotion } from 'framer-motion';
 import Image from 'next/image';
-import { ArrowRight, Clock, Flame, ShieldCheck, Wrench } from 'lucide-react';
+import { ArrowRight, Clock, ShieldCheck, Wrench } from 'lucide-react';
 import { Button } from '@ui/button'
 
 interface HeroHighlight {

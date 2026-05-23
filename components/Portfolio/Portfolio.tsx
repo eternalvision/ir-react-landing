@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useMemo } from 'react'
 import { useTranslation } from 'next-i18next'
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion'
 import Image from 'next/image'
@@ -18,6 +18,14 @@ export const Portfolio = () => {
 
   const [activeCategory, setActiveCategory] = useState<string>('all')
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null)
+  const categoryCounts = useMemo(
+    () =>
+      categories.map((category) => ({
+        category,
+        count: items.filter((item) => item.category === category).length,
+      })),
+    [categories, items]
+  )
 
   const filtered =
     activeCategory === 'all' ? items : items.filter((item) => item.category === activeCategory)
@@ -61,28 +69,40 @@ export const Portfolio = () => {
           </h2>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-2 mb-10" role="group" aria-label="Filter projects">
+        <div
+          className="mx-auto mb-10 flex w-full max-w-3xl flex-wrap justify-center gap-2 border border-border bg-background p-2"
+          role="group"
+          aria-label="Filter projects"
+        >
           <button
             onClick={() => setActiveCategory('all')}
-            className={`px-5 py-2 text-sm font-medium border transition-all ${
+            aria-pressed={activeCategory === 'all'}
+            className={`flex items-center gap-2 px-4 py-2 text-sm font-semibold transition-all ${
               activeCategory === 'all'
-                ? 'bg-accent text-white border-accent'
-                : 'border-border hover:border-accent hover:text-accent'
+                ? 'bg-accent text-white'
+                : 'text-foreground/70 hover:bg-surface hover:text-accent'
             }`}
           >
-            {t('portfolio.filter_all')}
+            <span>{t('portfolio.filter_all')}</span>
+            <span className={activeCategory === 'all' ? 'text-white/80' : 'text-foreground/40'}>
+              {items.length}
+            </span>
           </button>
-          {categories.map((cat) => (
+          {categoryCounts.map(({ category, count }) => (
             <button
-              key={cat}
-              onClick={() => setActiveCategory(cat)}
-              className={`px-5 py-2 text-sm font-medium border transition-all ${
-                activeCategory === cat
-                  ? 'bg-accent text-white border-accent'
-                  : 'border-border hover:border-accent hover:text-accent'
+              key={category}
+              onClick={() => setActiveCategory(category)}
+              aria-pressed={activeCategory === category}
+              className={`flex items-center gap-2 px-4 py-2 text-sm font-semibold transition-all ${
+                activeCategory === category
+                  ? 'bg-accent text-white'
+                  : 'text-foreground/70 hover:bg-surface hover:text-accent'
               }`}
             >
-              {cat}
+              <span>{category}</span>
+              <span className={activeCategory === category ? 'text-white/80' : 'text-foreground/40'}>
+                {count}
+              </span>
             </button>
           ))}
         </div>
