@@ -1,4 +1,5 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from 'next/document'
+import type { DocumentContext } from 'next/document'
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -24,43 +25,60 @@ const jsonLd = {
   ],
 }
 
-export default function Document() {
-  return (
-    <Html suppressHydrationWarning lang="en">
-      <Head>
-        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
-        <script src="/config.js" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-        {process.env.NEXT_PUBLIC_GOOGLE_TAG && (
-          // eslint-disable-next-line @next/next/next-script-for-ga
+export default class MyDocument extends Document<{ locale?: string }> {
+  static override async getInitialProps(ctx: DocumentContext) {
+    const initialProps = await Document.getInitialProps(ctx)
+    return { ...initialProps, locale: ctx.locale }
+  }
+
+  override render() {
+    const locale = this.props.locale ?? 'cs'
+
+    return (
+      <Html suppressHydrationWarning lang={locale}>
+        <Head>
+          <link rel="icon" href="/favicon.ico" sizes="any" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+          <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+          <link rel="manifest" href="/site.webmanifest" />
+          <meta name="theme-color" content="#001336" />
+          <meta name="msapplication-TileColor" content="#001336" />
+          {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+          <script src="/config.js" />
           <script
-            dangerouslySetInnerHTML={{
-              __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          />
+          {process.env.NEXT_PUBLIC_GOOGLE_TAG && (
+            // eslint-disable-next-line @next/next/next-script-for-ga
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','${process.env.NEXT_PUBLIC_GOOGLE_TAG}');`,
-            }}
-          />
-        )}
-      </Head>
-      <body>
-        <Main />
-        {process.env.NEXT_PUBLIC_GOOGLE_TAG && (
-          <noscript>
-            <iframe
-              src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GOOGLE_TAG}`}
-              height="0"
-              width="0"
-              style={{ display: 'none', visibility: 'hidden' }}
+              }}
             />
-          </noscript>
-        )}
-        <NextScript />
-      </body>
-    </Html>
-  )
+          )}
+        </Head>
+        <body>
+          <Main />
+          {process.env.NEXT_PUBLIC_GOOGLE_TAG && (
+            <noscript>
+              <iframe
+                src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GOOGLE_TAG}`}
+                height="0"
+                width="0"
+                style={{ display: 'none', visibility: 'hidden' }}
+              />
+            </noscript>
+          )}
+          <NextScript />
+        </body>
+      </Html>
+    )
+  }
 }

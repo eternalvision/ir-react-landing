@@ -15,8 +15,8 @@ import {
 import { useConfig } from '@lib/config';
 
 const LOCALES = [
-  { code: 'en', label: 'EN', flag: '🇬🇧' },
   { code: 'cs', label: 'CS', flag: '🇨🇿' },
+  { code: 'en', label: 'EN', flag: '🇬🇧' },
   { code: 'ru', label: 'RU', flag: '🇷🇺' },
   { code: 'uk', label: 'UK', flag: '🇺🇦' },
 ];

@@ -1,5 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { z } from 'zod'
+import { renderContactEmail, renderContactEmailText } from '@lib/emailTemplates'
 import { resend } from '@lib/resend'
 
 const schema = z.object({
@@ -21,20 +22,20 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   const { name, email, phone, message } = parsed.data
   const to = process.env.RESEND_TO ?? 'info@example.com'
+  const emailData = {
+    name,
+    email,
+    message,
+    ...(phone ? { phone } : {}),
+  }
 
   try {
     await resend.emails.send({
       from: 'Website <onboarding@resend.dev>',
       to,
       subject: `New enquiry from ${name}`,
-      html: `
-        <h2>New contact form submission</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        ${phone ? `<p><strong>Phone:</strong> ${phone}</p>` : ''}
-        <p><strong>Message:</strong></p>
-        <p>${message.replace(/\n/g, '<br />')}</p>
-      `,
+      html: renderContactEmail(emailData),
+      text: renderContactEmailText(emailData),
       replyTo: email,
     })
     return res.status(200).json({ ok: true })

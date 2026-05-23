@@ -22,14 +22,14 @@ const LOCALE_NAMES: Record<string, string> = {
   uk: 'uk_UA',
 }
 
-const ALL_LOCALES = ['en', 'ru', 'cs', 'uk']
+const ALL_LOCALES = ['cs', 'en', 'ru', 'uk']
 
 export default function Home() {
   const { t } = useTranslation('common')
   const router = useRouter()
   const config = useConfig()
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://example.com'
-  const locale = router.locale ?? 'en'
+  const locale = router.locale ?? 'cs'
 
   const languageAlternates = ALL_LOCALES.map((loc) => ({
     hrefLang: loc,
@@ -84,6 +84,6 @@ export default function Home() {
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale ?? 'en', ['common'])),
+    ...(await serverSideTranslations(locale ?? 'cs', ['common'])),
   },
 })

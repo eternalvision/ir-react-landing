@@ -42,7 +42,7 @@ const COOKIE_MESSAGES: Record<string, typeof enCommon> = {
 
 function App({ Component, pageProps, router }: AppProps) {
   const [preloaderDone, setPreloaderDone] = useState(false)
-  const cookieMessages = COOKIE_MESSAGES[router.locale ?? 'en'] ?? enCommon
+  const cookieMessages = COOKIE_MESSAGES[router.locale ?? 'cs'] ?? csCommon
   const cookieCategories = useMemo<CategoryConfig[]>(
     () =>
       COOKIE_CATEGORY_KEYS.map((key) => ({
