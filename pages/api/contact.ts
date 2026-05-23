@@ -31,7 +31,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   try {
     await resend.emails.send({
-      from: 'Website <onboarding@resend.dev>',
+      from: 'InstaRum Website <noreply@instarum.cz>',
       to,
       subject: `New enquiry from ${name}`,
       html: renderContactEmail(emailData),
