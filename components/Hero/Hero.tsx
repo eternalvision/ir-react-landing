@@ -39,19 +39,19 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-[linear-gradient(to_right,var(--border)_1px,transparent_1px),linear-gradient(to_bottom,var(--border)_1px,transparent_1px)] bg-[size:72px_72px] opacity-20" aria-hidden />
       <div className="absolute inset-x-0 bottom-0 h-24 bg-surface" aria-hidden />
 
-      <div className="relative container mx-auto grid min-h-screen grid-cols-1 items-center gap-12 pt-28 pb-16 lg:grid-cols-[minmax(0,0.95fr)_minmax(420px,1.05fr)] lg:pt-24">
-        <div>
+      <div className="relative container mx-auto grid min-h-screen min-w-0 grid-cols-1 items-center gap-12 pt-28 pb-16 lg:grid-cols-[minmax(0,0.95fr)_minmax(420px,1.05fr)] lg:pt-24">
+        <div className="min-w-0">
           <motion.div
             {...fadeUp(0)}
-            className="mb-6 inline-flex items-center gap-2 border border-border bg-surface px-3 py-2 text-xs font-semibold uppercase text-foreground/70"
+            className="mb-6 flex w-fit max-w-full items-start gap-2 border border-border bg-surface px-3 py-2 text-xs font-semibold uppercase text-foreground/70"
           >
-            <span className="h-2 w-2 bg-accent" aria-hidden />
-            <span>{t('hero.eyebrow')}</span>
+            <span className="mt-1 h-2 w-2 shrink-0 bg-accent" aria-hidden />
+            <span className="min-w-0 break-words">{t('hero.eyebrow')}</span>
           </motion.div>
 
           <motion.h1
             {...fadeUp(0.08)}
-            className="max-w-4xl font-heading text-5xl font-bold leading-[0.98] text-foreground sm:text-6xl lg:text-7xl"
+            className="max-w-4xl break-words font-heading text-4xl font-bold leading-[0.98] text-foreground sm:text-6xl lg:text-7xl"
           >
             {t('hero.title')}
           </motion.h1>
@@ -70,7 +70,7 @@ export const Hero = () => {
             <Button
               size="lg"
               onClick={() => scrollTo('contact')}
-              className="h-12 cursor-pointer gap-2 bg-accent px-6 text-base font-semibold text-white hover:bg-accent/90"
+              className="h-12 w-full cursor-pointer gap-2 bg-accent px-6 text-base font-semibold text-white hover:bg-accent/90 sm:w-auto"
             >
               {t('hero.cta_contact')}
               <ArrowRight className="h-4 w-4" aria-hidden />
@@ -79,7 +79,7 @@ export const Hero = () => {
               size="lg"
               variant="outline"
               onClick={() => scrollTo('portfolio')}
-              className="h-12 cursor-pointer border-accent bg-surface px-6 text-base font-semibold text-accent hover:bg-accent hover:text-white"
+              className="h-12 w-full cursor-pointer border-accent bg-surface px-6 text-base font-semibold text-accent hover:bg-accent hover:text-white sm:w-auto"
             >
               {t('hero.cta_portfolio')}
             </Button>
@@ -108,7 +108,7 @@ export const Hero = () => {
 
         <motion.div
           {...fadeUp(0.18)}
-          className="relative min-h-[520px] lg:min-h-[640px]"
+          className="relative hidden min-h-[520px] min-w-0 lg:block lg:min-h-[640px]"
           aria-hidden
         >
           <div className="absolute right-0 top-0 h-[72%] w-[78%] overflow-hidden border border-border bg-surface shadow-2xl shadow-slate-950/10">
