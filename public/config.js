@@ -18,7 +18,8 @@ window.config = Object.assign(window.config, {
     instagram: '',
     youtube: '',
   },
-  googleTag: '',
+  googleTag: 'GTM-MJ2KHTVR',
+  gaId: 'G-F0S81FKZ23',
   resendTo: 'instarumcz@gmail.com',
   seo: {
     ogImage: '/api/og',

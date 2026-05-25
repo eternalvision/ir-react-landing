@@ -20,6 +20,7 @@ export interface SiteConfig {
     youtube: string
   }
   googleTag: string
+  gaId: string
   resendTo: string
   seo: {
     ogImage: string
@@ -42,6 +43,7 @@ const defaults: SiteConfig = {
   dataBox: 'ehjy4t5',
   socials: { linkedin: '', facebook: '', instagram: '', youtube: '' },
   googleTag: '',
+  gaId: '',
   resendTo: 'instarumcz@gmail.com',
   seo: { ogImage: '/api/og', twitterHandle: '' },
 }
@@ -61,6 +63,7 @@ function envBase(): Partial<SiteConfig> {
       email:       v(process.env.NEXT_PUBLIC_EMAIL),
       address:     v(process.env.NEXT_PUBLIC_ADDRESS),
       googleTag:   v(process.env.NEXT_PUBLIC_GOOGLE_TAG),
+      gaId:        v(process.env.NEXT_PUBLIC_GA_ID),
     }).filter(([, val]) => val !== undefined)
   ) as Partial<SiteConfig>
 }

@@ -55,6 +55,18 @@ export default class MyDocument extends Document<{ locale?: string }> {
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
           />
+          {cfg.gaId && (
+            // eslint-disable-next-line @next/next/next-script-for-ga
+            <script async src={`https://www.googletagmanager.com/gtag/js?id=${cfg.gaId}`} />
+          )}
+          {cfg.gaId && (
+            // eslint-disable-next-line @next/next/next-script-for-ga
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${cfg.gaId}');`,
+              }}
+            />
+          )}
           {process.env.NEXT_PUBLIC_GOOGLE_TAG && (
             // eslint-disable-next-line @next/next/next-script-for-ga
             <script
