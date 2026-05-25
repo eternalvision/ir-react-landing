@@ -6,7 +6,6 @@ export default function handler() {
   const companyName = process.env.NEXT_PUBLIC_COMPANY_NAME ?? 'InstaRum s.r.o.'
   const phone       = process.env.NEXT_PUBLIC_PHONE          ?? '+420724257857'
   const email       = process.env.NEXT_PUBLIC_EMAIL          ?? 'instarumcz@gmail.com'
-  const address     = process.env.NEXT_PUBLIC_ADDRESS        ?? 'Praha 5'
   const domain      = (process.env.NEXT_PUBLIC_SITE_URL ?? 'instarum.cz').replace(/^https?:\/\//, '')
 
   const DARK  = '#0A0F1E'
