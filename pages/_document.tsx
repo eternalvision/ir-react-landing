@@ -69,7 +69,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           )}
         </Head>
         <body>
-          <Main />
           {process.env.NEXT_PUBLIC_GOOGLE_TAG && (
             <noscript>
               <iframe
@@ -80,6 +79,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               />
             </noscript>
           )}
+          <Main />
           <NextScript />
         </body>
       </Html>
