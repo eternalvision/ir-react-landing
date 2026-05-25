@@ -1,25 +1,29 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import type { DocumentContext } from 'next/document'
+import { getConfig } from '@lib/config'
+
+const cfg = getConfig()
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://example.com'
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
     {
       '@type': 'Organization',
-      name: process.env.NEXT_PUBLIC_COMPANY_NAME ?? 'Company Name',
-      url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://example.com',
-      telephone: process.env.NEXT_PUBLIC_PHONE ?? '',
-      email: process.env.NEXT_PUBLIC_EMAIL ?? '',
+      name: cfg.companyName,
+      url: siteUrl,
+      telephone: cfg.phone,
+      email: cfg.email,
     },
     {
       '@type': 'LocalBusiness',
-      name: process.env.NEXT_PUBLIC_COMPANY_NAME ?? 'Company Name',
-      telephone: process.env.NEXT_PUBLIC_PHONE ?? '',
-      email: process.env.NEXT_PUBLIC_EMAIL ?? '',
-      url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://example.com',
+      name: cfg.companyName,
+      telephone: cfg.phone,
+      email: cfg.email,
+      url: siteUrl,
       address: {
         '@type': 'PostalAddress',
-        streetAddress: process.env.NEXT_PUBLIC_ADDRESS ?? '',
+        streetAddress: cfg.address,
       },
     },
   ],
