@@ -132,16 +132,6 @@ export const Hero = () => {
             />
           </div>
 
-          <div className="absolute bottom-0 right-8 w-[48%] border border-border bg-surface p-5 shadow-xl shadow-slate-950/10">
-            <div className="flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center bg-accent text-white">
-                <Clock className="h-5 w-5" />
-              </div>
-              <div>
-                <div className="font-heading text-l font-bold leading-none">{t('services.items.5.title')}</div>
-              </div>
-            </div>
-          </div>
 
           <div className="absolute left-[12%] top-12 border border-border bg-surface p-4 shadow-lg shadow-slate-950/10">
             <div className="flex items-center gap-3">
