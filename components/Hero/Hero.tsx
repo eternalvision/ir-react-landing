@@ -138,8 +138,7 @@ export const Hero = () => {
                 <Clock className="h-5 w-5" />
               </div>
               <div>
-                <div className="font-heading text-3xl font-bold leading-none">24/7</div>
-                <div className="mt-1 text-sm text-foreground/60">{t('services.items.5.title')}</div>
+                <div className="font-heading text-l font-bold leading-none">{t('services.items.5.title')}</div>
               </div>
             </div>
           </div>
