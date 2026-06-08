@@ -55,6 +55,13 @@ export default class MyDocument extends Document<{ locale?: string }> {
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
           />
+          {(cfg.gaId || cfg.googleTag) && (
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{'analytics_storage':'denied','ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','wait_for_update':500});`,
+              }}
+            />
+          )}
           {cfg.gaId && (
             // eslint-disable-next-line @next/next/next-script-for-ga
             <script async src={`https://www.googletagmanager.com/gtag/js?id=${cfg.gaId}`} />
@@ -63,7 +70,7 @@ export default class MyDocument extends Document<{ locale?: string }> {
             // eslint-disable-next-line @next/next/next-script-for-ga
             <script
               dangerouslySetInnerHTML={{
-                __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${cfg.gaId}');`,
+                __html: `gtag('js',new Date());gtag('config','${cfg.gaId}');`,
               }}
             />
           )}
