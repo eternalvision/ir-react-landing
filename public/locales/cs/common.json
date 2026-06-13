@@ -8,23 +8,24 @@
     "contact": "Kontakt"
   },
   "hero": {
-    "title": "InstaRum s.r.o.",
-    "eyebrow": "Montáž a servis inženýrských systémů",
-    "subtitle": "Profesionálně zajišťujeme instalatérské, topné a technické práce v Česku. Společnost je oficiálně registrovaná a má potřebná oprávnění i kvalifikace.",
-    "cta_contact": "Kontaktujte nás",
+    "title": "Instalatér a topenář Praha",
+    "eyebrow": "Praha a Středočeský kraj",
+    "subtitle": "Instalatérské práce, topení, kotelny, tepelná čerpadla, voda a kanalizace pro domy, byty, firmy i stavby. Zavolejte — poradíme, domluvíme výjezd a připravíme cenovou nabídku.",
+    "cta_call": "Zavolat",
+    "cta_contact": "Nechat poptávku",
     "cta_portfolio": "Naše práce",
     "highlights": [
       {
-        "value": "IČO",
-        "label": "Registrovaná společnost"
+        "value": "Zdarma",
+        "label": "Cenová nabídka"
       },
       {
         "value": "24/7",
         "label": "Havarijní výjezd"
       },
       {
-        "value": "4",
-        "label": "Jazyky: CZ / EN / RU / UA"
+        "value": "Záruka",
+        "label": "Na provedené práce"
       }
     ]
   },
@@ -293,11 +294,11 @@
   "contact": {
     "label": "Kontakt",
     "title": "Kontaktujte nás",
-    "subtitle": "Pracujeme v Praze a Středočeském kraji. Bezplatná konzultace.",
+    "subtitle": "Pracujeme v Praze a Středočeském kraji. Odpovíme do 15 minut v pracovní době.",
     "form": {
       "name": "Vaše jméno",
       "name_placeholder": "Jan Novák",
-      "email": "E-mail",
+      "email": "E-mail (volitelně)",
       "email_placeholder": "jan@example.com",
       "phone": "Telefon",
       "phone_placeholder": "+420 123 456 789",

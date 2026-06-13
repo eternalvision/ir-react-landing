@@ -1,4 +1,4 @@
-import { useTranslation } from 'next-i18next';
+import { useTranslation } from 'next-i18next/pages';
 import { motion, useReducedMotion } from 'framer-motion';
 import Image from 'next/image';
 import { ArrowRight, Clock, ShieldCheck, Wrench } from 'lucide-react';
@@ -131,7 +131,6 @@ export const Hero = () => {
               className="object-cover"
             />
           </div>
-
 
           <div className="absolute left-[12%] top-12 border border-border bg-surface p-4 shadow-lg shadow-slate-950/10">
             <div className="flex items-center gap-3">

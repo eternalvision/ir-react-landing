@@ -8,23 +8,24 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "InstaRum s.r.o.",
-    "eyebrow": "Installation and service of engineering systems",
-    "subtitle": "Professional plumbing, heating and technical work in Czechia. The company is officially registered and has the required permits and qualifications.",
-    "cta_contact": "Contact us",
+    "title": "Plumber & Heating Prague",
+    "eyebrow": "Prague and Central Bohemia",
+    "subtitle": "Plumbing, heating, boiler rooms, heat pumps, water and sewage work for homes, apartments, companies and construction projects. Call us — we will advise, arrange a visit and prepare a price estimate.",
+    "cta_call": "Call",
+    "cta_contact": "Send enquiry",
     "cta_portfolio": "Our work",
     "highlights": [
       {
-        "value": "IČO",
-        "label": "Registered company"
+        "value": "Free",
+        "label": "Price estimate"
       },
       {
         "value": "24/7",
         "label": "Emergency call-out"
       },
       {
-        "value": "4",
-        "label": "Languages: CZ / EN / RU / UA"
+        "value": "Warranty",
+        "label": "On completed work"
       }
     ]
   },
@@ -293,11 +294,11 @@
   "contact": {
     "label": "Contact",
     "title": "Get in Touch",
-    "subtitle": "Serving Prague and Středočeský Region. Free consultation.",
+    "subtitle": "Serving Prague and Central Bohemia. We reply within 15 minutes during working hours.",
     "form": {
       "name": "Your name",
       "name_placeholder": "John Smith",
-      "email": "Email",
+      "email": "Email (optional)",
       "email_placeholder": "john@example.com",
       "phone": "Phone",
       "phone_placeholder": "+420 123 456 789",

@@ -5,7 +5,7 @@ import { resend } from '@lib/resend'
 
 const schema = z.object({
   name: z.string().min(2),
-  email: z.string().email(),
+  email: z.string().email().optional().or(z.literal('')),
   phone: z.string().optional(),
   message: z.string().min(10),
 })
@@ -24,8 +24,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   const to = process.env.RESEND_TO ?? 'info@example.com'
   const emailData = {
     name,
-    email,
     message,
+    ...(email ? { email } : {}),
     ...(phone ? { phone } : {}),
   }
 
@@ -36,7 +36,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       subject: `New enquiry from ${name}`,
       html: renderContactEmail(emailData),
       text: renderContactEmailText(emailData),
-      replyTo: email,
+      ...(email ? { replyTo: email } : {}),
     })
     return res.status(200).json({ ok: true })
   } catch {

@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback, useMemo } from 'react'
-import { useTranslation } from 'next-i18next'
+import { useTranslation } from 'next-i18next/pages'
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion'
 import Image from 'next/image'
 import { X, ChevronLeft, ChevronRight } from 'lucide-react'
@@ -124,13 +124,15 @@ export const Portfolio = () => {
                   aria-label={`View ${item.title}`}
                 >
                   <figure className="m-0">
-                    <Image
-                      src={item.image}
-                      alt={item.title}
-                      width={600}
-                      height={400}
-                      className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
+                    <div className="relative aspect-[3/2] w-full overflow-hidden">
+                      <Image
+                        src={item.image}
+                        alt={item.title}
+                        fill
+                        sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                    </div>
                     <figcaption className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <div className="text-left">
                         <p className="text-white font-heading font-semibold">{item.title}</p>

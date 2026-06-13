@@ -1,5 +1,5 @@
 import type { ElementType } from 'react'
-import { useTranslation } from 'next-i18next'
+import { useTranslation } from 'next-i18next/pages'
 import { ExternalLink } from 'lucide-react'
 import { useConfig } from '@lib/config'
 import { Logo } from '@ui/Logo'

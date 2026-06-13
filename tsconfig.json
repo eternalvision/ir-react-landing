@@ -1,25 +1,40 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
     "module": "ESNext",
     "moduleResolution": "bundler",
     "moduleDetection": "force",
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "jsxImportSource": "react",
-
     "baseUrl": "./",
     "paths": {
-      "@components/*": ["components/*"],
-      "@constants/*":  ["constants/*"],
-      "@hooks/*":      ["hooks/*"],
-      "@lib/*":        ["lib/*"],
-      "@pages/*":      ["pages/*"],
-      "@ui/*":         ["ui/*"],
-      "@utils/*":      ["utils/*"]
+      "@components/*": [
+        "components/*"
+      ],
+      "@constants/*": [
+        "constants/*"
+      ],
+      "@hooks/*": [
+        "hooks/*"
+      ],
+      "@lib/*": [
+        "lib/*"
+      ],
+      "@pages/*": [
+        "pages/*"
+      ],
+      "@ui/*": [
+        "ui/*"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ]
     },
-
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
@@ -28,27 +43,31 @@
     "useUnknownInCatchVariables": true,
     "exactOptionalPropertyTypes": true,
     "noUncheckedIndexedAccess": true,
-
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-
     "allowJs": false,
     "checkJs": false,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "verbatimModuleSyntax": true,
-
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "incremental": true,
     "noEmit": true,
-
-    "types": ["node"],
-    "typeRoots": ["./node_modules/@types"],
-    "plugins": [{ "name": "next" }]
+    "types": [
+      "node"
+    ],
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": [
     "next-env.d.ts",
@@ -57,5 +76,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts"
   ],
-  "exclude": ["node_modules", ".next"]
+  "exclude": [
+    "node_modules",
+    ".next"
+  ]
 }

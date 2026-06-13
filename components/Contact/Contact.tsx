@@ -1,4 +1,4 @@
-import { useTranslation } from 'next-i18next'
+import { useTranslation } from 'next-i18next/pages'
 import { motion, useReducedMotion } from 'framer-motion'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
@@ -10,7 +10,7 @@ import { MapPin, Phone, Mail } from 'lucide-react'
 
 const schema = z.object({
   name: z.string().min(2),
-  email: z.string().email(),
+  email: z.string().email().optional().or(z.literal('')),
   phone: z.string().optional(),
   message: z.string().min(10),
 })

@@ -1,6 +1,6 @@
 export interface ContactEmailData {
   name: string
-  email: string
+  email?: string
   phone?: string
   message: string
 }
@@ -41,7 +41,7 @@ const renderField = (label: string, value: string) => `
 
 export const renderContactEmail = ({ name, email, phone, message }: ContactEmailData) => {
   const safeName = escapeHtml(name)
-  const safeEmail = escapeHtml(email)
+  const safeEmail = email?.trim() ? escapeHtml(email.trim()) : ''
   const safePhone = phone?.trim() ? escapeHtml(phone.trim()) : ''
   const safeMessage = formatMessage(message)
   const submittedAt = new Intl.DateTimeFormat('en-GB', {
@@ -77,7 +77,7 @@ export const renderContactEmail = ({ name, email, phone, message }: ContactEmail
               <td style="background: ${tokens.surface}; border: 1px solid ${tokens.border}; padding: 28px;">
                 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
                   ${renderField('Name', safeName)}
-                  ${renderField('Email', `<a href="mailto:${safeEmail}" style="color: ${tokens.accent}; text-decoration: none;">${safeEmail}</a>`)}
+                  ${safeEmail ? renderField('Email', `<a href="mailto:${safeEmail}" style="color: ${tokens.accent}; text-decoration: none;">${safeEmail}</a>`) : ''}
                   ${safePhone ? renderField('Phone', `<a href="tel:${safePhone.replace(/[^\d+]/g, '')}" style="color: ${tokens.accent}; text-decoration: none;">${safePhone}</a>`) : ''}
                   ${renderField('Submitted', escapeHtml(submittedAt))}
                   <tr>
@@ -110,7 +110,7 @@ export const renderContactEmailText = ({ name, email, phone, message }: ContactE
   `New enquiry from ${name}`,
   '',
   `Name: ${name}`,
-  `Email: ${email}`,
+  email?.trim() ? `Email: ${email.trim()}` : '',
   phone?.trim() ? `Phone: ${phone.trim()}` : '',
   '',
   'Message:',

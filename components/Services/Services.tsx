@@ -1,4 +1,4 @@
-import { useTranslation } from 'next-i18next'
+import { useTranslation } from 'next-i18next/pages'
 import { motion, useReducedMotion } from 'framer-motion'
 import { Card, CardContent } from '@ui/card'
 import {

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { useTranslation } from 'next-i18next'
+import { useTranslation } from 'next-i18next/pages'
 import { motion, useReducedMotion } from 'framer-motion'
 import Image from 'next/image'
 
@@ -104,7 +104,7 @@ export const About = () => {
                 alt={t('about.title')}
                 width={600}
                 height={500}
-                className="w-full h-[500px] object-cover"
+                className="aspect-[6/5] h-auto w-full object-cover"
               />
             </div>
             <div

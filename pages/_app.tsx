@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'next-themes'
-import { appWithTranslation } from 'next-i18next'
+import { appWithTranslation } from 'next-i18next/pages'
 import { Inter, Space_Grotesk } from 'next/font/google'
 import { Preloader } from '@components/Preloader/Preloader'
 import {
