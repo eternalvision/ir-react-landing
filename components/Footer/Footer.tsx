@@ -3,6 +3,7 @@ import { useTranslation } from 'next-i18next/pages'
 import { ExternalLink } from 'lucide-react'
 import { useConfig } from '@lib/config'
 import { Logo } from '@ui/Logo'
+import { PersonalBadge } from './PersonalBadge'
 
 const NAV_KEYS = ['about', 'services', 'portfolio', 'testimonials', 'faq', 'contact'] as const
 
@@ -89,9 +90,9 @@ export const Footer = () => {
                 })}
               </div>
             )}
+            <PersonalBadge />
           </div>
         </div>
-
         <div className="mt-10 pt-6 border-t border-border text-center text-xs text-muted-foreground">
           © {year} {config.companyName}. {t('footer.copyright')}
         </div>
