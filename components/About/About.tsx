@@ -10,22 +10,29 @@ interface Stat {
 }
 
 const Counter = ({ value, suffix }: { value: number; suffix: string }) => {
-  const [count, setCount] = useState(0)
+  // Real value in SSR HTML for crawlers; animate from 0 only when the counter starts off-screen.
+  const [count, setCount] = useState(value)
   const ref = useRef<HTMLSpanElement>(null)
   const shouldReduce = useReducedMotion()
 
   useEffect(() => {
-    if (shouldReduce) {
-      setCount(value)
-      return
-    }
+    const el = ref.current
+    if (shouldReduce || !el) return
+    let armed = false
+    let timer: ReturnType<typeof setInterval> | undefined
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (!entry?.isIntersecting) return
+        if (!entry) return
+        if (!entry.isIntersecting) {
+          armed = true
+          setCount(0)
+          return
+        }
         observer.disconnect()
+        if (!armed) return
         let start = 0
         const step = value / 60
-        const timer = setInterval(() => {
+        timer = setInterval(() => {
           start += step
           if (start >= value) {
             setCount(value)
@@ -37,8 +44,11 @@ const Counter = ({ value, suffix }: { value: number; suffix: string }) => {
       },
       { threshold: 0.5 }
     )
-    if (ref.current) observer.observe(ref.current)
-    return () => observer.disconnect()
+    observer.observe(el)
+    return () => {
+      observer.disconnect()
+      clearInterval(timer)
+    }
   }, [value, shouldReduce])
 
   return <span ref={ref}>{count}{suffix}</span>

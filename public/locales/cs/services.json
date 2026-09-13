@@ -1,0 +1,288 @@
+{
+  "page": {
+    "home": "Domů",
+    "enquiry": "Nezávazná poptávka",
+    "included_title": "Co pro vás uděláme",
+    "process_title": "Jak postupujeme",
+    "process": [
+      {
+        "title": "Zavoláte nebo napíšete",
+        "text": "Popište nám problém nebo zakázku. V pracovní době odpovíme do 15 minut, havárie řešíme nonstop."
+      },
+      {
+        "title": "Prohlídka a nabídka",
+        "text": "Posoudíme situaci na místě nebo podle fotek a připravíme cenovou nabídku zdarma."
+      },
+      {
+        "title": "Provedení práce",
+        "text": "Práci provedeme v domluveném termínu, čistě a s ohledem na váš domov."
+      },
+      {
+        "title": "Předání a záruka",
+        "text": "Vysvětlíme obsluhu, po sobě uklidíme a na provedené práce poskytujeme záruku."
+      }
+    ],
+    "faq_title": "Časté dotazy",
+    "related_title": "Další služby",
+    "area_title": "Kde pracujeme",
+    "area_text": "Praha 1–22 a Středočeský kraj, včetně okresů Praha-západ a Praha-východ. Sídlíme v Praze 12-Belárie. Komunikujeme česky, anglicky, rusky i ukrajinsky."
+  },
+  "items": {
+    "instalaterske-prace": {
+      "title": "Instalatérské práce Praha – montáž, opravy, výměny | InstaRum",
+      "description": "Instalatér v Praze a okolí: výměna baterií, WC a umyvadel, rozvody vody a odpadů, opravy úniků vody. Nabídka zdarma, havarijní výjezd 24/7.",
+      "h1": "Instalatérské práce v Praze",
+      "lead": "Montáž, opravy a výměny sanitárního vybavení a rozvodů v bytech, rodinných domech i firmách. Přijedeme, posoudíme stav a připravíme cenovou nabídku zdarma.",
+      "intro": [
+        "Instalatéra potřebujete při rekonstrukci koupelny, když kape baterie, protéká WC nebo se ucpal odpad. InstaRum s.r.o. zajišťuje drobné opravy i kompletní instalatérské práce na klíč – od výměny jednoho ventilu po nové rozvody vody a kanalizace v celém bytě.",
+        "Pracujeme v Praze a Středočeském kraji pro domácnosti, správce domů, kanceláře i stavební firmy. Před zahájením práce vždy vysvětlíme postup a domluvíme cenu, po dokončení po sobě uklidíme."
+      ],
+      "included": [
+        "Výměna a montáž vodovodních baterií, umyvadel, van a sprchových koutů",
+        "Montáž WC, podomítkových modulů a bidetů",
+        "Opravy úniků vody, kapajících ventilů a netěsných spojů",
+        "Nové rozvody vody a odpadů při rekonstrukci bytu nebo koupelny",
+        "Připojení praček, myček a dalších spotřebičů",
+        "Výměna uzavíracích ventilů, filtrů a vodoměrných sestav"
+      ],
+      "faq": [
+        {
+          "question": "Kolik stojí instalatérské práce?",
+          "answer": "Cena závisí na rozsahu práce a materiálu. Po popisu problému nebo prohlídce na místě připravíme cenovou nabídku zdarma, abyste předem věděli, s čím počítat."
+        },
+        {
+          "question": "Zvládnete i drobnou opravu, třeba kapající baterii?",
+          "answer": "Ano. Děláme drobné opravy i velké zakázky. Zavolejte nebo pošlete fotku problému a domluvíme termín."
+        },
+        {
+          "question": "Dodáte i materiál?",
+          "answer": "Materiál můžeme zajistit my, nebo použijeme vybavení, které už máte. Poradíme, kde se dá ušetřit bez ztráty kvality."
+        }
+      ]
+    },
+    "havarijni-sluzba": {
+      "title": "Havarijní instalatér Praha nonstop 24/7 | InstaRum",
+      "description": "Teče voda, prasklá trubka nebo nefunkční kotel? Havarijní instalatér a topenář v Praze 24/7. Zavolejte +420 724 257 857 a domluvíme výjezd.",
+      "h1": "Havarijní instalatér Praha 24/7",
+      "lead": "Prasklé potrubí, únik vody nebo porucha topení nečekají na pracovní dobu. Havarijní výjezd zajišťujeme nonstop po celé Praze a v okolí.",
+      "intro": [
+        "Při havárii rozhoduje čas. Zavolejte nám, popište situaci a hned domluvíme výjezd technika. Po telefonu také poradíme, jak do příjezdu omezit škody – například kde zavřít hlavní uzávěr vody nebo jak bezpečně odstavit kotel.",
+        "Na místě najdeme příčinu poruchy, provedeme opravu nebo provizorní zajištění a navrhneme trvalé řešení. Havarijní služby poskytujeme česky, anglicky, rusky i ukrajinsky."
+      ],
+      "included": [
+        "Prasklé nebo netěsné vodovodní potrubí",
+        "Únik vody z bojleru, baterie nebo připojovací hadice",
+        "Ucpaný nebo zpětně tekoucí odpad",
+        "Porucha kotle a výpadek topení nebo teplé vody",
+        "Zaseklé a netěsné ventily",
+        "Zajištění místa havárie a návrh trvalé opravy"
+      ],
+      "faq": [
+        {
+          "question": "Co dělat, když teče voda?",
+          "answer": "Zavřete hlavní uzávěr vody v bytě nebo domě, vypněte elektřinu v zasažených místech a zavolejte nám. Po telefonu vás provedeme dalšími kroky."
+        },
+        {
+          "question": "Jezdíte i v noci a o víkendu?",
+          "answer": "Ano, havarijní výjezd zajišťujeme 24 hodin denně, 7 dní v týdnu, včetně svátků."
+        },
+        {
+          "question": "Kam až vyjíždíte?",
+          "answer": "Po celé Praze (Praha 1–22) a do Středočeského kraje. Dobu příjezdu upřesníme při telefonátu podle aktuální vytíženosti."
+        }
+      ]
+    },
+    "vymena-kotle": {
+      "title": "Výměna kotle Praha – montáž kotlů a kotelen | InstaRum",
+      "description": "Výměna plynového kotle za kondenzační, montáž kotelen a servis kotlů v Praze a okolí. Návrh řešení, montáž a napojení. Cenová nabídka zdarma.",
+      "h1": "Výměna a montáž kotlů v Praze",
+      "lead": "Vyměníme starý kotel za úsporný kondenzační, postavíme novou kotelnu nebo zajistíme servis té stávající. Pro byty, rodinné domy i komerční objekty.",
+      "intro": [
+        "Starý kotel má vyšší spotřebu, častější poruchy a často už pro něj nejsou náhradní díly. Výměnou za moderní kondenzační kotel můžete snížit náklady na vytápění a získat spolehlivý zdroj tepla na další roky.",
+        "Nejdříve posoudíme stávající topný systém, velikost objektu a vaše požadavky a doporučíme vhodný typ a výkon kotle. Poté zajistíme demontáž starého zařízení, montáž nového kotle, napojení na topení a ohřev vody a vysvětlíme vám ovládání."
+      ],
+      "included": [
+        "Výměna plynového kotle za kondenzační",
+        "Kompletní montáž kotelny pro rodinné domy i firmy",
+        "Napojení kotle na topný systém a zásobník teplé vody",
+        "Montáž oběhových čerpadel, expanzních nádob a armatur",
+        "Proplach a odvzdušnění topného systému",
+        "Pravidelný servis kotlů před topnou sezonou"
+      ],
+      "faq": [
+        {
+          "question": "Jak dlouho trvá výměna kotle?",
+          "answer": "Běžná výměna kotle v bytě nebo rodinném domě obvykle trvá jeden až dva dny. Přesný termín upřesníme po prohlídce."
+        },
+        {
+          "question": "Pomůžete s výběrem kotle?",
+          "answer": "Ano. Podle velikosti objektu, topného systému a spotřeby teplé vody doporučíme vhodný typ a výkon kotle."
+        },
+        {
+          "question": "Zajišťujete i servis kotlů?",
+          "answer": "Ano, nabízíme pravidelnou údržbu kotlů a topných systémů, ideálně před začátkem topné sezony."
+        }
+      ]
+    },
+    "tepelna-cerpadla": {
+      "title": "Montáž tepelného čerpadla Praha a okolí | InstaRum",
+      "description": "Montáž tepelných čerpadel vzduch-voda v Praze a Středočeském kraji. Návrh, instalace, napojení na topení a ohřev vody, servis. Nabídka zdarma.",
+      "h1": "Montáž tepelných čerpadel v Praze",
+      "lead": "Tepelné čerpadlo snižuje náklady na vytápění a ohřev vody. Navrhneme vhodné řešení, zajistíme montáž a napojení na stávající nebo nový topný systém.",
+      "intro": [
+        "Tepelné čerpadlo vzduch-voda je dnes nejčastější volbou pro rodinné domy – při výměně starého kotle i v novostavbách. Aby fungovalo úsporně, musí odpovídat tepelné ztrátě domu a být správně napojené na topný systém.",
+        "Posoudíme objekt, stávající radiátory nebo podlahové topení a doporučíme vhodný výkon. Zajistíme montáž, napojení na topení a zásobník teplé vody, uvedení do provozu i následný servis."
+      ],
+      "included": [
+        "Posouzení objektu a návrh výkonu tepelného čerpadla",
+        "Montáž tepelných čerpadel vzduch-voda",
+        "Napojení na radiátory, podlahové topení a ohřev vody",
+        "Kombinace s kotlem nebo jiným zdrojem tepla",
+        "Montáž akumulačních nádrží a zásobníků",
+        "Uvedení do provozu, zaškolení a servis"
+      ],
+      "faq": [
+        {
+          "question": "Hodí se tepelné čerpadlo i do starší zástavby?",
+          "answer": "Často ano, záleží na tepelné ztrátě domu a typu otopné soustavy. Po prohlídce vám řekneme, zda je vhodné a jaké úpravy by byly potřeba."
+        },
+        {
+          "question": "Dá se tepelné čerpadlo napojit na stávající radiátory?",
+          "answer": "Ve většině případů ano. Posoudíme velikost radiátorů a teplotu vody, kterou systém potřebuje, a navrhneme případné úpravy."
+        },
+        {
+          "question": "Poskytujete i servis tepelných čerpadel?",
+          "answer": "Ano, nabízíme pravidelný servis a kontrolu systému, aby čerpadlo pracovalo spolehlivě a úsporně."
+        }
+      ]
+    },
+    "topeni": {
+      "title": "Ústřední topení Praha – montáž a opravy | InstaRum",
+      "description": "Montáž, rekonstrukce a opravy ústředního topení v Praze. Nové rozvody, radiátory, proplach a odvzdušnění systému. Cenová nabídka zdarma.",
+      "h1": "Montáž a opravy ústředního topení v Praze",
+      "lead": "Navrhneme a namontujeme nový topný systém nebo zrekonstruujeme stávající – v bytech, rodinných domech i komerčních prostorách.",
+      "intro": [
+        "Nerovnoměrně topící radiátory, hluk v potrubí nebo vysoké účty za energie jsou signálem, že topný systém potřebuje pozornost. Někdy stačí proplach a vyregulování, jindy se vyplatí rekonstrukce rozvodů a výměna zdroje tepla.",
+        "Zajišťujeme ústřední topení na klíč: od návrhu přes montáž rozvodů, radiátorů a kotle až po napouštění, odvzdušnění a nastavení systému. Pracujeme čistě a termíny dodržujeme."
+      ],
+      "included": [
+        "Nové rozvody ústředního topení v bytech a domech",
+        "Rekonstrukce a výměna starých rozvodů",
+        "Montáž a výměna radiátorů a termostatických ventilů",
+        "Proplach, napouštění a odvzdušnění systému",
+        "Hydraulické vyregulování pro rovnoměrné vytápění",
+        "Opravy netěsností a poruch topení"
+      ],
+      "faq": [
+        {
+          "question": "Proč některé radiátory netopí?",
+          "answer": "Nejčastější příčinou je vzduch v systému, zanesené potrubí nebo špatné vyregulování. Na místě zjistíme příčinu a navrhneme opravu."
+        },
+        {
+          "question": "Kdy je nejlepší dělat rekonstrukci topení?",
+          "answer": "Ideálně mimo topnou sezonu, tedy od jara do podzimu. Havarijní opravy samozřejmě řešíme kdykoli."
+        },
+        {
+          "question": "Děláte topení i pro firmy a stavby?",
+          "answer": "Ano, spolupracujeme se stavebními firmami a pracujeme i v kancelářích a komerčních objektech."
+        }
+      ]
+    },
+    "podlahove-vytapeni": {
+      "title": "Podlahové topení a radiátory Praha – montáž | InstaRum",
+      "description": "Montáž teplovodního podlahového topení a výměna radiátorů v Praze a okolí. Návrh, pokládka, napojení a regulace. Cenová nabídka zdarma.",
+      "h1": "Podlahové topení a radiátory v Praze",
+      "lead": "Montáž teplovodního podlahového vytápění a výměna radiátorů pro rovnoměrné a úsporné teplo v celém bytě nebo domě.",
+      "intro": [
+        "Podlahové topení vytváří příjemné teplo bez viditelných radiátorů a skvěle se hodí k tepelným čerpadlům i kondenzačním kotlům. Radiátory jsou naopak ideální tam, kde je potřeba rychlý náběh tepla nebo kde nelze měnit podlahy.",
+        "Navrhneme rozmístění okruhů, zajistíme pokládku, napojení na rozdělovač a zdroj tepla a nastavíme regulaci pro jednotlivé místnosti. Vyměníme i staré radiátory a ventily."
+      ],
+      "included": [
+        "Návrh a pokládka teplovodního podlahového topení",
+        "Montáž rozdělovačů a regulace pro jednotlivé místnosti",
+        "Tlaková zkouška před zalitím podlahy",
+        "Výměna a montáž radiátorů a koupelnových žebříků",
+        "Montáž termostatických hlavic a ventilů",
+        "Napojení na kotel nebo tepelné čerpadlo"
+      ],
+      "faq": [
+        {
+          "question": "Lze podlahové topení udělat při rekonstrukci bytu?",
+          "answer": "Ano, pokud to umožní skladba a výška podlahy. Po prohlídce doporučíme vhodný systém."
+        },
+        {
+          "question": "Je podlahové topení vhodné k tepelnému čerpadlu?",
+          "answer": "Ano, díky nízké teplotě vody je podlahové topení pro tepelné čerpadlo ideální."
+        },
+        {
+          "question": "Vyměníte jen několik radiátorů?",
+          "answer": "Ano, vyměníme i jednotlivé radiátory, včetně vypuštění a odvzdušnění systému."
+        }
+      ]
+    },
+    "bojlery": {
+      "title": "Výměna bojleru Praha – montáž ohřívačů vody | InstaRum",
+      "description": "Výměna a montáž elektrických i nepřímotopných bojlerů v Praze a okolí. Demontáž starého bojleru, montáž, připojení a pojistné ventily.",
+      "h1": "Výměna a montáž bojlerů v Praze",
+      "lead": "Starý bojler teče, nehřeje nebo spotřebovává příliš energie? Vyměníme ho za nový a zapojíme včetně pojistných prvků.",
+      "intro": [
+        "Bojler pracuje každý den a po letech provozu se v něm usazuje vodní kámen, koroduje nádoba a roste spotřeba elektřiny. Pokud z bojleru kape voda nebo teplá voda dochází rychleji než dřív, je čas na kontrolu nebo výměnu.",
+        "Pomůžeme vybrat vhodný objem a typ ohřívače, demontujeme starý bojler, namontujeme nový, připojíme ho na vodu, případně na topný systém, a zkontrolujeme těsnost a funkci pojistného ventilu."
+      ],
+      "included": [
+        "Výměna elektrických bojlerů",
+        "Montáž nepřímotopných zásobníků napojených na kotel nebo tepelné čerpadlo",
+        "Demontáž a odvoz starého bojleru",
+        "Montáž pojistných ventilů a expanzních nádob",
+        "Připojení na rozvody vody a topení",
+        "Diagnostika a opravy úniků vody z bojleru"
+      ],
+      "faq": [
+        {
+          "question": "Jak poznám, že je potřeba bojler vyměnit?",
+          "answer": "Typickými znaky jsou únik vody, rezavá voda, hluk při ohřevu nebo nedostatek teplé vody. Při kontrole posoudíme, zda se vyplatí oprava, nebo výměna."
+        },
+        {
+          "question": "Jak velký bojler potřebuji?",
+          "answer": "Záleží na počtu osob a zvyklostech domácnosti. Doporučíme vhodný objem, abyste neplatili za ohřev zbytečně velkého množství vody."
+        },
+        {
+          "question": "Odvezete starý bojler?",
+          "answer": "Ano, na požádání starý bojler demontujeme a odvezeme."
+        }
+      ]
+    },
+    "voda-a-kanalizace": {
+      "title": "Rozvody vody a kanalizace Praha – montáž | InstaRum",
+      "description": "Nové rozvody vody a kanalizace při rekonstrukci bytu, domu nebo firmy v Praze. Výměna starého potrubí, stoupačky, odpady. Nabídka zdarma.",
+      "h1": "Rozvody vody a kanalizace v Praze",
+      "lead": "Montáž a výměna rozvodů studené a teplé vody a vnitřní kanalizace při rekonstrukcích i novostavbách.",
+      "intro": [
+        "Staré ocelové nebo olověné potrubí zarůstá, koroduje a zhoršuje kvalitu vody. Při rekonstrukci bytu nebo koupelny je proto ideální chvíle vyměnit rozvody vody i odpadů za moderní plastové nebo vícevrstvé potrubí.",
+        "Navrhneme trasy rozvodů, provedeme montáž, tlakové zkoušky a připojení zařizovacích předmětů. Spolupracujeme s rekonstrukčními a stavebními firmami a přizpůsobíme se harmonogramu stavby."
+      ],
+      "included": [
+        "Nové rozvody studené a teplé vody",
+        "Výměna starého ocelového a olověného potrubí",
+        "Vnitřní kanalizace a odpady",
+        "Montáž stoupaček a připojení bytů",
+        "Tlakové zkoušky rozvodů",
+        "Instalatérské práce pro stavební a rekonstrukční firmy"
+      ],
+      "faq": [
+        {
+          "question": "Vyplatí se měnit rozvody vody při rekonstrukci?",
+          "answer": "Pokud jsou rozvody staré, rozhodně ano. Výměna při otevřených stěnách je výrazně levnější než pozdější opravy havárií."
+        },
+        {
+          "question": "Pracujete pro stavební firmy?",
+          "answer": "Ano, jako subdodavatel zajišťujeme rozvody vody, kanalizace i topení na bytových a komerčních stavbách."
+        },
+        {
+          "question": "Jak dlouho trvá výměna rozvodů v bytě?",
+          "answer": "Obvykle několik dní podle rozsahu. Přesný harmonogram připravíme po prohlídce."
+        }
+      ]
+    }
+  }
+}

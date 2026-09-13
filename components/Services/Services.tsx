@@ -1,7 +1,10 @@
 import { useTranslation } from 'next-i18next/pages'
 import { motion, useReducedMotion } from 'framer-motion'
 import { Card, CardContent } from '@ui/card'
+import Link from 'next/link'
+import { servicePath } from '@lib/services'
 import {
+  ArrowRight,
   Droplets,
   Factory,
   Flame,
@@ -30,6 +33,7 @@ interface ServiceItem {
   icon: string
   title: string
   description: string
+  slug?: string
 }
 
 export const Services = () => {
@@ -59,13 +63,27 @@ export const Services = () => {
                 viewport={{ once: true, margin: '-80px' }}
                 transition={{ duration: 0.5, delay: i * 0.08 }}
               >
-                <Card className="group h-full border border-border bg-surface hover:border-accent transition-all duration-300 hover:-translate-y-1 rounded-none">
+                <Card className="group relative h-full border border-border bg-surface hover:border-accent transition-all duration-300 hover:-translate-y-1 rounded-none">
                   <CardContent className="p-6">
                     <div className="w-12 h-12 bg-accent/10 flex items-center justify-center mb-5 group-hover:bg-accent/20 transition-colors">
                       <Icon className="h-6 w-6 text-accent" aria-hidden />
                     </div>
-                    <h3 className="font-heading font-semibold text-xl mb-3">{item.title}</h3>
+                    <h3 className="font-heading font-semibold text-xl mb-3">
+                      {item.slug ? (
+                        <Link href={servicePath(item.slug)} className="after:absolute after:inset-0">
+                          {item.title}
+                        </Link>
+                      ) : (
+                        item.title
+                      )}
+                    </h3>
                     <p className="text-foreground/60 text-sm leading-relaxed">{item.description}</p>
+                    {item.slug && (
+                      <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-accent">
+                        {t('services.more')}
+                        <ArrowRight className="h-4 w-4" aria-hidden />
+                      </span>
+                    )}
                   </CardContent>
                 </Card>
               </motion.li>

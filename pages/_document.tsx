@@ -3,31 +3,6 @@ import type { DocumentContext } from 'next/document'
 import { getConfig } from '@lib/config'
 
 const cfg = getConfig()
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://example.com'
-
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@graph': [
-    {
-      '@type': 'Organization',
-      name: cfg.companyName,
-      url: siteUrl,
-      telephone: cfg.phone,
-      email: cfg.email,
-    },
-    {
-      '@type': 'LocalBusiness',
-      name: cfg.companyName,
-      telephone: cfg.phone,
-      email: cfg.email,
-      url: siteUrl,
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: cfg.address,
-      },
-    },
-  ],
-}
 
 export default class MyDocument extends Document<{ locale?: string }> {
   static override async getInitialProps(ctx: DocumentContext) {
@@ -51,10 +26,6 @@ export default class MyDocument extends Document<{ locale?: string }> {
           <meta name="msapplication-TileColor" content="#001336" />
           {/* eslint-disable-next-line @next/next/no-sync-scripts */}
           <script src="/config.js" />
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-          />
           {(cfg.gaId || cfg.googleTag) && (
             <script
               dangerouslySetInnerHTML={{

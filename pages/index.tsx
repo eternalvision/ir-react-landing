@@ -1,8 +1,6 @@
 import type { GetStaticProps } from 'next'
 import { serverSideTranslations } from 'next-i18next/pages/serverSideTranslations'
 import { useTranslation } from 'next-i18next/pages'
-import { generateNextSeo } from 'next-seo/pages'
-import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { Header } from '@components/Header/Header'
 import { Footer } from '@components/Footer/Footer'
@@ -13,63 +11,26 @@ import { Portfolio } from '@components/Portfolio/Portfolio'
 import { Testimonials } from '@components/Testimonials/Testimonials'
 import { FAQ } from '@components/FAQ/FAQ'
 import { Contact } from '@components/Contact/Contact'
-import { useConfig } from '@lib/config'
-
-const LOCALE_NAMES: Record<string, string> = {
-  en: 'en_GB',
-  ru: 'ru_RU',
-  cs: 'cs_CZ',
-  uk: 'uk_UA',
-}
-
-const ALL_LOCALES = ['cs', 'en', 'ru', 'uk']
-
-const getLocalizedUrl = (siteUrl: string, locale: string) =>
-  locale === 'cs' ? siteUrl : `${siteUrl}/${locale}`
+import { Seo } from '@components/Seo/Seo'
+import { businessJsonLd, faqJsonLd, localizedUrl } from '@lib/seo'
+import { SERVICE_SLUGS, servicePath } from '@lib/services'
 
 export default function Home() {
   const { t } = useTranslation('common')
-  const router = useRouter()
-  const config = useConfig()
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://example.com'
-  const locale = router.locale ?? 'cs'
-  const localizedUrl = getLocalizedUrl(siteUrl, locale)
-
-  const languageAlternates = ALL_LOCALES.map((loc) => ({
-    hrefLang: loc,
-    href: getLocalizedUrl(siteUrl, loc),
+  const { locale = 'cs' } = useRouter()
+  const faqItems = t('faq.items', { returnObjects: true }) as { question: string; answer: string }[]
+  const services = SERVICE_SLUGS.map((slug) => ({
+    name: t(`service_nav.${slug}`),
+    url: localizedUrl(locale, servicePath(slug)),
   }))
-  languageAlternates.push({ hrefLang: 'x-default', href: siteUrl })
-  const twitter = {
-    cardType: 'summary_large_image',
-    ...(config.seo.twitterHandle ? { handle: config.seo.twitterHandle } : {}),
-  }
 
   return (
     <>
-      <Head>
-        {generateNextSeo({
-          title: t('seo.title'),
-          description: t('seo.description'),
-          canonical: localizedUrl,
-          openGraph: {
-            title: t('seo.title'),
-            description: t('seo.description'),
-            url: localizedUrl,
-            locale: LOCALE_NAMES[locale] ?? 'en_GB',
-            images: [
-              {
-                url: `${siteUrl}${config.seo.ogImage}`,
-                width: 1200,
-                height: 630,
-                alt: t('seo.title'),
-              },
-            ],
-          },
-          twitter,
-          languageAlternates,
-        })}
-      </Head>
+      <Seo
+        title={t('seo.title')}
+        description={t('seo.description')}
+        jsonLd={[businessJsonLd(locale, t('seo.description'), services), faqJsonLd(faqItems)]}
+      />
 
       <Header />
       <main id="main-content">

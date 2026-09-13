@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next/pages';
 import { useTheme } from 'next-themes';
@@ -72,10 +73,6 @@ export const Header = () => {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  const scrollTo = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   const switchLocale = (locale: string) => {
     void router.push(router.pathname, router.asPath, { locale, scroll: false })
   };
@@ -90,8 +87,8 @@ export const Header = () => {
         }`}
       >
         <div className="container mx-auto h-16 flex items-center justify-between">
-          <button
-            onClick={() => scrollTo('hero')}
+          <Link
+            href="/"
             className="flex items-center gap-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded"
             aria-label={`${config.companyName} — home`}
           >
@@ -99,18 +96,18 @@ export const Header = () => {
             <span className="font-heading font-bold text-lg hidden sm:block">
               {config.companyName}
             </span>
-          </button>
+          </Link>
 
           <nav aria-label="Main navigation">
             <ul className="hidden md:flex items-center gap-6 list-none m-0 p-0">
               {NAV_KEYS.map((key) => (
                 <li key={key}>
-                  <button
-                    onClick={() => scrollTo(key)}
+                  <Link
+                    href={`/#${key}`}
                     className="text-sm font-medium text-foreground/70 hover:text-accent transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded"
                   >
                     {t(`nav.${key}`)}
-                  </button>
+                  </Link>
                 </li>
               ))}
             </ul>

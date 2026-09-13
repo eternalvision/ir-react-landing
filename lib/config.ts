@@ -28,24 +28,27 @@ export interface SiteConfig {
   }
 }
 
+// Business data must be identical in SSR HTML, JSON-LD, Google Business Profile and Firmy.cz (NAP consistency).
 const defaults: SiteConfig = {
-  companyName: '',
+  companyName: 'InstaRum s.r.o.',
   tagline: '',
-  logoUrl: '',
-  faviconUrl: '',
-  phone: '',
-  email: '',
-  address: '',
-  addressUrl: '',
-  addressIframe: '',
-  ico: '',
-  dic: '',
-  dataBox: '',
+  logoUrl: '/logo.svg',
+  faviconUrl: '/favicon.ico',
+  phone: '+420 724 257 857',
+  email: 'instarumcz@gmail.com',
+  address: 'Vorařská 2386/1, 143 00 Praha 12-Belárie',
+  addressUrl:
+    'https://www.google.com/maps/search/?api=1&query=Vora%C5%99sk%C3%A1%202386%2F1%2C%20143%2000%20Praha%2012-Bel%C3%A1rie',
+  addressIframe:
+    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.8655216007774!2d14.396870212054791!3d50.01387571858328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b96b93378abd9%3A0x44336a8de4d3dbb5!2zVm9yYcWZc2vDoSAyMzg2LzEsIDE0MyAwMCBQcmFoYSAxMi1CZWzDoXJpZQ!5e0!3m2!1sru!2scz!4v1780949433986!5m2!1sru!2scz',
+  ico: '22348760',
+  dic: 'CZ22348760',
+  dataBox: 'ehjy4t5',
   socials: { linkedin: '', facebook: '', instagram: '', youtube: '' },
   googleTag: '',
   gaId: '',
   resendTo: '',
-  seo: { ogImage: '', twitterHandle: '' },
+  seo: { ogImage: '/api/og', twitterHandle: '' },
 }
 
 declare global {
@@ -59,9 +62,7 @@ function envBase(): Partial<SiteConfig> {
   return Object.fromEntries(
     Object.entries({
       companyName: v(process.env.NEXT_PUBLIC_COMPANY_NAME),
-      phone:       v(process.env.NEXT_PUBLIC_PHONE),
       email:       v(process.env.NEXT_PUBLIC_EMAIL),
-      address:     v(process.env.NEXT_PUBLIC_ADDRESS),
       googleTag:   v(process.env.NEXT_PUBLIC_GOOGLE_TAG),
       gaId:        v(process.env.NEXT_PUBLIC_GA_ID),
     }).filter(([, val]) => val !== undefined)

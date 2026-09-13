@@ -1,9 +1,8 @@
-import { useMemo, useState } from 'react'
+import { useMemo } from 'react'
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'next-themes'
-import { appWithTranslation } from 'next-i18next/pages'
+import { appWithTranslation, useTranslation } from 'next-i18next/pages'
 import { Inter, Space_Grotesk } from 'next/font/google'
-import { Preloader } from '@components/Preloader/Preloader'
 import {
   CookieBanner,
   CookieConsentProvider,
@@ -15,10 +14,6 @@ import {
 import { Toaster } from '@ui/sonner'
 import '../styles/globals.css'
 import { Analytics } from '@vercel/analytics/next'
-import enCommon from '../public/locales/en/common.json'
-import csCommon from '../public/locales/cs/common.json'
-import ruCommon from '../public/locales/ru/common.json'
-import ukCommon from '../public/locales/uk/common.json'
 
 const inter = Inter({
   subsets: ['latin', 'cyrillic'],
@@ -33,44 +28,38 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 const COOKIE_CATEGORY_KEYS = ['necessary', 'analytics', 'marketing', 'preferences'] as const
-const COOKIE_MESSAGES: Record<string, typeof enCommon> = {
-  en: enCommon,
-  cs: csCommon,
-  ru: ruCommon,
-  uk: ukCommon,
-}
 
-function App({ Component, pageProps, router }: AppProps) {
-  const [preloaderDone, setPreloaderDone] = useState(false)
-  const cookieMessages = COOKIE_MESSAGES[router.locale ?? 'cs'] ?? csCommon
+function App({ Component, pageProps }: AppProps) {
+  // Only the current locale's messages are loaded (via getStaticProps), not all four bundled into JS.
+  const { t } = useTranslation('common')
   const cookieCategories = useMemo<CategoryConfig[]>(
     () =>
       COOKIE_CATEGORY_KEYS.map((key) => ({
         key,
-        title: cookieMessages.cookies.categories[key].title,
-        description: cookieMessages.cookies.categories[key].description,
+        title: t(`cookies.categories.${key}.title`),
+        description: t(`cookies.categories.${key}.description`),
         required: key === 'necessary',
       })),
-    [cookieMessages]
+    [t]
   )
   const cookieLabels = useMemo<CookieConsentLabels>(
     () => ({
-      bannerTitle: cookieMessages.cookies.banner.title,
-      bannerDescription: cookieMessages.cookies.banner.description,
-      learnMore: cookieMessages.cookies.banner.learn_more,
-      customize: cookieMessages.cookies.actions.customize,
-      rejectAll: cookieMessages.cookies.actions.reject_all,
-      acceptAll: cookieMessages.cookies.actions.accept_all,
-      settingsTitle: cookieMessages.cookies.settings.title,
-      settingsDescription: cookieMessages.cookies.settings.description,
-      required: cookieMessages.cookies.settings.required,
-      toggleCookies: (title) => cookieMessages.cookies.settings.toggle.replace('{{title}}', title),
-      savePreferences: cookieMessages.cookies.actions.save,
-      readOur: cookieMessages.cookies.settings.read_our,
-      privacyPolicy: cookieMessages.cookies.settings.privacy_policy,
-      trigger: cookieMessages.cookies.trigger,
+      bannerTitle: t('cookies.banner.title'),
+      bannerDescription: t('cookies.banner.description'),
+      learnMore: t('cookies.banner.learn_more'),
+      customize: t('cookies.actions.customize'),
+      rejectAll: t('cookies.actions.reject_all'),
+      acceptAll: t('cookies.actions.accept_all'),
+      settingsTitle: t('cookies.settings.title'),
+      settingsDescription: t('cookies.settings.description'),
+      required: t('cookies.settings.required'),
+      toggleCookies: (title) => t('cookies.settings.toggle', { title }),
+      savePreferences: t('cookies.actions.save'),
+      readOur: t('cookies.settings.read_our'),
+      privacyPolicy: t('cookies.settings.privacy_policy'),
+      trigger: t('cookies.trigger'),
     }),
-    [cookieMessages]
+    [t]
   )
 
   return (
@@ -88,7 +77,6 @@ function App({ Component, pageProps, router }: AppProps) {
         }}
       >
         <div className={`${inter.variable} ${spaceGrotesk.variable}`}>
-          {!preloaderDone && <Preloader onComplete={() => setPreloaderDone(true)} />}
           <Component {...pageProps} />
           <CookieBanner />
           <CookieSettings />

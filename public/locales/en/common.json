@@ -32,7 +32,7 @@
   "about": {
     "label": "Company",
     "title": "A reliable partner for engineering system installation and service",
-    "text": "InstaRum s.r.o. specialises in professional installation and maintenance of engineering systems in Czechia. We work with apartments and private houses, commercial facilities, offices, shops, construction companies and contractors. We speak Czech, English, Russian and Ukrainian.",
+    "text": "InstaRum s.r.o. specialises in professional installation and maintenance of engineering systems in Czechia. We work with apartments and private houses, commercial facilities, offices, shops, construction companies and contractors. We speak Czech, English, Russian and Ukrainian. We are based in Prague 12 and cover all of Prague and the Central Bohemian Region.",
     "stats": [
       {
         "value": 2024,
@@ -58,32 +58,38 @@
       {
         "icon": "Wrench",
         "title": "Plumbing Works",
-        "description": "Plumbing works of any complexity: installation, repair and replacement of equipment."
+        "description": "Plumbing works of any complexity: installation, repair and replacement of equipment.",
+        "slug": "instalaterske-prace"
       },
       {
         "icon": "Factory",
         "title": "Heating Systems",
-        "description": "Installation and repair of heating systems for residential and commercial properties."
+        "description": "Installation and repair of heating systems for residential and commercial properties.",
+        "slug": "topeni"
       },
       {
         "icon": "ThermometerSun",
         "title": "Boiler Room Installation",
-        "description": "Complete boiler room installation, including boiler, water heater and equipment connection."
+        "description": "Complete boiler room installation, including boiler, water heater and equipment connection.",
+        "slug": "vymena-kotle"
       },
       {
         "icon": "Zap",
         "title": "Heat Pumps",
-        "description": "Heat pump installation and system connection."
+        "description": "Heat pump installation and system connection.",
+        "slug": "tepelna-cerpadla"
       },
       {
         "icon": "Droplets",
         "title": "Water Supply & Sewage",
-        "description": "Water and sewage distribution for different types of properties."
+        "description": "Water and sewage distribution for different types of properties.",
+        "slug": "voda-a-kanalizace"
       },
       {
         "icon": "Flame",
         "title": "Radiators & Underfloor Heating",
-        "description": "Installation of radiators and underfloor heating systems."
+        "description": "Installation of radiators and underfloor heating systems.",
+        "slug": "podlahove-vytapeni"
       },
       {
         "icon": "Hammer",
@@ -98,9 +104,11 @@
       {
         "icon": "ShieldAlert",
         "title": "Urgent Repairs",
-        "description": "Emergency call-outs and fast repairs when failures occur."
+        "description": "Emergency call-outs and fast repairs when failures occur.",
+        "slug": "havarijni-sluzba"
       }
-    ]
+    ],
+    "more": "Learn more"
   },
   "portfolio": {
     "label": "Work",
@@ -312,11 +320,13 @@
   },
   "footer": {
     "description": "InstaRum s.r.o. - engineering system installation and service in Prague. IČO 22348760.",
-    "copyright": "All rights reserved."
+    "copyright": "All rights reserved.",
+    "services_title": "Services",
+    "languages_title": "Languages"
   },
   "seo": {
-    "title": "InstaRum s.r.o. - Plumbing, Heating & Engineering Systems in Prague",
-    "description": "InstaRum s.r.o. - professional installation and maintenance of engineering systems in Czechia. Plumbing, heating, boilers, water heaters, heat pumps, refrigeration equipment and urgent repairs."
+    "title": "Plumber & Heating Engineer Prague – English-speaking | InstaRum",
+    "description": "English-speaking plumber and heating engineer in Prague. Boiler replacement, heat pumps, underfloor heating, water and drainage, 24/7 emergency call-out. Free quote."
   },
   "cookies": {
     "banner": {
@@ -357,5 +367,20 @@
         "description": "Cookies that remember your settings and choices."
       }
     }
+  },
+  "service_nav": {
+    "instalaterske-prace": "Plumbing services",
+    "havarijni-sluzba": "Emergency plumber 24/7",
+    "vymena-kotle": "Boiler replacement & boiler rooms",
+    "tepelna-cerpadla": "Heat pumps",
+    "topeni": "Central heating",
+    "podlahove-vytapeni": "Underfloor heating & radiators",
+    "bojlery": "Water heater replacement",
+    "voda-a-kanalizace": "Water supply & drainage"
+  },
+  "not_found": {
+    "title": "Page not found",
+    "text": "This page does not exist or has been moved. Browse our services or give us a call.",
+    "cta": "Back to homepage"
   }
 }

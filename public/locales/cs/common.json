@@ -32,7 +32,7 @@
   "about": {
     "label": "Společnost",
     "title": "Spolehlivý partner pro montáž a servis inženýrských systémů",
-    "text": "InstaRum s.r.o. se specializuje na profesionální montáž a servis inženýrských systémů v Česku. Pracujeme pro byty a rodinné domy, komerční objekty, kanceláře, obchody, stavební firmy i dodavatele. Mluvíme česky, anglicky, rusky a ukrajinsky.",
+    "text": "InstaRum s.r.o. se specializuje na profesionální montáž a servis inženýrských systémů v Česku. Pracujeme pro byty a rodinné domy, komerční objekty, kanceláře, obchody, stavební firmy i dodavatele. Mluvíme česky, anglicky, rusky a ukrajinsky. Sídlíme v Praze 12 a vyjíždíme po celé Praze i do Středočeského kraje.",
     "stats": [
       {
         "value": 2024,
@@ -58,32 +58,38 @@
       {
         "icon": "Wrench",
         "title": "Instalatérské práce",
-        "description": "Instalatérské práce jakékoli náročnosti: montáž, opravy a výměna zařízení."
+        "description": "Instalatérské práce jakékoli náročnosti: montáž, opravy a výměna zařízení.",
+        "slug": "instalaterske-prace"
       },
       {
         "icon": "Factory",
         "title": "Topné systémy",
-        "description": "Montáž a opravy topných systémů pro bytové i komerční objekty."
+        "description": "Montáž a opravy topných systémů pro bytové i komerční objekty.",
+        "slug": "topeni"
       },
       {
         "icon": "ThermometerSun",
         "title": "Montáž kotelny",
-        "description": "Kompletní montáž kotelny včetně napojení kotlů, bojlerů a vybavení."
+        "description": "Kompletní montáž kotelny včetně napojení kotlů, bojlerů a vybavení.",
+        "slug": "vymena-kotle"
       },
       {
         "icon": "Zap",
         "title": "Tepelná čerpadla",
-        "description": "Montáž tepelných čerpadel a napojení systémů."
+        "description": "Montáž tepelných čerpadel a napojení systémů.",
+        "slug": "tepelna-cerpadla"
       },
       {
         "icon": "Droplets",
         "title": "Voda a kanalizace",
-        "description": "Rozvody vody a kanalizace pro různé typy objektů."
+        "description": "Rozvody vody a kanalizace pro různé typy objektů.",
+        "slug": "voda-a-kanalizace"
       },
       {
         "icon": "Flame",
         "title": "Radiátory a podlahové vytápění",
-        "description": "Montáž radiátorů a systémů podlahového vytápění."
+        "description": "Montáž radiátorů a systémů podlahového vytápění.",
+        "slug": "podlahove-vytapeni"
       },
       {
         "icon": "Hammer",
@@ -98,9 +104,11 @@
       {
         "icon": "ShieldAlert",
         "title": "Rychlé opravy",
-        "description": "Havarijní výjezd a operativní opravy při poruchách."
+        "description": "Havarijní výjezd a operativní opravy při poruchách.",
+        "slug": "havarijni-sluzba"
       }
-    ]
+    ],
+    "more": "Více o službě"
   },
   "portfolio": {
     "label": "Práce",
@@ -312,11 +320,13 @@
   },
   "footer": {
     "description": "InstaRum s.r.o. - montáž a servis inženýrských systémů v Praze. IČO 22348760.",
-    "copyright": "Všechna práva vyhrazena."
+    "copyright": "Všechna práva vyhrazena.",
+    "services_title": "Služby",
+    "languages_title": "Jazyky"
   },
   "seo": {
-    "title": "InstaRum s.r.o. - instalatérství, topení a inženýrské systémy v Praze",
-    "description": "InstaRum s.r.o. - profesionální montáž a servis inženýrských systémů v Česku. Instalatérství, topení, kotle, bojlery, tepelná čerpadla, chladicí zařízení a rychlé opravy."
+    "title": "Instalatér a topenář Praha – kotle, tepelná čerpadla | InstaRum",
+    "description": "Instalatér a topenář v Praze a Středočeském kraji. Výměna kotlů a bojlerů, tepelná čerpadla, podlahové topení, havarijní výjezd 24/7. Nabídka zdarma."
   },
   "cookies": {
     "banner": {
@@ -357,5 +367,20 @@
         "description": "Cookies, které si pamatují vaše nastavení a volby."
       }
     }
+  },
+  "service_nav": {
+    "instalaterske-prace": "Instalatérské práce",
+    "havarijni-sluzba": "Havarijní instalatér 24/7",
+    "vymena-kotle": "Výměna kotle a kotelny",
+    "tepelna-cerpadla": "Tepelná čerpadla",
+    "topeni": "Ústřední topení",
+    "podlahove-vytapeni": "Podlahové topení a radiátory",
+    "bojlery": "Výměna bojleru",
+    "voda-a-kanalizace": "Voda a kanalizace"
+  },
+  "not_found": {
+    "title": "Stránka nenalezena",
+    "text": "Tato stránka neexistuje nebo byla přesunuta. Podívejte se na naše služby nebo nám zavolejte.",
+    "cta": "Zpět na hlavní stránku"
   }
 }

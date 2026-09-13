@@ -1,0 +1,288 @@
+{
+  "page": {
+    "home": "Home",
+    "enquiry": "Free enquiry",
+    "included_title": "What we do",
+    "process_title": "How we work",
+    "process": [
+      {
+        "title": "Call or message us",
+        "text": "Describe the problem or project. We reply within 15 minutes during working hours; emergencies are handled around the clock."
+      },
+      {
+        "title": "Inspection and quote",
+        "text": "We assess the job on site or from photos and prepare a free price quote."
+      },
+      {
+        "title": "The work",
+        "text": "We do the job on the agreed date, cleanly and with respect for your home."
+      },
+      {
+        "title": "Handover and warranty",
+        "text": "We explain how everything works, clean up after ourselves and provide a warranty on completed work."
+      }
+    ],
+    "faq_title": "Frequently asked questions",
+    "related_title": "Other services",
+    "area_title": "Where we work",
+    "area_text": "Prague 1–22 and the Central Bohemian Region, including Prague-West and Prague-East. Our base is in Prague 12-Belárie. We speak English, Czech, Russian and Ukrainian."
+  },
+  "items": {
+    "instalaterske-prace": {
+      "title": "English-speaking Plumber Prague – Installation & Repairs | InstaRum",
+      "description": "English-speaking plumber in Prague: taps, toilets and sinks, water and drain pipes, leak repairs. Free quote and 24/7 emergency call-out.",
+      "h1": "Plumbing services in Prague",
+      "lead": "Installation, repair and replacement of bathroom fixtures and pipework in apartments, houses and businesses. We come over, assess the job and give you a free quote.",
+      "intro": [
+        "You need a plumber when renovating a bathroom, when a tap drips, a toilet keeps running or a drain is blocked. InstaRum s.r.o. handles small repairs as well as complete turnkey plumbing – from replacing a single valve to new water and drain pipes throughout an apartment.",
+        "We work across Prague and Central Bohemia for households, property managers, offices and construction companies. Before we start we explain the process and agree the price, and we clean up when we are done. No Czech needed – we speak English."
+      ],
+      "included": [
+        "Installation and replacement of taps, sinks, bathtubs and shower enclosures",
+        "Toilet, concealed cistern and bidet installation",
+        "Repairs of water leaks, dripping valves and leaking joints",
+        "New water and drain pipes during apartment or bathroom renovation",
+        "Connecting washing machines, dishwashers and other appliances",
+        "Replacement of shut-off valves, filters and water meter assemblies"
+      ],
+      "faq": [
+        {
+          "question": "How much does a plumber cost in Prague?",
+          "answer": "The price depends on the scope of work and materials. Once you describe the problem or we inspect it on site, we prepare a free quote so you know the cost upfront."
+        },
+        {
+          "question": "Do you take small jobs, like a dripping tap?",
+          "answer": "Yes. We do small repairs as well as large projects. Call us or send a photo of the problem and we will arrange a visit."
+        },
+        {
+          "question": "Do you supply the materials?",
+          "answer": "We can supply the materials or use fixtures you already have. We will also advise where you can save money without compromising quality."
+        }
+      ]
+    },
+    "havarijni-sluzba": {
+      "title": "Emergency Plumber Prague 24/7 – English-speaking | InstaRum",
+      "description": "Water leak, burst pipe or broken boiler? English-speaking emergency plumber and heating engineer in Prague, 24/7. Call +420 724 257 857.",
+      "h1": "Emergency plumber in Prague 24/7",
+      "lead": "Burst pipes, water leaks and heating failures do not wait for office hours. We provide emergency call-outs around the clock across Prague and the surrounding area.",
+      "intro": [
+        "In an emergency, time matters. Call us, describe the situation and we will arrange a technician straight away. Over the phone we will also tell you how to limit the damage until we arrive – for example where to find the main water shut-off or how to safely switch off the boiler.",
+        "On site we find the cause, carry out the repair or a temporary fix and propose a permanent solution. Emergency service is available in English, Czech, Russian and Ukrainian."
+      ],
+      "included": [
+        "Burst or leaking water pipes",
+        "Leaks from water heaters, taps or connection hoses",
+        "Blocked or backing-up drains",
+        "Boiler breakdowns and loss of heating or hot water",
+        "Stuck and leaking valves",
+        "Making the site safe and proposing a permanent repair"
+      ],
+      "faq": [
+        {
+          "question": "What should I do if water is leaking?",
+          "answer": "Close the main water valve in your apartment or house, switch off electricity in the affected area and call us. We will guide you through the next steps over the phone."
+        },
+        {
+          "question": "Do you come out at night and at weekends?",
+          "answer": "Yes, our emergency call-out is available 24 hours a day, 7 days a week, including public holidays."
+        },
+        {
+          "question": "Which areas do you cover?",
+          "answer": "All of Prague (Prague 1–22) and the Central Bohemian Region. We will confirm the arrival time on the phone based on current demand."
+        }
+      ]
+    },
+    "vymena-kotle": {
+      "title": "Boiler Replacement Prague – Boiler Installation | InstaRum",
+      "description": "Gas boiler replacement with a condensing boiler, boiler room installation and boiler servicing in Prague. English-speaking team, free quote.",
+      "h1": "Boiler replacement and installation in Prague",
+      "lead": "We replace old boilers with efficient condensing models, build new boiler rooms and service existing ones – for apartments, houses and commercial properties.",
+      "intro": [
+        "An old boiler uses more energy, breaks down more often and spare parts are frequently no longer available. Replacing it with a modern condensing boiler can lower your heating costs and give you a reliable heat source for years to come.",
+        "First we assess your heating system, the size of the property and your needs, and recommend a suitable boiler type and output. Then we remove the old unit, install the new boiler, connect it to the heating and hot water system and show you how to operate it."
+      ],
+      "included": [
+        "Replacing gas boilers with condensing boilers",
+        "Complete boiler room installation for homes and businesses",
+        "Connecting the boiler to the heating system and hot water cylinder",
+        "Installation of circulation pumps, expansion vessels and fittings",
+        "Flushing and bleeding the heating system",
+        "Regular boiler servicing before the heating season"
+      ],
+      "faq": [
+        {
+          "question": "How long does a boiler replacement take?",
+          "answer": "A standard boiler replacement in an apartment or house usually takes one to two days. We confirm the exact schedule after an inspection."
+        },
+        {
+          "question": "Can you help me choose a boiler?",
+          "answer": "Yes. Based on the size of the property, the heating system and hot water use, we recommend a suitable boiler type and output."
+        },
+        {
+          "question": "Do you also service boilers?",
+          "answer": "Yes, we offer regular maintenance of boilers and heating systems, ideally before the start of the heating season."
+        }
+      ]
+    },
+    "tepelna-cerpadla": {
+      "title": "Heat Pump Installation Prague | InstaRum",
+      "description": "Air-to-water heat pump installation in Prague and Central Bohemia. Design, installation, connection to heating and hot water, servicing. Free quote.",
+      "h1": "Heat pump installation in Prague",
+      "lead": "A heat pump cuts the cost of heating and hot water. We design the right solution and install and connect it to your existing or new heating system.",
+      "intro": [
+        "Air-to-water heat pumps are now the most common choice for family houses – both when replacing an old boiler and in new builds. To run efficiently, the heat pump has to match the heat loss of the house and be correctly connected to the heating system.",
+        "We assess the property and the existing radiators or underfloor heating and recommend the right output. We handle installation, connection to heating and the hot water cylinder, commissioning and ongoing servicing."
+      ],
+      "included": [
+        "Property assessment and heat pump sizing",
+        "Air-to-water heat pump installation",
+        "Connection to radiators, underfloor heating and hot water",
+        "Hybrid systems combined with a boiler or other heat source",
+        "Installation of buffer tanks and hot water cylinders",
+        "Commissioning, user training and servicing"
+      ],
+      "faq": [
+        {
+          "question": "Is a heat pump suitable for an older house?",
+          "answer": "Often yes – it depends on the heat loss of the house and the type of heating system. After an inspection we will tell you whether it is suitable and what changes might be needed."
+        },
+        {
+          "question": "Can a heat pump work with my existing radiators?",
+          "answer": "In most cases yes. We check the radiator sizes and the water temperature the system needs and propose any adjustments."
+        },
+        {
+          "question": "Do you service heat pumps?",
+          "answer": "Yes, we offer regular servicing and system checks so the heat pump runs reliably and efficiently."
+        }
+      ]
+    },
+    "topeni": {
+      "title": "Central Heating Prague – Installation & Repairs | InstaRum",
+      "description": "Central heating installation, renovation and repairs in Prague. New pipework, radiators, system flushing and bleeding. English-speaking team, free quote.",
+      "h1": "Central heating installation and repairs in Prague",
+      "lead": "We design and install new heating systems or renovate existing ones – in apartments, family houses and commercial spaces.",
+      "intro": [
+        "Radiators that heat unevenly, noisy pipes or high energy bills are signs that your heating system needs attention. Sometimes flushing and balancing is enough; in other cases it pays to renovate the pipework and replace the heat source.",
+        "We provide turnkey central heating: from design through installation of pipework, radiators and boiler to filling, bleeding and setting up the system. We work cleanly and keep to deadlines."
+      ],
+      "included": [
+        "New central heating pipework in apartments and houses",
+        "Renovation and replacement of old pipework",
+        "Installation and replacement of radiators and thermostatic valves",
+        "System flushing, filling and bleeding",
+        "Hydraulic balancing for even heating",
+        "Repairs of leaks and heating faults"
+      ],
+      "faq": [
+        {
+          "question": "Why do some radiators not heat up?",
+          "answer": "The most common causes are air in the system, sludge in the pipes or poor balancing. We find the cause on site and propose a repair."
+        },
+        {
+          "question": "When is the best time to renovate heating?",
+          "answer": "Ideally outside the heating season, from spring to autumn. Emergency repairs are of course handled at any time."
+        },
+        {
+          "question": "Do you install heating for businesses and construction projects?",
+          "answer": "Yes, we work with construction companies and also install heating in offices and commercial buildings."
+        }
+      ]
+    },
+    "podlahove-vytapeni": {
+      "title": "Underfloor Heating & Radiators Prague | InstaRum",
+      "description": "Wet underfloor heating installation and radiator replacement in Prague. Design, laying, connection and room-by-room controls. Free quote.",
+      "h1": "Underfloor heating and radiators in Prague",
+      "lead": "Installation of wet underfloor heating and radiator replacement for even, efficient warmth throughout your apartment or house.",
+      "intro": [
+        "Underfloor heating gives comfortable warmth without visible radiators and works perfectly with heat pumps and condensing boilers. Radiators, on the other hand, are ideal where you need heat quickly or where floors cannot be changed.",
+        "We design the circuit layout, lay the pipes, connect them to the manifold and heat source and set up controls for individual rooms. We also replace old radiators and valves."
+      ],
+      "included": [
+        "Design and installation of wet underfloor heating",
+        "Manifolds and room-by-room temperature controls",
+        "Pressure testing before the screed is poured",
+        "Replacement and installation of radiators and towel rails",
+        "Thermostatic heads and valves",
+        "Connection to a boiler or heat pump"
+      ],
+      "faq": [
+        {
+          "question": "Can underfloor heating be added during an apartment renovation?",
+          "answer": "Yes, if the floor build-up and height allow it. After an inspection we recommend a suitable system."
+        },
+        {
+          "question": "Is underfloor heating a good match for a heat pump?",
+          "answer": "Yes, thanks to its low water temperature, underfloor heating is ideal for heat pumps."
+        },
+        {
+          "question": "Will you replace just a few radiators?",
+          "answer": "Yes, we replace individual radiators too, including draining and bleeding the system."
+        }
+      ]
+    },
+    "bojlery": {
+      "title": "Water Heater Replacement Prague | InstaRum",
+      "description": "Replacement and installation of electric and indirect water heaters in Prague. Removal of the old unit, installation, connection and safety valves.",
+      "h1": "Water heater replacement in Prague",
+      "lead": "Is your old water heater leaking, not heating or using too much energy? We replace it and connect the new one with all safety components.",
+      "intro": [
+        "A water heater works every day, and over the years limescale builds up, the tank corrodes and electricity use rises. If it drips or hot water runs out faster than before, it is time for a check or replacement.",
+        "We help you choose the right size and type, remove the old unit, install the new one, connect it to the water supply or heating system and check for leaks and correct safety valve operation."
+      ],
+      "included": [
+        "Electric water heater replacement",
+        "Indirect hot water cylinders connected to a boiler or heat pump",
+        "Removal and disposal of the old unit",
+        "Safety valves and expansion vessels",
+        "Connection to water and heating pipes",
+        "Diagnosis and repair of water heater leaks"
+      ],
+      "faq": [
+        {
+          "question": "How do I know my water heater needs replacing?",
+          "answer": "Typical signs are leaks, rusty water, noise while heating or not enough hot water. During a check we assess whether a repair or a replacement makes more sense."
+        },
+        {
+          "question": "What size water heater do I need?",
+          "answer": "It depends on the number of people and your household habits. We recommend a suitable volume so you do not pay to heat more water than you need."
+        },
+        {
+          "question": "Will you take away the old water heater?",
+          "answer": "Yes, on request we remove and take away the old unit."
+        }
+      ]
+    },
+    "voda-a-kanalizace": {
+      "title": "Water Supply & Drainage Pipes Prague | InstaRum",
+      "description": "New water and drainage pipework for apartment, house and commercial renovations in Prague. Replacement of old pipes, risers and drains. Free quote.",
+      "h1": "Water supply and drainage in Prague",
+      "lead": "Installation and replacement of hot and cold water pipes and internal drainage in renovations and new builds.",
+      "intro": [
+        "Old steel or lead pipes clog up, corrode and reduce water quality. A renovation of an apartment or bathroom is therefore the ideal time to replace water and drain pipes with modern plastic or multilayer pipes.",
+        "We plan the pipe routes, carry out the installation and pressure tests and connect the fixtures. We work with renovation and construction companies and fit in with the site schedule."
+      ],
+      "included": [
+        "New hot and cold water pipework",
+        "Replacement of old steel and lead pipes",
+        "Internal drainage and waste pipes",
+        "Risers and apartment connections",
+        "Pressure testing of pipework",
+        "Plumbing subcontracting for construction and renovation companies"
+      ],
+      "faq": [
+        {
+          "question": "Is it worth replacing water pipes during a renovation?",
+          "answer": "If the pipes are old, definitely. Replacing them while the walls are open costs far less than repairing leaks later."
+        },
+        {
+          "question": "Do you work for construction companies?",
+          "answer": "Yes, as a subcontractor we install water, drainage and heating systems on residential and commercial projects."
+        },
+        {
+          "question": "How long does it take to replace pipes in an apartment?",
+          "answer": "Usually a few days, depending on the scope. We prepare an exact schedule after an inspection."
+        }
+      ]
+    }
+  }
+}

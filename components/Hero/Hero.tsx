@@ -49,19 +49,14 @@ export const Hero = () => {
             <span className="min-w-0 break-words">{t('hero.eyebrow')}</span>
           </motion.div>
 
-          <motion.h1
-            {...fadeUp(0.08)}
-            className="max-w-4xl break-words font-heading text-4xl font-bold leading-[0.98] text-foreground sm:text-6xl lg:text-7xl"
-          >
+          {/* H1 and subtitle render visible immediately: they are the LCP element */}
+          <h1 className="max-w-4xl break-words font-heading text-4xl font-bold leading-[0.98] text-foreground sm:text-6xl lg:text-7xl">
             {t('hero.title')}
-          </motion.h1>
+          </h1>
 
-          <motion.p
-            {...fadeUp(0.16)}
-            className="mt-6 max-w-2xl text-base leading-8 text-foreground/70 sm:text-lg"
-          >
+          <p className="mt-6 max-w-2xl text-base leading-8 text-foreground/70 sm:text-lg">
             {t('hero.subtitle')}
-          </motion.p>
+          </p>
 
           <motion.div
             {...fadeUp(0.24)}
