@@ -3,7 +3,6 @@
     "about": "O nás",
     "services": "Služby",
     "portfolio": "Práce",
-    "testimonials": "Výhody",
     "faq": "FAQ",
     "contact": "Kontakt"
   },
@@ -164,108 +163,6 @@
         "title": "Výměna a montáž bojlerů",
         "category": "Topení",
         "image": "/portfolio/boiler.webp"
-      }
-    ]
-  },
-  "testimonials": {
-    "label": "Recenze",
-    "title": "Co říkají zákazníci",
-    "review_modal": {
-      "trigger": "Napsat recenzi",
-      "title": "Napsat recenzi",
-      "name_label": "Vaše jméno",
-      "name_placeholder": "Jan Novák",
-      "rating_label": "Hodnocení",
-      "message_label": "Vaše recenze",
-      "message_placeholder": "Popište svou zkušenost s naší firmou...",
-      "submit": "Odeslat",
-      "success_title": "Děkujeme za recenzi!",
-      "success_text": "Vaše zpětná vazba je pro nás cenná."
-    },
-    "items": [
-      {
-        "name": "Marek Novák",
-        "company": "Praha 6",
-        "rating": 5,
-        "text": "Kompletní výměna topného systému v rodinném domě - nové trubky přes dvě patra, radiátory i kotel. Tři dny práce, stěny neznečistili. Topí jak má být."
-      },
-      {
-        "name": "Jana Svobodová",
-        "company": "Praha 5",
-        "rating": 4,
-        "text": "Praskla nám hadice za bojlerem v sobotu večer a voda tekla do kuchyně. Přijeli do hodiny a závadu opravili. Dala bych pět, ale čekala jsem delší záruku na práci."
-      },
-      {
-        "name": "Олена Ковальченко",
-        "company": "Praha 4",
-        "rating": 5,
-        "text": "Instalace tepelného čerpadla. Ze začátku jsem se bála komunikace, ale mluví rusky i ukrajinsky - žádný stres. Práce čistá, od první zimy funguje bez problémů."
-      },
-      {
-        "name": "Tomáš Krejčí",
-        "company": "Praha 2",
-        "rating": 4,
-        "text": "Výměna starého plynového kotle za kondenzační. Přišli v čas, uklidili, vysvětlili ovládání. Cena odpovídá trhu, práce bez výhrad. Určitě zavolám znovu."
-      },
-      {
-        "name": "Ivan Sokolov",
-        "company": "Praha 9",
-        "rating": 5,
-        "text": "Nová instalatérka a odpad v bytě po rekonstrukci. Čtyři dny práce, po nich ani prach. Poradili, kde ušetřit na materiálu, přitom nezflákli ani detail, který nebyl vidět."
-      },
-      {
-        "name": "Petra Horáčková",
-        "company": "Praha 10",
-        "rating": 4,
-        "text": "Podlahové vytápění v celém bytě. Na jednom místě museli termostat přemístit - první poloha nebyla ideální. Opravili to bez řečí a bez doplatku. Výsledek dobrý, topí rovnoměrně."
-      },
-      {
-        "name": "Andriy Melnyk",
-        "company": "Praha 8",
-        "rating": 5,
-        "text": "Ústřední topení na klíč do rekonstruovaného bytu. Přišli s nabídkou, popsali každou fázi, termín dodrželi. Topení šlape, žádné kapání ani rázy v trubkách."
-      },
-      {
-        "name": "Martin Dvořák",
-        "company": "Praha 3",
-        "rating": 3,
-        "text": "Přijeli opravit kotel v kanceláři. Práce samotná proběhla dobře. Ale v domluvený den nepřijeli a nevolali dopředu - přijeli až po přeplánování. Na plný počet hvězd to nestačí."
-      },
-      {
-        "name": "Lukáš Procházka",
-        "company": "Praha 7",
-        "rating": 5,
-        "text": "Výměna čtyř radiátorů - tři v pokojích, jeden v koupelně. Odvzdušnili starý okruh, vyměnili radiátory i ventily. Celý byt se topí rovnoměrně. Sousedé se ptali, kdo to dělal."
-      },
-      {
-        "name": "Světlana Ivanova",
-        "company": "Praha 1",
-        "rating": 4,
-        "text": "Ve dvě ráno zaseklý ventil, byt studený. Technik dorazil za padesát minut a závadu odstranil. Trochu poškrábal omítku u trubky, ale jinak naprostá spokojenost."
-      },
-      {
-        "name": "Jiří Blaha",
-        "company": "Praha 11",
-        "rating": 5,
-        "text": "Koupelna od základu - nový odpad, nové přívodní trubky, nová baterie. Poradili s rozmístěním, vše zařídili. Udělali víc, než jsem plánoval, a za rozumnou cenu."
-      },
-      {
-        "name": "Nataliya Bondarenko",
-        "company": "Praha 13",
-        "rating": 4,
-        "text": "Servis kotle před topnou sezonou. Vše proběhlo v pořádku, zkontrolovali a nastavili. Komunikace česky i rusky, příjemní. Hvězda dolů jen proto, že servisní okno bylo kratší, než jsem čekala."
-      },
-      {
-        "name": "Pavel Černý",
-        "company": "Praha 5",
-        "rating": 5,
-        "text": "Tepelné čerpadlo instalované od nich - dáváme pravidelný servis každý rok. Pokaždé přesně v čas, zpráva o stavu a konkrétní doporučení, co řešit dříve. Takový servis má vypadat."
-      },
-      {
-        "name": "Kateryna Shevchenko",
-        "company": "Praha 6",
-        "rating": 4,
-        "text": "Teplá podlaha v dětském pokoji a v předsíni. Termín dodrželi, po sobě uklidili do posledního kamínku. Hvězdička dolů za to, že vysvětlení ovládání bylo příliš stručné."
       }
     ]
   },

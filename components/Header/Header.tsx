@@ -22,7 +22,7 @@ const LOCALES = [
   { code: 'uk', label: 'UK', flag: '🇺🇦' },
 ];
 
-const NAV_KEYS = ['about', 'services', 'portfolio', 'testimonials', 'faq', 'contact'] as const;
+const NAV_KEYS = ['about', 'services', 'portfolio', 'faq', 'contact'] as const;
 
 const StickyCallButton = ({ href, label }: { href: string; label: string }) => {
   const [visible, setVisible] = useState(true)

@@ -9,7 +9,7 @@ import { SERVICE_SLUGS, servicePath } from '@lib/services'
 import { Logo } from '@ui/Logo'
 import { PersonalBadge } from './PersonalBadge'
 
-const NAV_KEYS = ['about', 'services', 'portfolio', 'testimonials', 'faq', 'contact'] as const
+const NAV_KEYS = ['about', 'services', 'portfolio', 'faq', 'contact'] as const
 
 const LOCALE_LABELS: Record<string, string> = {
   cs: 'Čeština',

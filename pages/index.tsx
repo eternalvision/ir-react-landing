@@ -8,7 +8,6 @@ import { Hero } from '@components/Hero/Hero'
 import { About } from '@components/About/About'
 import { Services } from '@components/Services/Services'
 import { Portfolio } from '@components/Portfolio/Portfolio'
-import { Testimonials } from '@components/Testimonials/Testimonials'
 import { FAQ } from '@components/FAQ/FAQ'
 import { Contact } from '@components/Contact/Contact'
 import { Seo } from '@components/Seo/Seo'
@@ -38,7 +37,6 @@ export default function Home() {
         <About />
         <Services />
         <Portfolio />
-        <Testimonials />
         <FAQ />
         <Contact />
       </main>

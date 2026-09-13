@@ -3,7 +3,6 @@
     "about": "About",
     "services": "Services",
     "portfolio": "Our Work",
-    "testimonials": "Why Us",
     "faq": "FAQ",
     "contact": "Contact"
   },
@@ -164,108 +163,6 @@
         "title": "Water heater replacement and installation",
         "category": "Heating",
         "image": "/portfolio/boiler.webp"
-      }
-    ]
-  },
-  "testimonials": {
-    "label": "Reviews",
-    "title": "What Clients Say",
-    "review_modal": {
-      "trigger": "Leave a review",
-      "title": "Leave a review",
-      "name_label": "Your name",
-      "name_placeholder": "John Smith",
-      "rating_label": "Rating",
-      "message_label": "Your review",
-      "message_placeholder": "Tell us about your experience...",
-      "submit": "Submit",
-      "success_title": "Thank you for your review!",
-      "success_text": "We appreciate your feedback."
-    },
-    "items": [
-      {
-        "name": "Marek Novák",
-        "company": "Prague 6",
-        "rating": 5,
-        "text": "Full heating system replacement in a two-storey house - new pipes, radiators and boiler. Three days of work and they left the walls spotless. Heating works exactly as it should."
-      },
-      {
-        "name": "Jana Svobodová",
-        "company": "Prague 5",
-        "rating": 4,
-        "text": "A pipe burst behind the boiler on a Saturday evening and water was flooding the kitchen. They arrived within the hour and fixed it. Would give five stars but expected a slightly longer warranty on the repair."
-      },
-      {
-        "name": "Olena Kovalchenko",
-        "company": "Prague 4",
-        "rating": 5,
-        "text": "Heat pump installation. I was worried about the language barrier, but they speak Russian and Ukrainian - no stress at all. Work done cleanly, running without issues since the first winter."
-      },
-      {
-        "name": "Tomáš Krejčí",
-        "company": "Prague 2",
-        "rating": 4,
-        "text": "Old gas boiler swapped for a condensing one. Arrived on time, cleaned up, explained the new controls. Fair price for the market, work done without complaints. Will call again."
-      },
-      {
-        "name": "Ivan Sokolov",
-        "company": "Prague 9",
-        "rating": 5,
-        "text": "New plumbing and drainage in a renovated flat. Four days of work, not a speck of dust left behind. They suggested where to save on materials without cutting corners on what matters."
-      },
-      {
-        "name": "Petra Horáčková",
-        "company": "Prague 10",
-        "rating": 4,
-        "text": "Underfloor heating across the whole flat. Had to relocate one thermostat - the initial position wasn't ideal. Fixed it without any fuss or extra charge. Even heat throughout."
-      },
-      {
-        "name": "Andriy Melnyk",
-        "company": "Prague 8",
-        "rating": 5,
-        "text": "Full central heating on a turnkey basis for a renovated flat. Came with a clear proposal, explained each phase, kept to the schedule. No drips, no pipe knocking."
-      },
-      {
-        "name": "Martin Dvořák",
-        "company": "Prague 3",
-        "rating": 3,
-        "text": "Called them to repair the office boiler. The repair itself was done well. However, they didn't show up on the agreed day and didn't call ahead - came only after rescheduling. Too big a slip for full marks."
-      },
-      {
-        "name": "Lukáš Procházka",
-        "company": "Prague 7",
-        "rating": 5,
-        "text": "Replaced four radiators - three in rooms, one in the bathroom. Bled the old circuit, swapped radiators and thermostatic valves. The whole flat heats evenly now. Neighbours asked who we used."
-      },
-      {
-        "name": "Světlana Ivanova",
-        "company": "Prague 1",
-        "rating": 4,
-        "text": "Stuck valve at 2 am, flat going cold. Technician arrived in 50 minutes and fixed it. Slightly scraped the plaster around the pipe but otherwise completely satisfied. Grateful for the night call."
-      },
-      {
-        "name": "Jiří Blaha",
-        "company": "Prague 11",
-        "rating": 5,
-        "text": "Full bathroom from scratch - new waste pipe, new supply pipes, new mixer tap. Suggested a better layout, took care of everything. Did more than I originally planned and at a fair price."
-      },
-      {
-        "name": "Nataliya Bondarenko",
-        "company": "Prague 13",
-        "rating": 4,
-        "text": "Annual boiler service before winter. Everything checked and adjusted. Staff speak Czech and Russian, pleasant to deal with. One star off only because the service window was shorter than expected."
-      },
-      {
-        "name": "Pavel Černý",
-        "company": "Prague 5",
-        "rating": 5,
-        "text": "They installed our heat pump and we have used their annual service ever since. Every year on time, with a condition report and specific recommendations on what to address before it becomes a problem. That is how service should work."
-      },
-      {
-        "name": "Kateryna Shevchenko",
-        "company": "Prague 6",
-        "rating": 4,
-        "text": "Underfloor heating in the children's room and hallway. Schedule kept, cleaned up to the last speck. One star off - the explanation of the controls was too brief."
       }
     ]
   },
